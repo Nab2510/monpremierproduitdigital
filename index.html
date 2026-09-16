@@ -4,8 +4,8 @@
 <meta name="description" content="Le cours pas à pas pour créer ton premier produit digital et l'installer sur ta boutique en ligne, même en partant de zéro.">
 <script>
 /* ▼▼▼ TES RÉGLAGES : REMPLACE CE QU'IL Y A ENTRE LES GUILLEMETS ▼▼▼ */
-window.LIEN_ACHAT          = "   https://stan.store/realisetoiavecnab/p/mon-premier-produit-digital-bwhko79z";   /* lien direct du produit sur Stan Store */
-window.LIEN_MENTIONS       = "#";                                      /* lien de tes mentions légales et CGV */
+window.LIEN_ACHAT          = "https://stan.store/realisetoiavecnab/p/mon-premier-produit-digital-bwhko79z";   /* lien direct du produit sur Stan Store */
+window.LIEN_MENTIONS       = "https://monpremierproduitdigital.vercel.app/mentions-legales.html";                                      /* lien de tes mentions légales et CGV */
 window.PRIX_LANCEMENT_ACTIF = true;                                     /* false = affiche seulement 37 € */
 window.FIN_PRIX_LANCEMENT  = "";                                        /* ex. "2026-09-25T23:59:00" : compte à rebours réel, puis 37 € automatiquement */
 /* ▲▲▲ FIN DES RÉGLAGES ▲▲▲ */
@@ -655,6 +655,10 @@ html body.normal .launch-only{display:none !important}
 html body.normal span.normal-only{display:inline !important}
 html body.normal b.normal-only,html body.normal small.normal-only{display:block !important}
 .shero h1{font-size:clamp(52px,6.6vw,92px)}
+
+.legalpills{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:18px 0}
+.legalpills a{display:inline-block;background:#fff;border:2px solid var(--barbie);color:var(--hotdeep);text-decoration:none;font-weight:600;border-radius:99px;padding:9px 18px;font-size:15px}
+.legalpills a:hover{background:var(--hot);border-color:var(--hot);color:#fff}
 </style></head>
 <body>
 <div class="annonce" id="annonce">🎀 <span id="annTxt">Prix de lancement : 27 €, puis 37 € après le lancement</span> <span id="cd" class="cd"></span></div>
@@ -813,7 +817,7 @@ html body.normal b.normal-only,html body.normal small.normal-only{display:block 
       </div>
       <div class="cdbig launch-only" id="cdbig"></div>
       <a class="cta big gold wide" data-buy href="#">Oui, je veux le cours 💗</a>
-      <p class="small center">Contenu numérique livré immédiatement : en achetant, tu demandes l'accès immédiat et renonces à ton droit de rétractation.</p>
+      <p class="small center">Contenu numérique livré immédiatement : en achetant, tu demandes l'accès immédiat et renonces à ton droit de rétractation. <a href="https://monpremierproduitdigital.vercel.app/mentions-legales.html#cgv" target="_blank" rel="noopener" style="color:#C8337A">Voir les CGV</a></p>
     </div>
   </div>
 </section>
@@ -847,7 +851,7 @@ html body.normal b.normal-only,html body.normal small.normal-only{display:block 
 
 <footer class="sfoot">
   <p><strong>Réalise-toi avec Nab</strong> · Instagram et TikTok @realisetoiavecnab</p>
-  <p><a data-legal href="#">Mentions légales et conditions de vente</a></p>
+  <p class="legalpills"><a href="https://monpremierproduitdigital.vercel.app/mentions-legales.html#mentions" target="_blank" rel="noopener">Mentions légales</a><a href="https://monpremierproduitdigital.vercel.app/mentions-legales.html#cgv" target="_blank" rel="noopener">CGV</a><a href="https://monpremierproduitdigital.vercel.app/mentions-legales.html#confidentialite" target="_blank" rel="noopener">Confidentialité</a></p>
   <p class="small">Aucun résultat financier n'est garanti. Les résultats dépendent de l'implication de chacune.</p>
 </footer>
 
