@@ -179,10 +179,11 @@ details.acc .in{padding:0 22px 18px}
   <div class="wrap">
     <h2>Comment <span class="gold">rejoindre</span></h2>
     <ol class="steps4" style="max-width:780px;margin:24px auto 30px">
-      <li><b>Inscris-toi au programme</b><br>Clique sur le bouton ci-dessous. L'inscription se fait sur Stan Store.</li>
-      <li><b>Récupère ton lien personnel</b><br>Une fois inscrite, Stan te donne ton lien affilié unique. C'est lui qui compte tes ventes.</li>
-      <li><b>Partage avec ton lien</b><br>Mets-le dans ta bio, tes stories (sticker lien), tes messages et tes emails, avec les visuels et textes ci-dessous.</li>
-      <li><b>Touche tes commissions</b><br>Tes commissions sont suivies et versées via Stan, selon ses conditions. Pense à déclarer ces revenus.</li>
+      <li><b>Achète le cours</b><br>Le programme d'affiliation est réservé aux clientes de Mon Premier Produit Digital : c'est ce qui te permet d'en parler avec sincérité.</li>
+      <li><b>Ouvre l'email de Stan</b><br>Juste après ton achat, Stan t'envoie un email avec ton accès affiliée. Pense à vérifier tes courriers indésirables.</li>
+      <li><b>Récupère ton lien unique</b><br>Suis le lien de l'email, connecte-toi ou crée ton compte, puis accepte les conditions d'affiliation : ton lien personnel s'affiche.</li>
+      <li><b>Partage avec ton lien</b><br>Bio, stories (sticker lien), messages, emails : utilise les visuels et les textes ci-dessous, avec la mention « Affiliation · collaboration commerciale ».</li>
+      <li><b>Touche tes commissions</b><br>Stan suit tes ventes et verse tes commissions automatiquement, selon ses conditions. Pense à déclarer ces revenus.</li>
     </ol>
     <div style="text-align:center"><a class="btn" id="join" href="#" target="_blank" rel="noopener">JE M'INSCRIS AU PROGRAMME 💸</a><p style="font-size:14.5px;margin-top:12px" id="joinhelp"></p></div>
   </div>
@@ -296,7 +297,8 @@ Pour le découvrir : [TON LIEN]
 (function(){
   var L=(window.LIEN_INSCRIPTION_AFFILIEE||"").trim();
   var j=document.getElementById("join"), h=document.getElementById("joinhelp");
-  if(L){j.href=L;}else{j.href="https://ig.me/m/realisetoiavecnab";j.textContent="DEMANDER MON LIEN AFFILIÉE 💌";h.textContent="Écris « AFFILIÉE » à @realisetoiavecnab sur Instagram pour recevoir ton lien d'inscription.";}
+  j.href="https://monpremierproduitdigital.vercel.app/";j.textContent="JE N'AI PAS ENCORE LE COURS 💗";
+  h.innerHTML="Tu as déjà acheté le cours mais tu ne trouves pas ton lien ? <a href=\"https://ig.me/m/realisetoiavecnab\" target=\"_blank\" rel=\"noopener\" style=\"color:#C8337A;font-weight:600\">Écris « AFFILIÉE » à @realisetoiavecnab sur Instagram</a>.";
   var nb=document.getElementById("nb"),tot=document.getElementById("tot");
   function upd(){var n=Math.max(0,parseInt(nb.value||"0",10));tot.textContent=(n*33.5).toLocaleString("fr-FR",{minimumFractionDigits:0,maximumFractionDigits:2})+" €";}
   nb.addEventListener("input",upd);upd();
