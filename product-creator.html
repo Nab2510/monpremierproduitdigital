@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<script>window.PC_LIEN_IA = "https://claude.ai/artifact/5aEMcm1Tq4b3VEH3VSqmGx";</script>
+<title>PRODUCT CREATOR ✨ · Mon Premier Produit Digital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --barbie:#FFC1D8; --bonbon:#FF9EC7; --hot:#EC4E97; --hotdeep:#C8337A;
+  --blush:#FFF4F8; --blush2:#FFE7F0; --ink:#3A1F2B; --ink2:#6E5260;
+  --gold:linear-gradient(115deg,#A97A24 0%,#E9C878 28%,#FFF1C9 46%,#D9AE55 64%,#A97A24 100%);
+  --goldd:linear-gradient(115deg,#7A5312 0%,#B8862F 18%,#F3D98B 30%,#B8862F 42%,#7A5312 55%,#B8862F 70%,#F3D98B 82%,#7A5312 100%);
+  --shadow:0 18px 50px -24px rgba(200,51,122,.45);
+  --r-lg:32px; --r-md:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--blush);color:var(--ink);font-family:"Poppins",system-ui,sans-serif;font-size:17.5px;line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"Playfair Display",Georgia,serif;line-height:1.12;margin:0;font-weight:700}
+p{margin:0 0 .9em}
+button{font-family:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--hot);outline-offset:3px;border-radius:10px}
+.gold{font-style:italic;font-weight:600;background:var(--goldd);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 5s linear infinite;padding-right:.08em}
+@keyframes shine{to{background-position:-220% 0}}
+@keyframes breathe{50%{transform:scale(1.035)}}
+@keyframes sweep{0%{left:-70%}55%,100%{left:130%}}
+@keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(18px,-26px)}}
+@keyframes twinkle{0%,100%{transform:scale(.6) rotate(0);opacity:.3}50%{transform:scale(1.15) rotate(45deg);opacity:1}}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes pop{0%{opacity:0;transform:scale(.92)}100%{opacity:1;transform:none}}
+@keyframes bob{50%{transform:translateY(-8px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+
+/* ---------- barre du haut ---------- */
+.top{position:sticky;top:0;z-index:40;background:rgba(255,244,248,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(236,78,151,.14)}
+.topin{max-width:1120px;margin:0 auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:12px;background:none;border:0;padding:0;color:var(--ink);text-align:left}
+.logo{flex:0 0 42px;height:42px;border-radius:50%;background:var(--gold);background-size:200% 100%;display:grid;place-items:center;font-family:"Playfair Display";font-weight:700;font-style:italic;color:#fff;font-size:22px;animation:shine 5s linear infinite}
+.brand b{display:block;font-family:"Poppins";font-weight:800;letter-spacing:2px;font-size:15px}
+.brand small{display:block;font-size:12px;color:var(--ink2)}
+.topr{display:flex;gap:8px;align-items:center}
+.pill{border:2px solid var(--barbie);background:#fff;color:var(--hotdeep);border-radius:99px;padding:8px 16px;font-weight:600;font-size:14.5px;white-space:nowrap}
+.pill.dark{background:var(--hot);border-color:var(--hot);color:#fff}
+.aibadge{display:none;font-size:12.5px;font-weight:600;color:#8E6B22;background:#FFF3DA;border-radius:99px;padding:6px 12px;white-space:nowrap}
+.aibadge.on{display:inline-block}
+
+/* ---------- étapes ---------- */
+.stepper{max-width:1120px;margin:0 auto;padding:10px 22px 12px}
+.bar{height:8px;background:var(--blush2);border-radius:99px;overflow:hidden;margin-bottom:10px}
+.bar i{display:block;height:100%;width:0;background:var(--goldd);background-size:220% 100%;animation:shine 4s linear infinite;transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.steps{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.steps::-webkit-scrollbar{display:none}
+.st{flex:0 0 auto;display:flex;align-items:center;gap:8px;border:0;background:transparent;border-radius:99px;padding:6px 12px 6px 6px;color:var(--ink2);font-size:13.5px;font-weight:600;white-space:nowrap;transition:background .25s}
+.st .n{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#fff;border:2px solid var(--blush2);font-family:"Playfair Display";font-size:14px;color:var(--ink2)}
+.st.done .n{background:var(--gold);border-color:transparent;color:#3A2410}
+.st.cur{background:#fff;color:var(--ink);box-shadow:var(--shadow)}
+.st.cur .n{background:var(--hot);border-color:var(--hot);color:#fff}
+.st:disabled{opacity:.45;cursor:not-allowed}
+.st:not(:disabled):hover{background:#fff}
+
+/* ---------- mise en page ---------- */
+main{max-width:1120px;margin:0 auto;padding:24px 22px 120px}
+.screen{animation:rise .55s cubic-bezier(.2,.8,.2,1)}
+.head{margin:18px 0 26px}
+.kicker{display:inline-block;background:var(--hot);color:#fff;border-radius:99px;padding:6px 14px;font-weight:600;font-size:13.5px;letter-spacing:.4px;margin-bottom:14px}
+.head h2{font-size:clamp(32px,4.6vw,50px);letter-spacing:-.5px}
+.head p.lead{font-size:clamp(17px,1.8vw,19.5px);color:var(--ink2);max-width:720px;margin-top:12px}
+.soft{background:#fff;border-radius:var(--r-md);padding:18px 22px;border-left:5px solid var(--hot);margin:0 0 22px;font-size:16.5px}
+.soft.gold2{border-left-color:#C9973A;background:#FFF9EC}
+.card{background:#fff;border-radius:var(--r-lg);padding:30px 30px;box-shadow:var(--shadow);margin-bottom:20px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:860px){.grid2,.grid3{grid-template-columns:1fr}}
+
+/* ---------- questions ---------- */
+.q{margin-bottom:24px}
+.q label{display:block;font-family:"Playfair Display";font-weight:700;font-size:21px;margin-bottom:4px}
+.q .help{font-size:14.5px;color:var(--ink2);margin-bottom:10px}
+.inp,textarea.inp{width:100%;font-family:inherit;font-size:16.5px;color:var(--ink);background:var(--blush);border:2px solid var(--blush2);border-radius:16px;padding:13px 16px;transition:border-color .2s,box-shadow .2s,background .2s}
+textarea.inp{min-height:92px;resize:vertical;line-height:1.55}
+.inp:focus{outline:none;border-color:var(--hot);background:#fff;box-shadow:0 0 0 4px rgba(236,78,151,.12)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chip{border:2px solid var(--barbie);background:#fff;color:var(--ink);border-radius:99px;padding:8px 15px;font-size:14.5px;font-weight:500;transition:all .2s}
+.chip:hover{border-color:var(--hot)}
+.chip.on{background:var(--hot);border-color:var(--hot);color:#fff}
+.chip.sug{border-style:dashed;color:var(--hotdeep);font-size:13.5px}
+.minisub{display:flex;gap:6px;margin:4px 0 18px}
+.minisub i{width:34px;height:6px;border-radius:99px;background:var(--blush2)}
+.minisub i.on{background:var(--hot)}
+
+/* ---------- boutons ---------- */
+.btn{position:relative;overflow:hidden;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:99px;padding:17px 32px;font-size:16.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#3A2410;background:var(--goldd);background-size:220% 100%;box-shadow:0 16px 32px -14px rgba(122,83,18,.8);animation:shine 5s linear infinite;transition:transform .2s}
+.btn::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.6),transparent);transform:skewX(-20deg);animation:sweep 3.4s ease-in-out infinite;z-index:-1;pointer-events:none}
+.btn:hover{transform:translateY(-2px) scale(1.02)}
+.btn.pink{background:var(--hot);color:#fff;box-shadow:0 16px 32px -14px rgba(200,51,122,.9);animation:none}
+.btn.ghost{background:#fff;color:var(--hotdeep);border:2px solid var(--barbie);box-shadow:none;animation:none}
+.btn.ghost::after{display:none}
+.btn.sm{padding:11px 18px;font-size:13px;letter-spacing:.5px}
+.btn.big{padding:22px 44px;font-size:18px;animation:shine 5s linear infinite,breathe 2.8s ease-in-out infinite}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:24px}
+.actions.between{justify-content:space-between}
+.linkbtn{background:none;border:0;color:var(--hotdeep);font-weight:600;text-decoration:underline;text-underline-offset:3px;padding:6px 0;font-size:15px}
+
+/* ---------- accueil ---------- */
+.hero{position:relative;overflow:hidden;border-radius:40px;padding:70px 30px 64px;text-align:center;background:radial-gradient(circle at 15% 15%,#fff 0,transparent 36%),radial-gradient(circle at 85% 85%,#EC4E97 0,transparent 46%),linear-gradient(160deg,#FFC1D8 0%,#FF9EC7 100%);box-shadow:var(--shadow)}
+.fl{position:absolute;pointer-events:none;z-index:1}
+.bub{border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff 0,var(--bonbon) 45%,var(--hot) 100%);opacity:.55;animation:drift 12s ease-in-out infinite}
+.ring{border-radius:50%;border:2px solid #fff;opacity:.7;animation:drift 16s ease-in-out infinite reverse}
+.spk{width:22px;height:22px;background:var(--gold);clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%);animation:twinkle 3.2s ease-in-out infinite}
+.hero>*:not(.fl){position:relative;z-index:2}
+.hero .tagw{display:inline-block;background:#fff;color:var(--hotdeep);border-radius:99px;padding:8px 18px;font-weight:600;font-size:14.5px}
+.hero h1{font-family:"Poppins";font-weight:800;letter-spacing:clamp(3px,1vw,10px);font-size:clamp(40px,8vw,96px);line-height:1;margin:22px 0 6px;color:var(--ink)}
+.hero h1 span{background:var(--goldd);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 5s linear infinite}
+.hero .sub1{font-family:"Playfair Display";font-style:italic;font-size:clamp(20px,2.6vw,28px);color:var(--hotdeep);margin:10px 0 4px}
+.hero .sub2{font-size:15.5px;color:var(--ink);opacity:.8;margin-bottom:22px}
+.hero .welcome{max-width:620px;margin:0 auto 30px;font-size:18px;background:rgba(255,255,255,.75);border-radius:26px;padding:20px 26px}
+.hero .time{margin-top:16px;font-size:14.5px;font-weight:500}
+.map{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+@media (max-width:760px){.map{grid-template-columns:1fr 1fr}}
+.map div{background:#fff;border-radius:22px;padding:16px 18px;display:flex;gap:12px;align-items:center;box-shadow:var(--shadow);animation:rise .6s both}
+.map b{flex:0 0 38px;height:38px;border-radius:50%;background:var(--gold);display:grid;place-items:center;font-family:"Playfair Display";color:#3A2410}
+.map span{font-weight:600;font-size:14.5px;line-height:1.3}
+
+/* ---------- cartes d'options ---------- */
+.opt{position:relative;background:#fff;border-radius:26px;padding:24px 24px 20px;box-shadow:var(--shadow);border:2px solid transparent;transition:transform .25s,border-color .25s;animation:pop .45s cubic-bezier(.2,.8,.2,1) both;display:flex;flex-direction:column}
+.opt:hover{transform:translateY(-4px)}
+.opt.sel{border-color:var(--hot);box-shadow:0 0 0 5px rgba(236,78,151,.12),var(--shadow)}
+.opt .tagr{display:inline-block;align-self:flex-start;background:#FFF3DA;color:#8E6B22;border-radius:99px;padding:4px 12px;font-size:12.5px;font-weight:600;margin-bottom:10px}
+.opt h3{font-size:24px;margin-bottom:8px}
+.opt .sub{font-style:italic;color:var(--hotdeep);font-size:15.5px;margin-bottom:10px}
+.kv{font-size:15px;margin:0 0 7px}
+.kv b{color:var(--hotdeep);font-weight:600}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 16px}
+.meta span{background:var(--blush2);border-radius:99px;padding:4px 12px;font-size:13px;font-weight:500}
+.opt .btn{margin-top:auto}
+.why{background:var(--blush);border-radius:16px;padding:12px 14px;font-size:14.5px;margin:6px 0 14px}
+.why b{color:var(--hotdeep)}
+
+/* ---------- synthèses ---------- */
+.synth{background:linear-gradient(160deg,#fff 0%,#FFF0F6 100%);border:2px solid var(--barbie);border-radius:var(--r-lg);padding:28px 30px;margin:10px 0 20px;animation:pop .5s both}
+.synth h3{font-size:28px;margin-bottom:16px}
+.synth h3 .e{font-style:normal}
+.field{margin-bottom:14px}
+.field .lab{display:block;font-weight:700;font-size:13px;letter-spacing:1.2px;text-transform:uppercase;color:var(--hotdeep);margin-bottom:6px}
+.field textarea.inp,.field .inp{background:#fff}
+
+/* ---------- structure ---------- */
+.mod{background:#fff;border-radius:24px;padding:20px 22px;margin-bottom:14px;box-shadow:var(--shadow);animation:rise .45s both}
+.modh{display:flex;gap:12px;align-items:center}
+.modh .n{flex:0 0 42px;height:42px;border-radius:50%;background:var(--gold);display:grid;place-items:center;font-family:"Playfair Display";font-weight:700;color:#3A2410}
+.modh input{flex:1;font-family:"Playfair Display";font-weight:700;font-size:20px;border:0;border-bottom:2px dashed var(--blush2);background:transparent;padding:6px 2px;color:var(--ink)}
+.modh input:focus{outline:none;border-bottom-color:var(--hot)}
+.icon{flex:0 0 40px;height:40px;border-radius:50%;border:0;background:var(--blush2);font-size:16px}
+.icon:hover{background:var(--barbie)}
+.modb{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin-top:14px}
+@media (max-width:760px){.modb{grid-template-columns:1fr}}
+.modb .field textarea{min-height:64px;font-size:15px}
+
+/* ---------- checklist ---------- */
+.cl{list-style:none;margin:0;padding:0}
+.cl li{display:flex;gap:14px;align-items:flex-start;padding:14px 10px;border-bottom:1px solid var(--blush2);cursor:pointer;border-radius:14px;transition:background .2s}
+.cl li:hover{background:var(--blush)}
+.cl .box{flex:0 0 28px;height:28px;border-radius:9px;border:2.5px solid var(--bonbon);display:grid;place-items:center;color:#fff;font-weight:700;margin-top:2px;transition:all .25s}
+.cl li.on .box{background:var(--hot);border-color:var(--hot)}
+.cl li.on .box::before{content:"✓"}
+.cl li b{display:block}
+.cl li.on b{text-decoration:line-through;text-decoration-color:var(--bonbon)}
+.cl li span{font-size:14.5px;color:var(--ink2)}
+
+/* ---------- plan final ---------- */
+.plan{background:#fff;border-radius:36px;padding:40px 40px;box-shadow:var(--shadow);border-top:6px solid transparent;border-image:none;position:relative;overflow:hidden}
+.plan::before{content:"";position:absolute;inset:0 0 auto 0;height:8px;background:var(--goldd);background-size:220% 100%;animation:shine 4s linear infinite}
+.plan h3{font-family:"Poppins";font-weight:800;letter-spacing:1.5px;font-size:14px;color:var(--hotdeep);text-transform:uppercase;margin:24px 0 6px}
+.plan .pname{font-family:"Playfair Display";font-size:clamp(30px,4vw,44px);font-weight:700;line-height:1.1}
+.plan ul{margin:6px 0 0;padding-left:22px}
+.plan li{margin-bottom:4px}
+.plan li::marker{color:#C9973A}
+.final{text-align:center;background:linear-gradient(135deg,#EC4E97 0%,#FF9EC7 70%,#FFC1D8 100%);color:#fff;border-radius:36px;padding:44px 28px;margin:26px 0;position:relative;overflow:hidden}
+.final h2{color:#fff;font-size:clamp(28px,4vw,42px)}
+.final p{font-size:19px;max-width:560px;margin:14px auto 0}
+
+/* ---------- récapitulatif latéral ---------- */
+.veil{position:fixed;inset:0;background:rgba(58,31,43,.35);z-index:60;opacity:0;pointer-events:none;transition:opacity .3s}
+.veil.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(440px,100%);background:#fff;z-index:70;transform:translateX(105%);transition:transform .45s cubic-bezier(.2,.8,.2,1);padding:26px 24px 40px;overflow:auto;box-shadow:-30px 0 80px -30px rgba(200,51,122,.4)}
+.drawer.on{transform:none}
+.drawer h3{font-size:28px;margin:4px 0 18px}
+.drawer .x{float:right;width:42px;height:42px;border-radius:50%;border:0;background:var(--blush2);font-size:22px}
+.rec{border-bottom:1px solid var(--blush2);padding:12px 0}
+.rec b{display:block;font-size:12.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--hotdeep)}
+.rec span{font-size:15px}
+.rec .empty{color:#B9A3AD;font-style:italic}
+
+/* ---------- chargement, toast, confettis ---------- */
+.think{display:flex;align-items:center;gap:14px;background:#fff;border-radius:22px;padding:18px 22px;box-shadow:var(--shadow);margin:12px 0;animation:pop .3s both}
+.think i{width:26px;height:26px;border-radius:50%;border:3px solid var(--blush2);border-top-color:var(--hot);animation:spin 0.9s linear infinite}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,200%);visibility:hidden;background:var(--ink);color:#fff;border-radius:99px;padding:12px 24px;font-weight:500;z-index:90;transition:transform .35s;font-size:15px;max-width:92vw;text-align:center}
+.toast.on{transform:translate(-50%,0);visibility:visible}
+.confetti{position:fixed;inset:0;pointer-events:none;z-index:95;overflow:hidden}
+.confetti i{position:absolute;top:-20px;width:10px;height:15px;border-radius:3px;animation:fall linear forwards}
+.foot{text-align:center;font-size:13.5px;color:var(--ink2);padding:10px 22px 40px}
+
+@media (max-width:560px){
+  body{font-size:16.5px}
+  .brand small{display:none}
+  .card,.synth,.plan{padding:22px 18px;border-radius:26px}
+  .hero{padding:48px 18px 44px;border-radius:30px}
+  .btn{padding:15px 22px;font-size:14.5px}
+  .btn.big{width:100%;padding:19px 20px;font-size:16px}
+  .actions .btn{flex:1 1 auto}
+  .q label{font-size:19px}
+  .pill{padding:7px 12px;font-size:13px}
+}
+@media print{
+  body{background:#fff}
+  .top,.stepper,.actions,.drawer,.veil,.toast,.final,.noprint,.foot{display:none!important}
+  main{padding:0}
+  .plan{box-shadow:none;padding:0}
+}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+.iahint{display:flex;gap:16px;align-items:center;flex-wrap:wrap;background:#fff;border:2px dashed var(--bonbon);border-radius:26px;padding:18px 22px;margin-top:22px}
+.iahint>span{font-size:34px}
+.iahint p{flex:1 1 280px;margin:0;font-size:15.5px}
+body.has-ai .iahint{display:none}
+/* ===== studio ===== */
+.phase{flex:0 0 auto;align-self:center;font-size:11px;font-weight:800;letter-spacing:1.5px;color:var(--hotdeep);padding:0 4px 0 10px}
+.phase.gold{color:#9C7224}
+.st.crea .n{border-color:var(--gold-l,#F3D98B)}
+.kicker.gold{background:var(--goldd);background-size:220% 100%;color:#3A2410;animation:shine 5s linear infinite}
+.mini{font-size:14px;color:var(--ink2);margin:8px 0}
+.h3{font-size:26px;margin:28px 0 14px}
+.h4{font-family:"Poppins";font-weight:700;font-size:15px;letter-spacing:1px;text-transform:uppercase;color:var(--hotdeep);margin:20px 0 8px}
+.sumbig{cursor:pointer;font-weight:700;font-size:18px}
+.center{justify-content:center}
+.bigprice{font-family:"Playfair Display";font-size:44px;font-weight:700;margin:4px 0}
+.calc{font-size:14.5px;color:var(--hotdeep);font-weight:600}
+.phases{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+@media (max-width:700px){.phases{grid-template-columns:1fr}}
+.phases>div{border-radius:24px;padding:18px 22px;display:flex;flex-direction:column;gap:4px}
+.ph1{background:#fff;border:2px solid var(--barbie)}
+.ph2{background:linear-gradient(135deg,#FFF6E0,#FFE7F0);border:2px solid #F3D98B}
+.phases b{font-size:13px;letter-spacing:1.5px;color:var(--hotdeep)}
+.ph2 b{color:#9C7224}
+.express{display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:#FFF9EC;border:2px dashed #E9C878;border-radius:20px;padding:14px 18px;margin-top:14px}
+.express>span{font-size:28px}.express p{flex:1 1 240px;margin:0;font-size:15px}
+.coach{margin:18px 0 0}
+.coachtxt{background:#fff;border-radius:22px;padding:18px 22px;border-left:5px solid var(--hot);margin-bottom:10px;box-shadow:var(--shadow)}
+.coachtxt b{display:block;margin-bottom:6px;color:var(--hotdeep)}
+.coachtxt ul{margin:0;padding-left:20px}
+.rcard{background:#fff;border-radius:22px;padding:18px 22px;box-shadow:var(--shadow);margin-bottom:16px}
+.rch{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:6px}
+.rch b{font-size:15px}
+.rcard ol,.rcard ul{margin:0;padding-left:20px}
+.empty{color:#B9A3AD}
+.launch{position:relative;overflow:hidden;text-align:center;background:linear-gradient(135deg,#EC4E97 0%,#FF9EC7 70%,#FFC1D8 100%);color:#fff;border-radius:36px;padding:44px 26px;margin:24px 0}
+.launch h2{color:#fff;font-size:clamp(28px,4vw,42px)}
+.launch p{max-width:560px;margin:12px auto 22px;font-size:18px}
+.launch>*:not(.fl){position:relative;z-index:2}
+.iahint{display:flex;gap:16px;align-items:center;flex-wrap:wrap;background:#fff;border:2px dashed var(--bonbon);border-radius:26px;padding:18px 22px;margin:18px 0}
+.iahint>span{font-size:34px}.iahint p{flex:1 1 280px;margin:0;font-size:15.5px}
+.dirty{background:#FFF3DA;border-left:6px solid #C9973A;border-radius:22px;padding:16px 20px;margin:0 0 18px}
+.dirty p{margin:4px 0 8px}
+.dirty .actions{margin-top:6px}
+/* studio */
+.studio{display:grid;grid-template-columns:320px 1fr;gap:20px;align-items:start}
+@media (max-width:900px){.studio{grid-template-columns:1fr}}
+.side{position:sticky;top:150px;display:flex;flex-direction:column;gap:14px;max-height:calc(100vh - 170px);overflow:auto;padding-bottom:6px}
+@media (max-width:900px){.side{position:static;max-height:none}}
+.dash{background:linear-gradient(160deg,#FFC1D8,#FF9EC7);border-radius:26px;padding:20px;box-shadow:var(--shadow)}
+.dk{font-size:11px;font-weight:800;letter-spacing:2px;color:var(--hotdeep)}
+.dn{display:block;font-family:"Playfair Display";font-size:23px;line-height:1.15;margin:4px 0 2px}
+.df{display:block;font-size:13px;font-weight:600;margin-bottom:8px}
+.dp{font-size:13px;margin:0 0 4px;line-height:1.45}
+.dbar{height:10px;background:rgba(255,255,255,.7);border-radius:99px;overflow:hidden;margin:12px 0 8px}
+.dbar i{display:block;height:100%;background:var(--goldd);background-size:220% 100%;animation:shine 4s linear infinite;transition:width .6s}
+.dstats{display:flex;justify-content:space-between;gap:6px;font-size:12px}
+.dstats b{font-size:15px}
+.slist{background:#fff;border-radius:22px;padding:8px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:2px}
+.si{display:flex;gap:10px;align-items:center;text-align:left;border:0;background:transparent;border-radius:14px;padding:9px 10px;color:var(--ink);font-size:14px;font-weight:600;line-height:1.3}
+.si:hover{background:var(--blush)}
+.si.cur{background:var(--blush2)}
+.si small{display:block;font-weight:500;font-size:11.5px;color:var(--ink2)}
+.sic{flex:0 0 30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--blush2);color:var(--ink2);font-size:14px}
+.s-draft .sic{background:#FFE7F0;color:var(--hotdeep)}
+.s-ok .sic{background:var(--goldgrad,#E9C878);background:linear-gradient(115deg,#A97A24,#E9C878,#FFF1C9,#D9AE55);color:#3A2410}
+.s-stale .sic{background:#FFF3DA;color:#9C7224}
+.spin{width:16px;height:16px;border-radius:50%;border:2.5px solid #fff;border-top-color:var(--hot);animation:spin .9s linear infinite;display:inline-block}
+.sidebtns{display:flex;flex-direction:column;gap:8px}
+.sidebtns .btn{width:100%}
+.editor{background:#fff;border-radius:30px;padding:26px 30px;box-shadow:var(--shadow);min-width:0}
+@media (max-width:560px){.editor{padding:20px 16px;border-radius:24px}}
+.edh{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin-bottom:14px;padding-bottom:12px;border-bottom:2px dashed var(--blush2)}
+.edh .pn{background:var(--hot);color:#fff;border-radius:99px;padding:4px 12px;font-size:13px;font-weight:700}
+.edh h3{flex:1 1 200px;font-size:clamp(22px,2.6vw,28px)}
+.stp{border-radius:99px;padding:5px 12px;font-size:12.5px;font-weight:700;background:var(--blush2);color:var(--ink2)}
+.stp.s-ok{background:#FFF3DA;color:#8E6B22}.stp.s-draft{color:var(--hotdeep)}.stp.s-stale{background:#FFF3DA;color:#9C7224}
+.empty{text-align:center;padding:30px 10px}
+.editor .empty{color:var(--ink)}
+.empty>span{font-size:56px;display:block;animation:bob 3s ease-in-out infinite}
+.eact{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 6px}
+.req{background:var(--blush);border-radius:22px;padding:18px 20px;margin-top:14px}
+.req .chips{margin-top:8px}
+.chip:disabled{opacity:.45;cursor:not-allowed}
+.editarea{min-height:420px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14.5px;line-height:1.6}
+.manual{background:var(--blush);border-radius:22px;padding:20px}
+.manual ol{margin:6px 0 12px;padding-left:22px}
+.copyp{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:12px}
+.copyp details{flex:1 1 100%}
+.copyp pre{white-space:pre-wrap;font-size:12.5px;background:#fff;border-radius:14px;padding:12px;max-height:260px;overflow:auto}
+.think .btn{margin-left:auto}
+/* document rendu */
+.doc{font-size:16.5px;line-height:1.75;color:var(--ink)}
+.doc h2{font-size:clamp(26px,3vw,34px);margin:4px 0 16px;color:var(--ink)}
+.doc h3{font-family:"Playfair Display";font-size:23px;margin:26px 0 8px;color:var(--hotdeep)}
+.doc h4,.doc h5{font-family:"Playfair Display";font-size:19px;margin:20px 0 6px}
+.doc p{margin:0 0 12px}
+.doc ul,.doc ol{padding-left:24px;margin:0 0 12px}
+.doc li{margin-bottom:5px}
+.doc li::marker{color:#C9973A}
+.doc blockquote{margin:16px 0;padding:12px 18px;border-left:5px solid var(--hot);background:var(--blush);border-radius:12px;font-style:italic}
+.doc .blk{border-radius:18px;padding:14px 18px;margin:16px 0;background:var(--blush);border:2px solid var(--barbie)}
+.doc .blk-exercice,.doc .blk-jour,.doc .blk-action{background:#FFF9EC;border-color:#E9C878}
+.doc .blk-modele,.doc .blk-prompt,.doc .blk-script{background:#fff;border-style:dashed}
+.doc .blkh{font-weight:700;font-size:16.5px;margin-bottom:8px;display:flex;gap:8px;align-items:center}
+.doc .cbx{list-style:none;padding-left:0}
+.doc .cbx li{display:flex;gap:10px;align-items:flex-start}
+.doc .cbb{flex:0 0 18px;height:18px;border:2px solid var(--hot);border-radius:5px;margin-top:5px}
+.doc .wl{display:block;border-bottom:1.5px solid #E6C9D5;height:28px;margin:4px 0}
+.doc span.wl{display:inline-block;min-width:160px;height:1.2em;vertical-align:bottom}
+.doc .tw{overflow-x:auto;margin:12px 0}
+.doc table{border-collapse:collapse;width:100%;font-size:15px;min-width:420px}
+.doc th{background:var(--hot);color:#fff;text-align:left;padding:9px 12px}
+.doc td{border:1px solid #F3D3DF;padding:10px 12px;height:22px}
+.doc mark{background:#FFE7F0;color:var(--hotdeep);border-radius:6px;padding:0 4px}
+.doc hr{border:0;border-top:2px dashed var(--barbie);margin:22px 0}
+.doc.live{min-height:120px}
+/* assistante */
+.chatbox{position:fixed;top:0;right:0;height:100%;width:min(460px,100%);background:#fff;z-index:70;transform:translateX(105%);transition:transform .45s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column;box-shadow:-30px 0 80px -30px rgba(200,51,122,.4)}
+.chatbox.on{transform:none}
+.chath{padding:20px 22px 12px;border-bottom:1px solid var(--blush2)}
+.chath h3{font-size:26px}
+.chath .x{float:right;width:42px;height:42px;border-radius:50%;border:0;background:var(--blush2);font-size:22px}
+.chatmsgs{flex:1;overflow:auto;padding:16px 18px;display:flex;flex-direction:column;gap:10px;background:var(--blush)}
+.cmsg{display:flex}
+.cmsg>div{max-width:88%;border-radius:20px;padding:11px 15px;font-size:15px;line-height:1.55}
+.cmsg.a>div{background:#fff;border-bottom-left-radius:6px;box-shadow:0 8px 20px -14px rgba(200,51,122,.5)}
+.cmsg.u{justify-content:flex-end}
+.cmsg.u>div{background:var(--hot);color:#fff;border-bottom-right-radius:6px}
+.cmsg p{margin:0 0 6px}.cmsg ul,.cmsg ol{margin:0 0 6px;padding-left:18px}
+.chatf{padding:12px 16px 16px;border-top:1px solid var(--blush2)}
+.chatf .chips{margin:0 0 10px}
+.chatrow{display:flex;gap:8px}
+.chatrow textarea{flex:1;min-height:48px;max-height:120px}
+.dots{display:inline-flex;gap:4px}.dots i{width:8px;height:8px;border-radius:50%;background:var(--bonbon);animation:bob 1s ease-in-out infinite}.dots i:nth-child(2){animation-delay:.15s}.dots i:nth-child(3){animation-delay:.3s}
+/* produit final */
+.qc{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin:6px 0 14px}
+.qc>div:last-child{flex:1 1 260px}
+.gauge{position:relative;width:120px;height:120px;border-radius:50%;display:grid;place-content:center;text-align:center}
+.gauge::before{content:"";position:absolute;inset:12px;border-radius:50%;background:#fff}
+.gauge b,.gauge small{position:relative}
+.gauge b{font-family:"Playfair Display";font-size:36px;color:var(--hotdeep);line-height:1}
+.gauge small{font-size:12px;color:var(--ink2)}
+.qcl{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.qcl li{display:flex;gap:12px;align-items:flex-start;background:var(--blush);border-radius:16px;padding:12px 14px;font-size:15px}
+.qcl li>span{flex:0 0 28px;height:28px;border-radius:50%;display:grid;place-items:center;font-weight:800}
+.qcl li.ok>span{background:linear-gradient(115deg,#A97A24,#E9C878,#FFF1C9,#D9AE55);color:#3A2410}
+.qcl li.ko>span{background:var(--hot);color:#fff}
+.fix{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:#fff;border:2px solid var(--blush2);border-radius:16px;padding:12px 14px;margin-bottom:8px;font-size:14.5px}
+.fix>div{flex:1 1 260px}
+.ready{position:relative;overflow:hidden;text-align:center;background:linear-gradient(135deg,#EC4E97 0%,#FF9EC7 70%,#FFC1D8 100%);color:#fff;border-radius:36px;padding:48px 26px;margin:24px 0}
+.ready>*:not(.fl){position:relative;z-index:2}
+.ready h2{color:#fff;font-family:"Poppins";font-weight:800;letter-spacing:2px;font-size:clamp(28px,4.4vw,48px)}
+.ready p{font-size:19px;max-width:560px;margin:14px auto 22px}
+.rsum{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.rsum div{background:rgba(255,255,255,.9);color:var(--ink);border-radius:18px;padding:12px 18px;min-width:110px}
+.rsum b{display:block;font-family:"Playfair Display";font-size:24px;color:var(--hotdeep)}
+.rsum span{font-size:13px}
+/* aperçu & fenêtre */
+.preview{position:fixed;inset:0;z-index:100;background:var(--blush);overflow:auto;display:none}
+.preview.on{display:block}
+.pvbar{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 18px;background:rgba(255,244,248,.95);border-bottom:1px solid var(--blush2)}
+.pvdoc{max-width:820px;margin:0 auto;padding:20px 16px 60px}
+.pvcover{text-align:center;background:linear-gradient(160deg,#FFC1D8,#FF9EC7);border-radius:30px;padding:60px 26px;margin-bottom:20px;border-bottom:6px solid #C9973A}
+.pvcover span{background:#fff;color:var(--hotdeep);border-radius:99px;padding:6px 14px;font-weight:600;font-size:13px}
+.pvcover h1{font-size:clamp(32px,5vw,50px);margin:16px 0 6px}
+.pvcover .s{font-style:italic;color:var(--hotdeep);font-size:19px}
+.pvsec{background:#fff;border-radius:26px;padding:34px 38px;margin-bottom:18px;box-shadow:var(--shadow)}
+@media (max-width:560px){.pvsec{padding:22px 18px}}
+.modal{position:fixed;inset:0;z-index:120;background:rgba(58,31,43,.45);display:none;align-items:center;justify-content:center;padding:20px}
+.modal.on{display:flex}
+.modal>div{background:#fff;border-radius:30px;padding:30px 28px;max-width:480px;width:100%;animation:pop .3s both;text-align:center}
+.modal h3{font-size:26px;margin-bottom:10px}
+.modal .actions{justify-content:center}
+@media print{
+  body.pvopen>*:not(#preview){display:none!important}
+  body.pvopen .preview{position:static;display:block;background:#fff;overflow:visible}
+  .pvbar{display:none!important}
+  .pvsec{box-shadow:none;page-break-before:always;border-radius:0}
+  .pvcover{page-break-after:always}
+}
+
+.brand{min-width:0}.brand>span:last-child{min-width:0}
+@media (max-width:560px){.topr .lbl{display:none}.topr .pill{padding:7px 12px;font-size:15px}.brand b{letter-spacing:1px;font-size:14px}.topin{padding:10px 14px}}
+
+.screen{animation:none}.screen.anim{animation:rise .5s cubic-bezier(.2,.8,.2,1)}
+.screen:not(.anim) .opt,.screen:not(.anim) .mod,.screen:not(.anim) .synth,.screen:not(.anim) .map div{animation:none}
+
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="topin">
+    <button class="brand" data-go="0" aria-label="Accueil de Product Creator"><span class="logo">N</span><span><b>PRODUCT CREATOR ✨</b><small id="aistate">Mon Premier Produit Digital · Réalise-toi avec Nab</small></span></button>
+    <div class="topr"><button class="pill" data-act="chatOpen" aria-label="Mon assistante">💬<span class="lbl"> Assistante</span></button><button class="pill dark" data-act="recap" aria-label="Mon projet">💗<span class="lbl"> Mon projet</span></button></div>
+  </div>
+  <div class="stepper" id="stepper" style="display:none">
+    <div style="display:flex;align-items:center;gap:10px"><div class="bar" style="flex:1;margin:0"><i id="bar"></i></div><span class="pill" id="pct" style="padding:3px 10px;font-size:12.5px">0 %</span></div>
+    <div class="steps" id="steps" style="margin-top:10px"></div>
+  </div>
+</header>
+<main id="main"></main>
+<div class="foot">PRODUCT CREATOR ✨ · un outil signature de Mon Premier Produit Digital · Réalise-toi avec Nab<br>Les contenus proposés sont à relire et à personnaliser : aucun résultat de vente n'est garanti.</div>
+<div class="veil" id="veil"></div>
+<aside class="drawer" id="drawer" aria-label="Mon projet">
+  <button class="x" data-act="close" aria-label="Fermer">×</button>
+  <h3>💗 Mon projet</h3>
+  <div id="recap"></div>
+  <p class="mini" style="margin-top:16px">Ton projet est enregistré automatiquement sur cet appareil.</p>
+</aside>
+<aside class="chatbox" id="chat" aria-label="Mon assistante">
+  <div class="chath"><button class="x" data-act="close" aria-label="Fermer">×</button><h3>💬 Mon assistante</h3><p class="mini" style="margin:4px 0 0">Elle connaît tout ton projet.</p></div>
+  <div class="chatmsgs" id="chatmsgs"></div>
+  <div class="chatf">
+    <div class="chips"><button class="chip sug" data-act="chatSug">Mon produit est-il assez complet ?</button><button class="chip sug" data-act="chatSug">Qu'est-ce qui manque ?</button><button class="chip sug" data-act="chatSug">Vérifie la cohérence de mon produit</button><button class="chip sug" data-act="chatSug">Comment le rendre plus utile ?</button></div>
+    <div class="chatrow"><textarea class="inp" id="chatin" rows="1" placeholder="Pose ta question…"></textarea><button class="btn pink sm" id="chatsend" data-act="chatSend">Envoyer</button></div>
+    <p class="mini" id="chatnote"></p>
+  </div>
+</aside>
+<div class="preview" id="preview"><div class="pvbar"><b>👀 Mon produit</b><div class="actions" style="margin:0"><button class="btn ghost sm" data-act="pvprint">🖨️ Imprimer / PDF</button><button class="btn pink sm" data-act="pvclose">Fermer</button></div></div><div class="pvdoc" id="pvdoc"></div></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true"><div><h3 id="mt"></h3><p id="mx"></p><div class="actions"><button class="btn pink sm" id="myes"></button><button class="btn ghost sm" id="mno"></button></div></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(function(){
+"use strict";
+var KEY="product-creator-v2";
+var STEPS=["Mon idée","Ma cliente","Mon format","Mon concept","Ma structure","Mes bonus","Mon offre","Je valide","Je crée","Mon produit"];
+var EMO=["💡","👩‍💻","🎀","✨","📚","🎁","💰","✅","🪄","💖"];
+function blank(){return {step:0,maxStep:1,q1:0,express:false,
+  a1:{savoir:"",demandes:"",domaine:"",aime:"",transmettre:"",statut:"",ideeTexte:"",temps:""},
+  ideas:[],round:0,idea:null,
+  a2:{qui:"",situation:"",probleme:"",frustration:"",essaye:"",objectif:"",resultat:"",pourquoi:""},
+  client:null,format:null,autre:"",bundle:[],coach3:"",names:[],name:null,concept:null,promos:[],
+  structure:[],structureOk:false,bonusList:[],bonus:[],
+  a7:{prix:"",audience:"",plateforme:"",objectif:"",ventes:""},offer:null,
+  validated:false,tone:"Chaleureux et bienveillant",
+  sections:[],cur:0,sig:"",dirty:false,decisions:[],chat:[],qc:null,finished:false,version:1,versions:[]};}
+var S=blank();
+try{
+  var sv=localStorage.getItem(KEY);
+  if(sv){S=Object.assign(blank(),JSON.parse(sv));}
+  else{var old=localStorage.getItem("product-creator-v1");if(old){var o=JSON.parse(old);["a1","ideas","idea","a2","client","format","names","name","concept","structure","structureOk","bonusList","bonus","a7","offer"].forEach(function(k){if(o[k]!==undefined)S[k]=o[k];});S.maxStep=Math.min(o.maxStep||1,7);}}
+}catch(e){}
+Object.keys(S).forEach(function(k){if(k.charAt(0)==="_")delete S[k];});S._busy=null;
+var hasSaved=S.maxStep>1||!!S.a1.savoir;
+var saveT;
+function save(){clearTimeout(saveT);saveT=setTimeout(function(){try{var c={};Object.keys(S).forEach(function(k){if(k.charAt(0)!=="_")c[k]=S[k];});localStorage.setItem(KEY,JSON.stringify(c));}catch(e){toast("Mémoire du navigateur pleine : télécharge ton produit pour ne rien perdre.");}},250);}
+
+var $=function(s,r){return (r||document).querySelector(s);};
+var $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s));};
+function esc(t){return String(t==null?"":t).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];});}
+function cap(t){t=String(t||"").trim();return t?t.charAt(0).toUpperCase()+t.slice(1):t;}
+function low(t){t=String(t||"").trim();return t?t.charAt(0).toLowerCase()+t.slice(1):t;}
+function clean(t){return String(t||"").trim().replace(/\s+/g," ").replace(/[.!?…]+$/,"");}
+var STOPW=["de","du","des","la","le","les","l'","d'","et","à","a","en","pour","sur","avec","au","aux","un","une","mon","ma","mes","ton","ta","tes","son","sa","ses","leur","leurs","qui","que"];
+function phrase(t,n){t=clean(t).split(/\s(?:qui|que|qu'|afin|parce)\s/i)[0];var w=t.split(" ").slice(0,n);while(w.length>1&&STOPW.indexOf(w[w.length-1].toLowerCase())>-1)w.pop();return w.join(" ");}
+function de(t){t=String(t||"");return (/^[aeéèêiouhy]/i.test(t)?"d'":"de ")+t;}
+function short(t,n){t=clean(t);var w=t.split(" ");return w.length>n?w.slice(0,n).join(" "):t;}
+function uid(){return "s"+Math.random().toString(36).slice(2,9);}
+function toast(m){var t=$("#toast");t.textContent=m;t.classList.add("on");clearTimeout(t._h);t._h=setTimeout(function(){t.classList.remove("on");},2800);}
+function confetti(){if(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)return;var c=document.createElement("div");c.className="confetti";var cols=["#FF9EC7","#FFC1D8","#EC4E97","#E9C878","#C9973A","#fff"];for(var i=0;i<110;i++){var p=document.createElement("i");p.style.left=Math.random()*100+"vw";p.style.background=cols[i%6];p.style.animationDuration=(2.2+Math.random()*2)+"s";p.style.animationDelay=Math.random()*.5+"s";if(i%3===0){p.style.borderRadius="50%";p.style.width="9px";p.style.height="9px";}c.appendChild(p);}document.body.appendChild(c);setTimeout(function(){c.remove();},5000);}
+
+/* ================= IA ================= */
+var AI=null,AIstate="attente";
+(function(){
+  try{
+    if(window.claude&&typeof window.claude.use==="function"){
+      window.claude.use("sample").then(function(s){if(s){AI=s;AIstate="ok";document.body.classList.add("has-ai");}else AIstate="absente";render();}).catch(function(){AIstate="absente";render();});
+    }else{AIstate="absente";setTimeout(render,0);}
+  }catch(e){AIstate="absente";}
+})();
+function aiErr(e){
+  var c=e&&e.code;
+  if(c==="not_granted"){AI=null;AIstate="refusee";document.body.classList.remove("has-ai");return "Tu n'as pas autorisé l'assistance IA. Tu peux continuer sans elle, ou recharger la page pour l'autoriser.";}
+  if(c==="rate_limited"||c==="queue_overflow")return "Ton assistante reçoit trop de demandes d'un coup. Patiente une minute, puis réessaie.";
+  if(c==="prompt_too_large")return "Ton produit est devenu très long pour une seule demande. Essaie sur une partie plus courte.";
+  if(c==="cancelled")return "Création arrêtée.";
+  if(c==="refused")return "Ton assistante n'a pas pu traiter cette demande. Reformule-la autrement.";
+  if(c==="session_expired")return "Ta session Claude a expiré : recharge la page.";
+  return "Ton assistante n'a pas pu répondre cette fois. Réessaie dans un instant.";
+}
+function aiJSON(prompt,tier){if(!AI)return Promise.reject({code:"absent"});return AI.json(prompt,{modelTier:tier||"default"});}
+var RULES="Tu es l'assistante de création de PRODUCT CREATOR, l'outil du cours « Mon Premier Produit Digital » (marque Réalise-toi avec Nab). Règles : réponds en français naturel, en tutoyant la créatrice, ton chaleureux, clair et jamais infantilisant. N'invente JAMAIS d'informations sur la créatrice (expérience, résultats, témoignages, chiffres, clientes) : appuie-toi uniquement sur ses réponses. Aucune promesse de revenus, de ventes ou de résultat garanti. Les prix et durées sont des repères indicatifs. Évite les phrases creuses et génériques : sois concrète, spécifique et actionnable.";
+var JSONONLY="Réponds UNIQUEMENT avec du JSON valide, sans texte autour.";
+
+/* ================= formats ================= */
+var FORMATS=[
+ {k:"ebook",label:"E-book",e:"📖",fam:"contenu",diff:"Facile",temps:"3 à 5 jours",min:9,max:19,fit:["Quelques jours","1 à 2 semaines"],contient:"des chapitres rédigés, avec méthodes, exemples et conseils",pour:"idéal si tu aimes expliquer et transmettre une méthode",spec:"un véritable e-book rédigé : paragraphes développés, méthodes concrètes, exemples précis, conseils, erreurs à éviter, exercices seulement s'ils sont utiles, transitions naturelles. Pas un sommaire : le texte complet du chapitre."},
+ {k:"workbook",label:"Workbook",e:"📝",fam:"contenu",diff:"Moyen",temps:"3 à 7 jours",min:17,max:29,fit:["Quelques jours","1 à 2 semaines"],contient:"des explications courtes et beaucoup d'exercices à remplir",pour:"parfait quand ta cliente doit passer à l'action",spec:"un véritable cahier d'exercices utilisable : explications courtes, puis des exercices concrets (blocs :::exercice) avec questions numérotées, lignes à remplir (____), tableaux à compléter, cases à cocher, pages d'action et mini-bilans."},
+ {k:"guide",label:"Guide pratique",e:"📘",fam:"contenu",diff:"Facile",temps:"2 à 4 jours",min:12,max:19,fit:["Quelques jours","1 journée"],contient:"une méthode étape par étape, avec exemples et actions",pour:"idéal quand tu as une méthode claire à transmettre",spec:"un guide pratique directement exploitable : étapes numérotées, explications concrètes, exemples, conseils, erreurs à éviter (bloc :::astuce), actions à faire et checklist si pertinente."},
+ {k:"checklist",label:"Checklist",e:"✅",fam:"outil",diff:"Très facile",temps:"Quelques heures",min:5,max:9,fit:["Quelques heures","1 journée"],contient:"des cases à cocher organisées par catégories",pour:"parfait pour un premier produit rapide et très concret",spec:"LA checklist elle-même : des catégories (###) et des cases à cocher (- [ ]) avec chacune une instruction courte et précise, des points de contrôle et une progression logique. Aucun long paragraphe."},
+ {k:"planner",label:"Planner",e:"🗓️",fam:"outil",diff:"Facile",temps:"1 à 2 jours",min:9,max:15,fit:["1 journée","Quelques jours"],contient:"des pages de planification, trackers et bilans",pour:"parfait pour un résultat qui se construit jour après jour",spec:"les pages du planner elles-mêmes : objectifs, tableaux à remplir (tableaux Markdown avec cellules vides), trackers, espaces d'écriture (____), bilans et consignes courtes pour chaque page."},
+ {k:"packtemplates",label:"Pack de templates",e:"🎨",fam:"outil",diff:"Moyen",temps:"2 à 5 jours",min:15,max:27,fit:["Quelques jours","1 à 2 semaines"],contient:"de vrais modèles prêts à personnaliser",pour:"idéal pour faire gagner beaucoup de temps",spec:"de VRAIS modèles complets (blocs :::modele), avec le texte entier, les champs à personnaliser entre crochets [COMME CECI], les instructions d'utilisation, une ou deux variantes et un exemple rempli. Jamais une simple liste de noms de templates."},
+ {k:"kit",label:"Kit / boîte à outils",e:"🧰",fam:"outil",diff:"Moyen",temps:"3 à 5 jours",min:15,max:29,fit:["Quelques jours","1 à 2 semaines"],contient:"plusieurs outils complémentaires autour d'un même objectif",pour:"idéal quand la transformation demande plusieurs outils",spec:"les ressources elles-mêmes : modèles, checklists, fiches pratiques, scripts, tableaux et instructions, cohérents entre eux comme un produit unique."},
+ {k:"miniformation",label:"Mini-formation",e:"🎓",fam:"contenu",diff:"Avancé",temps:"1 à 2 semaines",min:27,max:47,fit:["1 à 2 semaines","Plus"],contient:"des leçons rédigées, scripts vidéo, exercices et fiches récap",pour:"idéal quand ton sujet se montre mieux qu'il ne s'explique",spec:"le contenu pédagogique réel de chaque leçon : objectif pédagogique, contenu de la leçon rédigé, script vidéo (bloc :::script) si pertinent, exercice (:::exercice), fiche récapitulative (:::bilan) et un court quiz si utile."},
+ {k:"challenge",label:"Challenge",e:"🔥",fam:"contenu",diff:"Moyen",temps:"1 semaine",min:17,max:27,fit:["Quelques jours","1 à 2 semaines"],contient:"un programme jour par jour, avec une action chaque jour",pour:"parfait pour motiver et créer une habitude",spec:"les journées du challenge elles-mêmes (blocs :::jour) : objectif du jour, consigne, action concrète, question de réflexion, message de motivation et mini-bilan."},
+ {k:"masterclass",label:"Masterclass",e:"🎥",fam:"contenu",diff:"Moyen",temps:"2 à 4 jours",min:17,max:37,fit:["Quelques jours","1 à 2 semaines"],contient:"le déroulé, le script et les supports",pour:"adapté si tu es à l'aise face caméra",spec:"le déroulé et le script réel de la partie (bloc :::script), avec explications, exemples, transitions, exercices pour le public, supports à montrer et, en fin de masterclass, l'appel à l'action."},
+ {k:"planaction",label:"Plan d'action",e:"📋",fam:"outil",diff:"Facile",temps:"1 à 2 jours",min:9,max:17,fit:["1 journée","Quelques jours"],contient:"objectifs, étapes, priorités, délais et suivi",pour:"idéal pour une cliente qui veut savoir exactement quoi faire",spec:"un vrai plan d'action : objectifs, étapes numérotées avec priorité et délai, cases à cocher, indicateurs de progression et un tableau de suivi à remplir."},
+ {k:"ressources",label:"Pack de ressources",e:"💡",fam:"outil",diff:"Facile",temps:"1 à 3 jours",min:9,max:19,fit:["1 journée","Quelques jours"],contient:"fiches, modèles, scripts et guides rapides",pour:"parfait si tu as déjà fait le tri pour les autres",spec:"les ressources elles-mêmes : fiches, modèles, scripts, checklists, tableaux, guides rapides et exemples prêts à utiliser."},
+ {k:"prompts",label:"Pack de prompts",e:"🤖",fam:"outil",diff:"Facile",temps:"1 journée",min:9,max:17,fit:["Quelques heures","1 journée"],contient:"des prompts complets, prêts à copier",pour:"idéal pour un sujet où l'IA fait gagner du temps",spec:"de vrais prompts complets (un bloc :::prompt par prompt) : contexte, instructions, variables à personnaliser entre crochets [COMME CECI], puis un exemple d'utilisation, le résultat attendu et une variante si utile."},
+ {k:"canva",label:"Modèles Canva",e:"🖌️",fam:"outil",diff:"Facile",temps:"1 journée",min:7,max:17,fit:["Quelques heures","1 journée"],contient:"les textes et la mise en page de chaque design",pour:"très simple à créer et à livrer",spec:"pour chaque design (bloc :::modele) : son format, tous les textes à placer, la mise en page détaillée zone par zone, les couleurs et polices conseillées, et les champs à personnaliser. Précise que la mise en forme se fait ensuite dans Canva."},
+ {k:"notion",label:"Modèle Notion",e:"🗂️",fam:"outil",diff:"Moyen",temps:"1 à 3 jours",min:9,max:19,fit:["1 journée","Quelques jours"],contient:"les pages, bases de données et contenus",pour:"adapté si tu es à l'aise avec Notion",spec:"l'espace Notion détaillé : pages et sous-pages, bases de données avec leurs propriétés (tableau), vues conseillées, contenus pré-remplis, modèles de pages et mode d'emploi."},
+ {k:"bundle",label:"Bundle",e:"🗂️",fam:"contenu",diff:"Avancé",temps:"1 à 2 semaines",min:27,max:47,fit:["1 à 2 semaines","Plus"],contient:"plusieurs formats réunis autour d'une même promesse",pour:"idéal pour une offre très complète",spec:"le composant indiqué dans le titre de la partie, créé selon les règles de son propre format, en gardant la même promesse, la même cible, le même ton et la même méthode que le reste du bundle."},
+ {k:"autre",label:"Autre format",e:"✨",fam:"contenu",diff:"Variable",temps:"Variable",min:9,max:37,fit:[],contient:"le format que tu imagines",pour:"si ton idée ne rentre dans aucune case",spec:"le format décrit par la créatrice, en produisant le contenu réel adapté à ce format (et non une description de ce qu'il faudrait faire)."}
+];
+var FEM=["checklist","miniformation","masterclass"];
+function fmt(k){for(var i=0;i<FORMATS.length;i++)if(FORMATS[i].k===k)return FORMATS[i];return FORMATS[2];}
+function flabel(){var f=fmt(S.format);if(f.k==="autre"&&clean(S.autre))return cap(clean(S.autre));if(f.k==="bundle"&&S.bundle.length)return "Bundle ("+S.bundle.map(function(k){return fmt(k).label;}).join(" + ")+")";return f.label;}
+function G(f){var fem=FEM.indexOf(f.k)>-1,v=/^[aeéiouh]/i.test(f.label);
+  return {le:v?"l'":(fem?"la ":"le "),Le:v?"L'":(fem?"La ":"Le "),un:fem?"une ":"un ",Un:fem?"Une ":"Un ",ce:fem?"cette ":(v?"cet ":"ce "),ton:fem&&!v?"ta ":"ton ",Ton:fem&&!v?"Ta ":"Ton "};}
+
+/* ================= moteur intégré (sans IA) ================= */
+var CATS=[
+ {kw:["cuisin","recette","repas","pâtiss","patiss","gâteau","gateau","batch","nutrition","manger","plat","goûter","gouter","vegan","végé","vege"],cible:"les femmes actives qui manquent de temps pour cuisiner",res:"cuisiner des repas simples et bons toute la semaine",sujet:"cuisine du quotidien"},
+ {kw:["maquill","beauté","beaute","skincare","peau","cheveux","coiff","ongle","make","soin","manucure","boucl"],cible:"les femmes qui veulent prendre soin d'elles sans y passer des heures",res:"avoir une routine beauté simple qui leur ressemble",sujet:"routine beauté"},
+ {kw:["sport","fitness","yoga","médit","medit","bien-être","bien être","bienetre","sommeil","stress","pilates","course","muscu","respiration","énergie","energie"],cible:"les femmes qui veulent se sentir mieux dans leur corps et leur tête",res:"installer une routine bien-être facile à tenir",sujet:"bien-être au quotidien"},
+ {kw:["organis","planning","ménage","menage","rangement","maman","enfant","famille","routine","productiv","agenda"],cible:"les mamans et les femmes débordées",res:"retrouver une organisation sereine au quotidien",sujet:"organisation du quotidien"},
+ {kw:["budget","argent","épargne","epargne","finance","économ","econom","dépense","depense","compta"],cible:"les personnes qui veulent mieux gérer leur argent",res:"savoir où va leur argent et épargner sans frustration",sujet:"gestion du budget"},
+ {kw:["cv","emploi","recrut","entretien","carrière","carriere","reconversion","étud","etud","révision","revision","examen","enseign","prof","concours"],cible:"les personnes en recherche d'emploi, en reconversion ou en études",res:"avancer vers leur objectif pro ou scolaire avec confiance",sujet:"réussite pro et études"},
+ {kw:["instagram","tiktok","réseau","reseau","contenu","canva","design","graphi","photo","vidéo","video","montage","marketing","community","story","stories","reel"],cible:"les créatrices et entrepreneuses qui débutent sur les réseaux",res:"créer du contenu joli et régulier sans y passer des heures",sujet:"contenu pour les réseaux"},
+ {kw:["déco","deco","maison","intérieur","interieur","plante","jardin","diy","couture","tricot","crochet","bricol","créati","creati","dessin","peinture"],cible:"les femmes qui aiment créer et embellir leur quotidien",res:"réaliser de jolies créations facilement chez elles",sujet:"créations maison"},
+ {kw:["anglais","espagnol","langue","arabe","italien","allemand","traduction"],cible:"les adultes qui veulent enfin progresser dans une langue",res:"parler avec plus d'aisance, un peu chaque jour",sujet:"apprentissage d'une langue"},
+ {kw:["confiance","mindset","développement","developpement","motivation","objectif","journal","gratitude","coach","estime","émotion","emotion"],cible:"les femmes qui veulent reprendre confiance en elles",res:"passer à l'action avec plus de confiance et de clarté",sujet:"confiance en soi"},
+ {kw:["business","entrepren","vente","vendre","client","freelance","ugc","affiliation","boutique","etsy"],cible:"les femmes qui lancent leur activité en ligne",res:"poser des bases claires pour leur activité",sujet:"lancement d'activité"},
+ {kw:["mariage","anniversaire","fête","fete","événement","evenement","voyage","vacances","naissance","grossesse","bébé","bebe"],cible:"les femmes qui préparent un moment important",res:"tout préparer sans stress et sans rien oublier",sujet:"préparation d'événement"}
+];
+var PATTERNS=[
+ {f:"checklist",n:"Ma checklist sans oubli : {S}",c:"Une checklist claire pour que {C} n'oublient rien d'important.",p:"se sentent perdues et ont peur d'oublier une étape",t:"passer du flou à une liste d'actions claire et rassurante"},
+ {f:"guide",n:"{S2} : le guide express",c:"Un guide pas à pas qui aide {C} à {R}.",p:"ne savent pas par où commencer",t:"passer de « je ne sais pas par où commencer » à « je sais exactement quoi faire »"},
+ {f:"planner",n:"Mon planner 30 jours : {S}",c:"Un planner pour avancer un peu chaque jour et {R}.",p:"manquent de régularité et d'organisation",t:"installer une vraie routine en 30 jours"},
+ {f:"prompts",n:"50 prompts IA malins : {S}",c:"Une collection de prompts testés pour que {C} gagnent du temps.",p:"perdent beaucoup de temps et ne savent pas comment se faire aider par l'IA",t:"obtenir de l'aide en quelques secondes grâce à l'IA"},
+ {f:"packtemplates",n:"Le kit prêt à l'emploi : {S}",c:"Des modèles prêts à personnaliser pour {R} sans partir de zéro.",p:"n'ont ni le temps ni l'envie de tout créer de zéro",t:"gagner des heures avec des modèles déjà prêts"},
+ {f:"workbook",n:"{S2} : le workbook pas à pas",c:"Un workbook avec des exercices concrets pour {R}.",p:"lisent beaucoup de conseils mais n'arrivent pas à passer à l'action",t:"passer de la théorie à l'action, exercice après exercice"},
+ {f:"challenge",n:"Le challenge 7 jours : {S}",c:"Un challenge motivant : une petite action par jour pendant 7 jours pour {R}.",p:"repoussent sans cesse le moment de commencer",t:"obtenir un premier résultat visible en une semaine"},
+ {f:"ebook",n:"{S2} : l'e-book essentiel",c:"Un e-book clair qui explique à {C} comment {R}.",p:"se perdent dans des conseils contradictoires",t:"comprendre enfin l'essentiel et savoir quoi appliquer"},
+ {f:"miniformation",n:"{S2} en 5 étapes",c:"Une mini-formation qui montre concrètement comment {R}.",p:"ont besoin de voir les gestes pour comprendre",t:"réussir seule en suivant une démonstration claire"}
+];
+var PREF={"Quelques heures":["checklist","prompts","planner","guide"],"1 journée":["checklist","prompts","planner","guide","packtemplates"],"Quelques jours":["guide","ebook","planner","packtemplates","workbook","challenge"],"1 à 2 semaines":["workbook","ebook","challenge","packtemplates","miniformation"],"Plus":["miniformation","workbook","challenge","ebook"]};
+function matchCats(){
+  var txt=[S.a1.savoir,S.a1.demandes,S.a1.domaine,S.a1.aime,S.a1.transmettre,S.a1.ideeTexte].join(" ").toLowerCase();
+  return CATS.map(function(c){var s=0;c.kw.forEach(function(k){if(txt.indexOf(k)>-1)s++;});return {c:c,s:s};}).filter(function(x){return x.s>0;}).sort(function(a,b){return b.s-a.s;}).map(function(x){return x.c;});
+}
+function subject(){
+  var raw=S.a1.domaine||S.a1.savoir||S.a1.aime||S.a1.transmettre||(S.idea&&S.idea.nom)||"";
+  raw=clean(raw).replace(/^(je sais |je suis douée? (en|pour) |j'aime |aider (à|a) |dans |le |la |les |l'|l’)/i,"");
+  return low(phrase(raw,6));
+}
+function baseInfo(){return (S.idea&&S.idea.base)?S.idea.base:{S:subject()||"ton sujet",C:clean(S.a2.qui)||"ta cliente",R:clean(S.a2.resultat||S.a2.objectif)||"obtenir son résultat"};}
+function makeIdea(p,b,own){
+  var f=fmt(p.f);
+  function fill(t){return t.replace(/\{S2\}/g,cap(b.S)).replace(/\{S\}/g,b.S).replace(/\{C\}/g,b.C).replace(/\{R\}/g,b.R);}
+  return {nom:fill(p.n),concept:fill(p.c),probleme:cap(b.C)+" "+fill(p.p)+".",cible:cap(b.C),transformation:cap(fill(p.t))+".",format:f.label,fk:f.k,difficulte:f.diff,temps:f.temps,prix:f.min+" à "+f.max+" €",own:!!own,base:b};
+}
+function localIdeas(round,exclude){
+  exclude=exclude||[];
+  var cats=matchCats(),subj=subject(),bases=[];
+  if(cats.length){cats.slice(0,2).forEach(function(c,i){bases.push({C:c.cible,R:c.res,S:(i===0?(subj||c.sujet):c.sujet)});});}
+  if(!bases.length){
+    var cible=S.a1.demandes?("les personnes qui te demandent souvent de l'aide pour « "+short(S.a1.demandes,8)+" »"):"les personnes qui débutent dans ton domaine";
+    var res=S.a1.transmettre?low(short(S.a1.transmettre,10)):("progresser en "+(subj||"ton domaine"));
+    bases.push({C:cible,R:res,S:subj||"ton domaine"});
+  }
+  var pref=PREF[S.a1.temps]||PREF["Quelques jours"];
+  var order=pref.concat(PATTERNS.map(function(p){return p.f;}).filter(function(f){return pref.indexOf(f)<0;}));
+  var pool=[];
+  order.forEach(function(f){bases.forEach(function(b){PATTERNS.forEach(function(p){if(p.f===f)pool.push({p:p,b:b});});});});
+  var out=[];
+  if(round===0&&clean(S.a1.ideeTexte)&&S.a1.statut!=="Non"){
+    out.push(makeIdea({f:pref[0]==="checklist"&&S.a1.temps!=="Quelques heures"?"guide":pref[0],n:cap(short(S.a1.ideeTexte,7)),c:"Ton idée, structurée : "+clean(S.a1.ideeTexte)+".",p:"rencontrent le problème que ton idée résout",t:bases[0].R},bases[0],true));
+  }
+  var start=(round*3)%pool.length;
+  for(var pass=0;pass<2&&out.length<4;pass++){
+    for(var i=0;out.length<4&&i<pool.length;i++){var x=pool[(start+i)%pool.length];var id=makeIdea(x.p,x.b,false);
+      if(out.some(function(o){return o.nom===id.nom;}))continue;
+      if(pass===0&&exclude.indexOf(id.nom)>-1)continue;
+      out.push(id);}
+  }
+  return out;
+}
+function genNames(){
+  var f=fmt(S.format),b=baseInfo();
+  var res=clean(S.a2.resultat||S.a2.objectif||b.R);
+  var dur={checklist:"10 minutes",planner:"30 jours",challenge:"7 jours",prompts:"1 clic",canva:"1 heure",planaction:"30 jours"}[f.k]||"5 étapes";
+  var cibRaw=clean(S.a2.qui||b.C).replace(/^(les |des |une |un |la |le )/i,"").split(/ qui | qu'| et /)[0];
+  var cw=cibRaw.split(" ").slice(0,4);while(cw.length>1&&STOPW.indexOf(cw[cw.length-1])>-1)cw.pop();
+  var cib=cw.join(" "),g=G(f),plur=/s$/.test(cw[0]||""),lab=low(flabel());
+  var subj=cap(phrase(b.S,4));
+  return [
+   {nom:cap(phrase(res,5))+" en "+dur,sous:cap(g.le+lab)+" pour "+low(short(res,10)),angle:"Résultat + rapidité",pour:"Il annonce directement le résultat et le temps."},
+   {nom:cap(g.le+lab)+(plur?" des ":" de la ")+cib,sous:cap(short(res,10))+", enfin simplement",angle:"Identification",pour:"Ta cliente se reconnaît immédiatement dans le nom."},
+   {nom:"Mission "+subj,sous:cap(g.ton+lab)+" pour passer à l'action",angle:"Défi motivant",pour:"Le mot « mission » donne envie de commencer tout de suite."},
+   {nom:subj+" facile",sous:"Tout ce qu'il faut, sans prise de tête",angle:"Simplicité",pour:"Il rassure une débutante qui a peur que ce soit compliqué."},
+   {nom:subj+" Zen",sous:"Pour "+low(short(res,10))+" en douceur",angle:"Émotion et sérénité",pour:"Il promet un ressenti agréable, pas seulement un résultat."}
+  ];
+}
+function genConcept(){
+  var f=fmt(S.format),a=S.a2,n=S.name?S.name.nom:"ton produit";
+  var res=low(clean(a.resultat||a.objectif||(S.idea?S.idea.transformation:"")));
+  var frs=a.frustration&&clean(a.frustration).split(" ").length<=8?low(clean(a.frustration)):"";
+  return {
+   promesse:"À la fin de "+G(f).ce+low(flabel())+", tu seras capable "+de(res)+".",
+   avant:cap(clean(a.situation||a.probleme))+(a.frustration?". "+cap(clean(a.frustration)):"")+".",
+   apres:cap(clean(a.resultat||a.objectif))+".",
+   grande:n+" t'aide à "+res+", étape par étape"+(frs?", sans "+frs:"")+".",
+   pourquoi:"Parce que "+low(clean(a.qui||"ta cliente"))+" "+(a.essaye?"a déjà essayé "+low(clean(a.essaye))+" sans trouver de solution simple":"ne trouve pas de solution simple et adaptée")+".",
+   pourqui:cap(clean(a.qui||(S.idea?S.idea.cible:"")))+".",
+   probleme:cap(clean(a.probleme||(S.idea?S.idea.probleme:"")))+"."
+  };
+}
+function M(t,o,c,p,e,r){return {id:uid(),titre:t,objectif:o||"",contenu:c||"",points:p||"",exercice:e||"",resultat:r||""};}
+function genStructure(variant){
+  var f=fmt(S.format),b=baseInfo(),subj=b.S,res=low(clean(S.a2.resultat||S.a2.objectif||b.R));
+  if(f.k==="bundle"){
+    var comps=S.bundle.length?S.bundle:["ebook","workbook","checklist"];
+    return comps.map(function(k){var cf=fmt(k);return M("Composant : "+cf.label,"Apporter la partie « "+low(cf.label)+" » de la transformation",cap(cf.contient),"","","Le "+low(cf.label)+" complet, cohérent avec le reste du bundle");});
+  }
+  if(f.k==="challenge"){
+    return ["Faire le point","Poser les bases","Le premier pas concret","Gagner en confiance","Aller plus loin","Consolider","Célébrer et continuer"].map(function(d,i){return M("Jour "+(i+1)+" : "+d,"Avancer d'une étape vers : "+res,"Une explication courte et une action du jour","L'action du jour, un exemple, une astuce","Réaliser l'action du jour et la cocher","Un petit progrès visible");});
+  }
+  if(f.k==="checklist"){
+    return [M("Avant de commencer : "+subj,"Tout préparer","Les éléments à réunir et à vérifier","","",""),M("Pas à pas","Réaliser chaque étape sans oubli","Les étapes clés dans l'ordre","","",""),M("Les vérifications finales","Contrôler le résultat","Les points de contrôle avant de terminer","","",""),M("Pour aller plus loin","Garder le cap","Les habitudes et rappels utiles","","","")];
+  }
+  if(f.k==="prompts"){
+    return [M("Prompts pour démarrer","Poser le contexte et clarifier son besoin","5 prompts de démarrage","","",""),M("Prompts pour créer","Produire vite et bien","6 prompts de création autour de "+subj,"","",""),M("Prompts pour améliorer","Relire, corriger, adapter","5 prompts d'amélioration","","",""),M("Prompts bonus","Aller plus loin","4 prompts avancés","","","")];
+  }
+  if(f.k==="packtemplates"||f.k==="canva"){
+    return [M("Modèles essentiels","Couvrir les besoins les plus fréquents","3 modèles complets autour de "+subj,"","",""),M("Modèles du quotidien","Gagner du temps chaque semaine","3 modèles pour un usage régulier","","",""),M("Modèles pour aller plus loin","Des modèles plus avancés","2 modèles premium","","","")];
+  }
+  if(f.k==="planner"||f.k==="planaction"){
+    var a=[M("Mes objectifs","Clarifier ce que je veux obtenir","Objectifs, motivation, point de départ","","Remplir sa page d'objectifs","Un objectif clair et mesurable"),M("Mon plan","Découper en étapes","Étapes, priorités et délais","","Planifier ses étapes","Un plan concret"),M("Mon suivi quotidien et hebdomadaire","Avancer régulièrement","Trackers et pages de suivi","","Remplir le suivi","Une habitude installée"),M("Mes bilans","Mesurer ses progrès et ajuster","Bilans hebdomadaire et mensuel","","Faire son bilan","Des progrès visibles")];
+    return a;
+  }
+  var base=[
+   M("Faire le point","Comprendre d'où elle part","Un auto-diagnostic simple","Sa situation, ses blocages, son objectif","Remplir son auto-diagnostic","Elle sait exactement où elle en est"),
+   M("Les bases : "+subj,"Comprendre l'essentiel sans jargon","Les notions indispensables, expliquées simplement","Ce qui compte vraiment, ce qu'on peut ignorer","Une fiche à compléter","Elle a des bases solides"),
+   M("La méthode pas à pas","Appliquer une méthode claire pour "+res,"La méthode en 3 à 5 étapes, avec exemples","Chaque étape, un exemple concret, une astuce","Appliquer la première étape à sa situation","Elle a commencé concrètement"),
+   M("Passer à l'action","Obtenir un premier résultat visible","Un plan d'action concret","Les actions de la semaine, les priorités","Suivre le plan pendant 7 jours","Un premier résultat obtenu"),
+   M("Tenir sur la durée","Garder le cap","Routine, motivation, prochaines étapes","Les habitudes à garder, quoi faire en cas de blocage","Écrire son plan pour le mois suivant","Elle continue en autonomie")
+  ];
+  if(variant)base.splice(3,0,M("Les erreurs à éviter","Éviter les pièges qui font abandonner","Les erreurs fréquentes et leurs solutions","3 à 5 erreurs, avec la bonne pratique","Repérer l'erreur qu'elle risque le plus","Elle avance plus sereinement"));
+  if(f.k==="miniformation")base.forEach(function(m,i){m.titre="Leçon "+(i+1)+" : "+m.titre;});
+  return base;
+}
+function genBonus(){
+  var s=baseInfo().S,f=fmt(S.format);
+  var all=[
+   {nom:"La checklist récap",contenu:"Toutes les étapes du produit sur une page à cocher",valeur:"Moyenne",interet:"Elle garde une vue d'ensemble et n'oublie rien.",fam:"contenu"},
+   {nom:"Les modèles prêts à utiliser",contenu:"2 ou 3 modèles à personnaliser autour de "+s,valeur:"Élevée",interet:"Elle applique tout de suite, sans partir de zéro.",fam:"contenu"},
+   {nom:"Le planner de mise en pratique",contenu:"Un planning sur 7 jours pour appliquer la méthode",valeur:"Élevée",interet:"Elle passe à l'action jour après jour.",fam:"any"},
+   {nom:"La fiche « erreurs à éviter »",contenu:"Les pièges les plus fréquents et comment les contourner",valeur:"Moyenne",interet:"Elle gagne du temps et évite de se décourager.",fam:"any"},
+   {nom:"Les prompts IA malins",contenu:"10 prompts pour se faire aider par l'IA sur "+s,valeur:"Moyenne",interet:"Elle obtient de l'aide personnalisée en quelques secondes.",fam:"any"},
+   {nom:"Le tableau de suivi",contenu:"Un tableau simple pour suivre ses progrès",valeur:"Moyenne",interet:"Elle voit ses progrès, ce qui la motive.",fam:"any"},
+   {nom:"Les exemples commentés",contenu:"Des exemples concrets avec les explications",valeur:"Élevée",interet:"Elle comprend à quoi ressemble un bon résultat.",fam:"outil"},
+   {nom:"Le mini-guide « démarrer en 15 minutes »",contenu:"Les 3 premières actions à faire tout de suite",valeur:"Moyenne",interet:"Elle obtient un premier succès rapide.",fam:"outil"}
+  ];
+  return all.filter(function(x){return x.fam==="any"||x.fam===f.fam;}).slice(0,5);
+}
+
+/* ================= mémoire du projet ================= */
+function brief(){
+  var o=[],a=S.a1,b=S.a2;
+  o.push("=== MÉMOIRE DU PROJET ===");
+  o.push("Ce que la créatrice sait faire : "+(a.savoir||"(non précisé)"));
+  if(a.demandes)o.push("Ce qu'on lui demande souvent : "+a.demandes);
+  if(a.domaine)o.push("Domaine : "+a.domaine);
+  if(a.aime)o.push("Ce qu'elle aime : "+a.aime);
+  if(a.transmettre)o.push("Ce qu'elle veut transmettre : "+a.transmettre);
+  if(S.idea)o.push("Idée retenue : "+S.idea.nom+" — "+S.idea.concept);
+  if(S.client)o.push("Cliente idéale : "+[S.client.qui,"Problème : "+S.client.probleme,"Frustrations : "+S.client.frustrations,"Ce qu'elle veut : "+S.client.veut,"Transformation : "+S.client.transformation].join(" | "));
+  else if(b.qui)o.push("Cliente : "+[b.qui,b.situation,b.probleme,b.frustration,b.objectif,b.resultat].filter(Boolean).join(" | "));
+  if(S.format){o.push("Format : "+flabel());}
+  if(S.name)o.push("Nom du produit : "+S.name.nom+(S.name.sous?" — "+S.name.sous:""));
+  if(S.concept){o.push("Promesse : "+S.concept.promesse);o.push("Grande promesse : "+S.concept.grande);o.push("Avant : "+S.concept.avant+" / Après : "+S.concept.apres);o.push("Positionnement : "+S.concept.pourquoi);}
+  if(S.bonus.length)o.push("Bonus : "+S.bonus.map(function(x){return x.nom+" ("+x.contenu+")";}).join(" ; "));
+  if(S.offer)o.push("Offre : "+S.offer.prix+" — "+S.offer.positionnement);
+  o.push("Ton souhaité : "+S.tone+". Niveau de la cliente finale : débutante.");
+  if(S.decisions.length)o.push("Décisions et demandes de la créatrice à respecter : "+S.decisions.slice(-12).join(" ; "));
+  return o.join("\n");
+}
+function outline(){
+  return S.sections.map(function(x,i){return (i+1)+". "+x.titre+" ["+({todo:"à créer",draft:"créée",ok:"validée",stale:"à mettre à jour"}[x.status]||"")+"]"+(x.content?" — début : "+x.content.replace(/\s+/g," ").slice(0,220):"");}).join("\n");
+}
+function signature(){return JSON.stringify([S.idea&&S.idea.nom,S.client&&S.client.probleme,S.client&&S.client.transformation,S.format,S.autre,S.bundle,S.name&&S.name.nom,S.concept&&S.concept.promesse,S.structure.map(function(m){return m.titre;}),S.bonus.map(function(b){return b.nom;}),S.tone]);}
+
+/* ================= rendu du contenu ================= */
+var BLK={exercice:["✏️","Exercice"],astuce:["💡","Astuce"],modele:["🧩","Modèle"],prompt:["🤖","Prompt"],exemple:["🌸","Exemple"],bilan:["📌","À retenir"],jour:["🔥","Jour"],script:["🎬","Script"],quiz:["❓","Quiz"],action:["🚀","Action"]};
+function inl(t){
+  t=esc(t);
+  t=t.replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>").replace(/(^|[\s(«])\*(?!\s)([^*]+?)\*(?=[\s).,;:!?»]|$)/g,"$1<em>$2</em>");
+  t=t.replace(/_{4,}/g,'<span class="wl"></span>');
+  t=t.replace(/\[(À PERSONNALISER[^\]]*)\]/gi,'<mark>[$1]</mark>');
+  return t;
+}
+function mdTable(rows){
+  var r=rows.map(function(x){return x.trim().replace(/^\||\|$/g,"").split("|").map(function(c){return c.trim();});}).filter(function(c){return !c.every(function(v){return /^:?-{2,}:?$/.test(v)||v==="";});});
+  if(!r.length)return "";
+  var h='<div class="tw"><table><thead><tr>'+r[0].map(function(c){return "<th>"+inl(c)+"</th>";}).join("")+"</tr></thead><tbody>";
+  r.slice(1).forEach(function(row){h+="<tr>"+r[0].map(function(_,i){return "<td>"+(row[i]?inl(row[i]):"&nbsp;")+"</td>";}).join("")+"</tr>";});
+  return h+"</tbody></table></div>";
+}
+function md(src){
+  var L=String(src||"").replace(/\r/g,"").split("\n"),out=[],i=0,list=null;
+  function cl(){if(list){out.push(list==="ol"?"</ol>":"</ul>");list=null;}}
+  while(i<L.length){
+    var l=L[i],m;
+    if((m=l.match(/^\s*:::\s*([a-zA-Zéèà]+)\s*(.*)$/))&&m[1]){
+      cl();var type=m[1].toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,""),title=m[2],body=[];i++;
+      while(i<L.length&&!/^\s*:::\s*$/.test(L[i])){body.push(L[i]);i++;}i++;
+      var b=BLK[type]||["✨",cap(type)];
+      out.push('<div class="blk blk-'+esc(type)+'"><div class="blkh"><span>'+b[0]+'</span>'+inl(title||b[1])+'</div>'+md(body.join("\n"))+'</div>');continue;
+    }
+    if(/^\s*\|/.test(l)){cl();var rows=[];while(i<L.length&&/^\s*\|/.test(L[i])){rows.push(L[i]);i++;}out.push(mdTable(rows));continue;}
+    if((m=l.match(/^(#{1,4})\s+(.*)$/))){cl();var n=Math.min(m[1].length+1,5);out.push("<h"+n+">"+inl(m[2])+"</h"+n+">");i++;continue;}
+    if((m=l.match(/^\s*[-*•]\s+\[( |x|X)\]\s*(.*)$/))){if(list!=="cb"){cl();out.push('<ul class="cbx">');list="cb";}out.push('<li><span class="cbb"></span><span>'+inl(m[2])+'</span></li>');i++;continue;}
+    if((m=l.match(/^\s*☐\s*(.*)$/))){if(list!=="cb"){cl();out.push('<ul class="cbx">');list="cb";}out.push('<li><span class="cbb"></span><span>'+inl(m[1])+'</span></li>');i++;continue;}
+    if((m=l.match(/^\s*[-*•]\s+(.*)$/))){if(list!=="ul"){cl();out.push("<ul>");list="ul";}out.push("<li>"+inl(m[1])+"</li>");i++;continue;}
+    if((m=l.match(/^\s*\d+[.)]\s+(.*)$/))){if(list!=="ol"){cl();out.push("<ol>");list="ol";}out.push("<li>"+inl(m[1])+"</li>");i++;continue;}
+    if(/^\s*>/.test(l)){cl();var q=[];while(i<L.length&&/^\s*>/.test(L[i])){q.push(L[i].replace(/^\s*>\s?/,""));i++;}out.push("<blockquote>"+inl(q.join(" "))+"</blockquote>");continue;}
+    if(/^\s*$/.test(l)){cl();i++;continue;}
+    if(/^\s*_{4,}\s*$/.test(l)){cl();out.push('<div class="wl"></div>');i++;continue;}
+    if(/^\s*-{3,}\s*$/.test(l)){cl();out.push("<hr>");i++;continue;}
+    cl();var p=[l];i++;
+    while(i<L.length&&L[i].trim()&&!/^(\s*#|\s*\||\s*:::|\s*[-*•]\s|\s*\d+[.)]\s|\s*>|\s*☐|\s*_{4,}\s*$)/.test(L[i])){p.push(L[i]);i++;}
+    out.push("<p>"+inl(p.join(" "))+"</p>");
+  }
+  cl();return out.join("");
+}
+var MARKUP="BALISAGE À UTILISER (texte brut, jamais de HTML) : « # » titre de la partie, « ## » et « ### » sous-titres ; paragraphes séparés par une ligne vide ; « - » puces ; « 1. » listes numérotées ; « - [ ] » cases à cocher ; tableaux Markdown « | Colonne | Colonne | » avec une ligne « |---|---| » (laisse des cellules vides à remplir) ; « ____ » (au moins 4 soulignés) pour une ligne à remplir ; « > » pour une citation ou une phrase clé ; **gras** ; blocs spéciaux ouverts par « :::exercice Titre », « :::astuce Titre », « :::modele Titre », « :::prompt Titre », « :::exemple Titre », « :::bilan Titre », « :::jour Titre », « :::script Titre », « :::quiz Titre » ou « :::action Titre » et fermés par une ligne « ::: ». Quand une information personnelle de la créatrice manque (anecdote, résultat, prénom…), écris [À PERSONNALISER : ce qu'il faut ajouter].";
+
+/* ================= sections du produit ================= */
+function coverTitle(){var f=fmt(S.format);return f.fam==="outil"?"Page de présentation et mode d'emploi":"Page de présentation et introduction";}
+function endTitle(){var f=fmt(S.format);return {checklist:"Récapitulatif et prochaines étapes",challenge:"Bilan final du challenge",planner:"Bilan et suite",planaction:"Bilan et suite",prompts:"Conseils d'utilisation et suite",packtemplates:"Conseils d'utilisation et suite",canva:"Conseils d'utilisation et suite"}[f.k]||"Conclusion et prochaines étapes";}
+function buildSections(){
+  var prev={};S.sections.forEach(function(x){prev[x.key]=x;});
+  var list=[{key:"cover",kind:"cover",titre:coverTitle()}];
+  S.structure.forEach(function(m){list.push({key:"p-"+(m.id||m.titre),kind:"part",titre:m.titre,ref:m.id});});
+  list.push({key:"end",kind:"end",titre:endTitle()});
+  S.bonus.forEach(function(b,i){list.push({key:"b-"+b.nom,kind:"bonus",titre:"Bonus "+(i+1)+" : "+b.nom,bonus:i});});
+  S.sections=list.map(function(x){var p=prev[x.key];return p?Object.assign(p,{titre:x.titre,kind:x.kind,ref:x.ref,bonus:x.bonus}):Object.assign(x,{status:"todo",content:"",history:[]});});
+  if(S.cur>=S.sections.length)S.cur=0;
+  S.sig=signature();S.dirty=false;
+}
+function partInfo(sec){
+  if(sec.kind==="cover")return "Rôle : ouvrir le produit. Contenu attendu : le titre, le sous-titre, la promesse, à qui s'adresse le produit, ce qu'il contient (vue d'ensemble des parties) et comment l'utiliser concrètement. Puis une introduction chaleureuse qui reconnaît la situation de la cliente et donne envie de commencer. Mets un encart [À PERSONNALISER : ta présentation en 3 à 5 lignes] pour la présentation de la créatrice.";
+  if(sec.kind==="end")return "Rôle : conclure. Contenu attendu : récapitulatif de la méthode ou des éléments clés, une checklist finale, les prochaines étapes concrètes, un message d'encouragement sincère et un appel à l'action doux (par exemple retrouver la créatrice sur ses réseaux : [À PERSONNALISER : tes réseaux]).";
+  if(sec.kind==="bonus"){var b=S.bonus[sec.bonus]||{};return "Rôle : bonus du produit. Crée le bonus lui-même, complet et utilisable : "+b.nom+" — "+b.contenu+". Intérêt pour la cliente : "+(b.interet||"")+".";}
+  var m=null;S.structure.forEach(function(x){if(x.id===sec.ref)m=x;});
+  if(!m)return "Partie du produit : "+sec.titre;
+  return "Objectif : "+(m.objectif||"-")+"\nContenu prévu : "+(m.contenu||"-")+"\nPoints à traiter : "+(m.points||"-")+"\nExercice prévu : "+(m.exercice||"-")+"\nRésultat attendu pour la cliente : "+(m.resultat||"-");
+}
+function sectionPrompt(sec,mode,request){
+  var f=fmt(S.format),o=[];
+  o.push(RULES);o.push(brief());
+  o.push("=== FORMAT ===\n"+flabel()+" : tu produis "+f.spec+(f.k==="autre"&&S.autre?" (format décrit par la créatrice : "+S.autre+")":"")+(f.k==="bundle"?" Composants du bundle : "+(S.bundle.map(function(k){return fmt(k).label+" → "+fmt(k).spec;}).join(" || ")):""));
+  o.push("=== PLAN COMPLET DU PRODUIT (pour rester cohérente, sans répéter ce qui existe déjà) ===\n"+outline());
+  o.push("=== PARTIE À TRAITER ===\nTitre : "+sec.titre+"\n"+partInfo(sec));
+  if(mode==="create")o.push("=== TA MISSION ===\nCrée maintenant le CONTENU RÉEL et complet de cette partie, prêt à être utilisé par la cliente finale (pas une description de ce qu'il faudrait faire). Longueur adaptée au format : développée pour un e-book, un guide ou une leçon (environ 500 à 900 mots), plus compacte pour une checklist, un planner ou des modèles, mais toujours complète.");
+  else o.push("=== CONTENU ACTUEL DE LA PARTIE ===\n"+sec.content+"\n\n=== DEMANDE DE LA CRÉATRICE ===\n"+request+"\n\n=== TA MISSION ===\nRéécris la partie entière en appliquant cette demande, en gardant tout ce qui fonctionne déjà et la cohérence avec le reste du produit. Renvoie la partie complète, pas seulement les changements.");
+  o.push(MARKUP);
+  o.push("Commence directement par « # "+sec.titre+" » (ou un titre équivalent) : aucune phrase avant, aucun commentaire après.");
+  return o.join("\n\n");
+}
+var ctl=null;
+function runSection(i,mode,request){
+  var sec=S.sections[i];if(!sec||S._busy)return;
+  if(!AI){toast("La création avec l'IA n'est pas disponible ici : utilise la consigne à copier ci-dessous.");return;}
+  if(mode!=="create"&&request)S.decisions.push(sec.titre+" : "+request);
+  if(sec.content)sec.history=(sec.history||[]).concat([sec.content]).slice(-3);
+  S._busy={i:i,text:"",mode:mode};ctl=new AbortController();
+  renderStudio();
+  var opts={signal:ctl.signal,onText:null};if(mode!=="create")opts.cache=false;
+  opts.onText=function(u){if(S._busy){S._busy.text=u.text;var el=$("#live");if(el){el.innerHTML=md(u.text);}var th=$(".editor .think span");if(th)th.textContent="Ton assistante écrit ta partie…";}};
+  AI(sectionPrompt(sec,mode,request),opts)
+  .then(function(r){
+    var t=String(r.text||"").trim();
+    if(!t){throw {code:"empty"};}
+    sec.content=t;sec.status="draft";
+    S._busy=null;save();renderStudio();
+    toast(mode==="create"?"Voici ta partie. Relis-la tranquillement 💕":"Ta partie est mise à jour ✨");
+    if(r.truncated)toast("La partie a été coupée car elle était très longue : demande « Termine cette partie » ou « Fais plus court ».");
+  })
+  .catch(function(e){
+    var partial=e&&e.text;
+    if(partial&&partial.length>200&&e.code!=="cancelled"){sec.content=partial;sec.status="draft";}
+    else if(e&&e.code==="cancelled"&&partial&&partial.length>200){sec.content=partial;sec.status="draft";}
+    else if(sec.history&&sec.history.length&&mode!=="create"){sec.content=sec.history.pop();}
+    S._busy=null;save();renderStudio();toast(aiErr(e));
+  });
+}
+function nextTodo(){for(var i=0;i<S.sections.length;i++){if(S.sections[i].status!=="ok")return i;}return -1;}
+function progress(){var n=S.sections.length;if(!n)return 0;var v=0;S.sections.forEach(function(x){v+=x.status==="ok"?1:(x.status==="draft"||x.status==="stale")?0.5:0;});return Math.round(v/n*100);}
+function words(t){return (String(t||"").match(/\S+/g)||[]).length;}
+
+/* ================= assistante ================= */
+function askAssistant(msg){
+  if(!AI){toast("Ton assistante est disponible dans la version avec l'IA.");return;}
+  if(S._chatBusy)return;
+  S.chat.push({role:"user",content:msg});S.chat=S.chat.slice(-12);
+  S._chatBusy=true;renderChat();
+  var cur=S.sections[S.cur];
+  var intro=RULES+"\n\nTu accompagnes la créatrice pendant la création de son produit. Réponds en tenant compte de tout le contexte ci-dessous, de façon concrète et courte (8 à 15 lignes maximum), avec des propositions précises. Tu ne modifies pas le produit toi-même : si une modification est utile, indique la demande exacte qu'elle peut coller dans « Ta demande » de la partie concernée.\n\n"+brief()+"\n\n=== PLAN ET ÉTAT DU PRODUIT ===\n"+outline()+(cur&&cur.content?"\n\n=== PARTIE OUVERTE : "+cur.titre+" ===\n"+cur.content.slice(0,6000):"");
+  var turns=[{role:"user",content:intro}].concat(S.chat);
+  var bubble=null;
+  AI(turns,{cache:false,onText:function(u){bubble=$("#chatlive");if(bubble)bubble.innerHTML=md(u.text);}})
+  .then(function(r){S.chat.push({role:"assistant",content:r.text});})
+  .catch(function(e){S.chat.push({role:"assistant",content:aiErr(e)});})
+  .then(function(){S._chatBusy=false;save();renderChat();});
+}
+
+/* ================= contrôle qualité ================= */
+function runQC(){
+  if(!AI){S.qc=localQC();save();render();return;}
+  S._qcBusy=true;render();
+  var full=S.sections.map(function(x){return "### "+x.titre+" ("+x.status+")\n"+String(x.content||"(vide)").slice(0,4500);}).join("\n\n").slice(0,52000);
+  aiJSON(RULES+"\n\n"+brief()+"\n\n=== PRODUIT COMPLET ===\n"+full+"\n\nFais le contrôle qualité final de ce produit pour une cliente débutante. Vérifie la cohérence (promesse, contenu, structure, contradictions), la qualité (développement, répétitions, niveau, exemples, exercices), l'utilité (apport réel, clarté des actions, ressources exploitables) et l'expérience (progression, lisibilité, organisation, titres). "+JSONONLY+" Format : {\"score\":0-100,\"resume\":\"2 phrases\",\"criteres\":[{\"nom\":\"Cohérence|Qualité|Utilité|Expérience\",\"ok\":true,\"commentaire\":\"\"}],\"corrections\":[{\"partie\":\"titre exact d'une partie\",\"probleme\":\"\",\"demande\":\"demande de modification précise à appliquer\"}]}","default")
+  .then(function(r){if(!r||!r.criteres)throw {code:"invalid"};S.qc=r;})
+  .catch(function(e){S.qc=localQC();S.qc.note=aiErr(e);})
+  .then(function(){S._qcBusy=false;save();render();});
+}
+function localQC(){
+  var crit=[],cor=[];
+  var empty=S.sections.filter(function(x){return !x.content;});
+  var draft=S.sections.filter(function(x){return x.status!=="ok";});
+  var shortS=S.sections.filter(function(x){return x.content&&words(x.content)<120;});
+  var perso=S.sections.filter(function(x){return /À PERSONNALISER/i.test(x.content||"");});
+  crit.push({nom:"Complétude",ok:!empty.length,commentaire:empty.length?empty.length+" partie(s) encore vide(s).":"Toutes les parties ont un contenu."});
+  crit.push({nom:"Validation",ok:!draft.length,commentaire:draft.length?draft.length+" partie(s) à relire et valider.":"Toutes les parties sont validées."});
+  crit.push({nom:"Développement",ok:!shortS.length,commentaire:shortS.length?"Parties peut-être trop courtes : "+shortS.map(function(x){return x.titre;}).join(", ")+".":"Les parties sont suffisamment développées."});
+  crit.push({nom:"Personnalisation",ok:!perso.length,commentaire:perso.length?"Il reste des éléments [À PERSONNALISER] dans : "+perso.map(function(x){return x.titre;}).join(", ")+".":"Aucun élément à personnaliser en attente."});
+  shortS.forEach(function(x){cor.push({partie:x.titre,probleme:"Partie courte",demande:"Développe cette partie avec un exemple concret et une action."});});
+  var ok=crit.filter(function(c){return c.ok;}).length;
+  return {score:Math.round(ok/crit.length*100),resume:"Vérification automatique de base (sans IA).",criteres:crit,corrections:cor,local:true};
+}
+
+/* ================= export ================= */
+function productHTML(){
+  var nm=S.name?S.name.nom:"Mon produit",sub=S.name?S.name.sous:"";
+  var body=S.sections.map(function(x){return '<section class="part">'+md(x.content||("# "+x.titre+"\n\n(À compléter)"))+"</section>";}).join("");
+  return '<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>'+esc(nm)+'</title>'+
+  '<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">'+
+  '<style>'+DOCCSS+'</style></head><body>'+
+  '<header class="cover"><div class="k">'+esc(flabel())+'</div><h1>'+esc(nm)+'</h1>'+(sub?'<p class="s">'+esc(sub)+'</p>':'')+(S.concept?'<p class="pr">'+esc(S.concept.promesse)+'</p>':'')+'</header>'+
+  '<nav class="toc"><h2>Sommaire</h2><ol>'+S.sections.map(function(x){return "<li>"+esc(x.titre)+"</li>";}).join("")+'</ol></nav>'+
+  body+'<footer>Créé avec PRODUCT CREATOR ✨ · Ce produit est destiné à un usage personnel : toute reproduction ou revente est interdite sans autorisation.</footer></body></html>';
+}
+var DOCCSS='body{margin:0;background:#FFF4F8;font-family:Poppins,Arial,sans-serif;color:#3A1F2B;line-height:1.7;font-size:16px}.cover{background:linear-gradient(160deg,#FFC1D8,#FF9EC7);padding:80px 40px;text-align:center;border-bottom:6px solid #C9973A}.cover .k{display:inline-block;background:#fff;color:#C8337A;border-radius:99px;padding:6px 16px;font-weight:600;font-size:13px}.cover h1{font-family:"Playfair Display",serif;font-size:48px;margin:18px 0 6px;line-height:1.1}.cover .s{font-style:italic;color:#C8337A;font-size:20px;margin:0}.cover .pr{max-width:600px;margin:18px auto 0;font-size:17px}.toc,.part{max-width:780px;margin:24px auto;background:#fff;border-radius:26px;padding:38px 44px;box-shadow:0 18px 44px -30px rgba(200,51,122,.5)}.toc h2{font-family:"Playfair Display",serif;margin:0 0 10px}.part{page-break-before:always}h2,h3,h4,h5{font-family:"Playfair Display",serif;line-height:1.2}h2{font-size:32px;margin:0 0 16px;color:#3A1F2B}h3{font-size:23px;margin:26px 0 8px;color:#C8337A}h4{font-size:19px;margin:20px 0 6px}li::marker{color:#C9973A}blockquote{margin:16px 0;padding:12px 18px;border-left:5px solid #EC4E97;background:#FFF4F8;border-radius:12px;font-style:italic}.blk{border-radius:18px;padding:16px 20px;margin:18px 0;background:#FFF4F8;border:2px solid #FFC1D8}.blk-exercice,.blk-jour,.blk-action{background:#FFF9EC;border-color:#E9C878}.blk-modele,.blk-prompt,.blk-script{background:#fff;border-style:dashed}.blkh{font-weight:700;font-size:17px;margin-bottom:8px;display:flex;gap:8px;align-items:center}.cbx{list-style:none;padding-left:0}.cbx li{display:flex;gap:10px;align-items:flex-start;margin-bottom:8px}.cbb{flex:0 0 18px;height:18px;border:2px solid #EC4E97;border-radius:5px;margin-top:4px}.wl{display:block;border-bottom:1.5px solid #E6C9D5;height:28px;margin:4px 0}span.wl{display:inline-block;min-width:160px;height:1.2em;vertical-align:bottom}.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;margin:14px 0;font-size:15px}th{background:#EC4E97;color:#fff;text-align:left;padding:9px 12px}td{border:1px solid #F3D3DF;padding:10px 12px;height:22px}mark{background:#FFE7F0;color:#C8337A;border-radius:6px;padding:0 4px}hr{border:0;border-top:2px dashed #FFC1D8;margin:24px 0}footer{text-align:center;font-size:12.5px;color:#6E5260;padding:24px}@media print{body{background:#fff}.toc,.part{box-shadow:none;margin:0 auto;border-radius:0}.cover{page-break-after:always}}';
+function productText(){return (S.name?S.name.nom:"Mon produit")+"\n"+(S.name&&S.name.sous?S.name.sous+"\n":"")+"\n"+S.sections.map(function(x){return x.content||("# "+x.titre);}).join("\n\n---\n\n")+"\n\nCréé avec PRODUCT CREATOR ✨";}
+function slug(t){return (String(t||"mon-produit").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")||"mon-produit").slice(0,50);}
+function download(kind){
+  var nm=slug(S.name&&S.name.nom),data=kind==="txt"?productText():productHTML(),name=nm+(kind==="txt"?".txt":".html");
+  var done=false;
+  try{if(window.claude&&typeof window.claude.use==="function"){done=true;window.claude.use("downloads").then(function(dl){if(dl){dl.save({filename:name,data:data}).then(function(){toast("Ton produit est téléchargé 💕");}).catch(function(){toast("Téléchargement annulé.");});}else fallbackDl(data,name,kind);}).catch(function(){fallbackDl(data,name,kind);});}}catch(e){}
+  if(!done)fallbackDl(data,name,kind);
+}
+function fallbackDl(data,name,kind){
+  try{var b=new Blob([data],{type:kind==="txt"?"text/plain":"text/html"}),u=URL.createObjectURL(b),a=document.createElement("a");a.href=u;a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(u);a.remove();},800);toast("Ton produit est téléchargé 💕");}
+  catch(e){toast("Téléchargement indisponible ici : utilise « Copier » ou « Imprimer ».");}
+}
+function copyText(t,msg){
+  function fb(){var ta=document.createElement("textarea");ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");toast(msg||"Copié 📋");}catch(e){toast("Copie impossible ici.");}ta.remove();}
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t).then(function(){toast(msg||"Copié 📋");}).catch(fb);else fb();
+}
+
+/* ================= rendu général ================= */
+function render(){
+  var m=$("#main");if(!m)return;
+  var fn=[welcome,step1,step2,step3,step4,step5,step6,step7,step8,step9,step10][S.step]||welcome;
+  if(S.step===9&&!S.sections.length){S.step=8;}
+  var anim=S.step!==render._last;render._last=S.step;
+  m.innerHTML='<div class="screen'+(anim?" anim":"")+'">'+fn()+'</div>';
+  renderStepper();renderDrawer();renderChat();
+  var hint=$("#aistate");if(hint)hint.textContent=AI?"✨ Assistance IA active":(AIstate==="attente"?"Connexion à l'IA…":"Mode sans IA");
+}
+function renderStudio(){if(S.step===9)render();}
+function go(n){if(n===9&&!S.sections.length)n=8;S.step=n;if(n>S.maxStep)S.maxStep=n;save();render();window.scrollTo({top:0,behavior:"smooth"});}
+function isDone(n){
+  switch(n){case 1:return !!S.idea;case 2:return !!S.client;case 3:return !!S.format;case 4:return !!(S.name&&S.concept);case 5:return S.structureOk;case 6:return S.bonus.length>0;case 7:return !!S.offer;case 8:return S.validated;case 9:return S.sections.length>0&&S.sections.every(function(x){return x.status==="ok";});case 10:return S.finished;}
+  return false;
+}
+function renderStepper(){
+  var st=$("#stepper");
+  if(S.step===0){st.style.display="none";return;}
+  st.style.display="block";
+  var d=0;for(var i=1;i<=10;i++)if(isDone(i))d++;
+  $("#bar").style.width=Math.round(d/10*100)+"%";$("#pct").textContent=Math.round(d/10*100)+" %";
+  $("#steps").innerHTML=STEPS.map(function(t,i){var n=i+1,cls="st"+(n===S.step?" cur":"")+(isDone(n)?" done":"")+(n>=9?" crea":"");return (n===1?'<span class="phase">JE CONÇOIS</span>':"")+(n===9?'<span class="phase gold">JE CRÉE</span>':"")+'<button class="'+cls+'" data-go="'+n+'" '+(n>S.maxStep?"disabled":"")+'><span class="n">'+(isDone(n)&&n!==S.step?"✓":(n<10?"0"+n:n))+'</span>'+esc(t)+'</button>';}).join("");
+  var cur=$(".st.cur");if(cur&&cur.scrollIntoView)cur.scrollIntoView({block:"nearest",inline:"center"});
+}
+function head(n,title,lead){return '<div class="head"><span class="kicker'+(n>=9?" gold":"")+'">'+EMO[n-1]+" "+(n<=8?"Phase 1 · Étape 0"+n+" sur 08":(n===9?"Phase 2 · Je crée":"Phase 2 · Mon produit"))+'</span><h2>'+title+'</h2>'+(lead?'<p class="lead">'+lead+'</p>':'')+'</div>';}
+function nav(prev,label,act,dis){return '<div class="actions between noprint">'+(prev!==null&&prev!==undefined?'<button class="btn ghost sm" data-go="'+prev+'">← Étape précédente</button>':'<span></span>')+(label?'<button class="btn pink" data-act="'+act+'" '+(dis?"disabled":"")+'>'+label+'</button>':'')+'</div>';}
+function field(label,key,obj,rows){return '<div class="field"><span class="lab">'+label+'</span><textarea class="inp" rows="'+(rows||2)+'" data-bind="'+obj+'.'+key+'">'+esc((S[obj]||{})[key]||"")+'</textarea></div>';}
+function thinking(msg,stop){return '<div class="think"><i></i><span>'+esc(msg||"Ton assistante réfléchit avec toi…")+'</span>'+(stop?'<button class="btn ghost sm" data-act="stop">■ Arrêter</button>':'')+'</div>';}
+function noAiNote(){return AI||AIstate==="attente"?"":'<div class="iahint"><span>🤖</span><p><b>Tu utilises Product Creator sans l\'assistance IA.</b><br>Les propositions viennent du moteur intégré. Pour que ton assistante crée vraiment ton produit avec toi, ouvre la version avec l\'IA dans Claude (compte Claude nécessaire, l\'IA utilise ton quota Claude).</p><a class="btn pink sm" href="'+esc(window.PC_LIEN_IA||"#")+'" target="_blank" rel="noopener">✨ Ouvrir avec l\'IA</a></div>';}
+
+/* ================= accueil ================= */
+function welcome(){
+  return '<section class="hero">'+
+  '<div class="fl bub" style="width:170px;height:170px;left:-40px;top:40px"></div><div class="fl bub" style="width:230px;height:230px;right:-70px;bottom:-40px;animation-delay:-6s"></div><div class="fl ring" style="width:300px;height:300px;right:12%;top:-150px"></div><div class="fl spk" style="left:18%;top:22%"></div><div class="fl spk" style="right:20%;top:34%;animation-delay:-1.2s"></div><div class="fl spk" style="left:26%;bottom:16%;animation-delay:-2s"></div>'+
+  '<span class="tagw">Ton assistante de création 💕</span>'+
+  '<h1><span>PRODUCT CREATOR</span> ✨</h1>'+
+  '<p class="sub1">De l\'idée au produit digital prêt à vendre.</p>'+
+  '<p class="sub2">Tu conçois ton produit, puis ton assistante le crée avec toi, partie par partie.</p>'+
+  '<div class="welcome">Bienvenue dans ton espace de création 💕<br>Que tu aies déjà une idée précise ou aucune idée, Product Creator t\'accompagne pour construire, puis <b>créer réellement</b> ton premier produit digital.</div>'+
+  (hasSaved?'<div class="actions" style="justify-content:center"><button class="btn big" data-act="resume">✨ Reprendre mon produit</button><button class="btn ghost" data-act="reset">Recommencer</button></div>':'<button class="btn big" data-act="start">✨ Commencer mon produit</button>')+
+  '<p class="time">⏱ Conception : 15 à 20 minutes · Création : à ton rythme</p>'+
+  '</section>'+noAiNote()+
+  '<div class="phases"><div class="ph1"><b>PHASE 1 · JE CONÇOIS</b><span>Idée, cliente, format, concept, structure, bonus, offre et validation.</span></div><div class="ph2"><b>PHASE 2 · JE CRÉE</b><span>Ton assistante rédige ton produit avec toi, tu valides, tu modifies, tu télécharges.</span></div></div>'+
+  '<div class="map">'+STEPS.map(function(t,i){return '<div style="animation-delay:'+(i*50)+'ms"><b>'+(i<9?"0"+(i+1):i+1)+'</b><span>'+EMO[i]+" "+esc(t)+'</span></div>';}).join("")+'</div>';
+}
+
+/* ================= étape 1 ================= */
+var Q1=[
+ [["savoir","Qu'est-ce que tu sais particulièrement bien faire ?","Même ce qui te paraît « banal » compte.","Ex. : cuisiner vite et sain, me maquiller, organiser la maison…",["Cuisiner","Organiser","Créer des visuels","Gérer un budget","Me maquiller","Expliquer simplement"]],
+  ["demandes","Qu'est-ce que les gens viennent régulièrement te demander ?","Pense à tes proches, tes collègues, tes abonnées.","Ex. : des idées de repas, des conseils pour leur CV…",[]]],
+ [["domaine","Dans quel domaine pourrais-tu aider quelqu'un à obtenir un résultat concret ?","Un domaine précis, c'est plus facile à vendre.","Ex. : l'organisation des repas de la semaine",["Cuisine","Beauté","Bien-être","Organisation","Argent","Réseaux sociaux","Études et carrière","Maison et déco"]],
+  ["aime","Qu'est-ce que tu aimes particulièrement ?","Un sujet que tu aimes, c'est un sujet dont tu parleras longtemps.","Ex. : les plantes, le sport, les jolies choses…",[]]],
+ [["transmettre","Qu'aimerais-tu transmettre, apprendre ou simplifier pour quelqu'un ?","","Ex. : montrer qu'on peut bien manger sans y passer des heures",[]]],
+ [["temps","Combien de temps aimerais-tu consacrer à la conception de ton premier produit ?","On adapte les idées à ton rythme.","",[]]]
+];
+function q1ok(){var a=S.a1;if(S.q1===0)return !!(clean(a.savoir)||clean(a.demandes));if(S.q1===1)return !!(clean(a.domaine)||clean(a.aime));if(S.q1===2)return !!(clean(a.transmettre)||a.statut);return !!a.temps;}
+function step1(){
+  var h=head(1,"Trouver mon idée","Pas besoin d'avoir LA bonne idée. On va la trouver ensemble.");
+  if(S._busy1)return h+thinking("Ton assistante imagine des idées rien que pour toi…");
+  if(S.express)return h+expressView();
+  if(S.ideas.length&&S.q1>=4)return h+ideasView();
+  var body=S.q1===0?'<div class="soft">Respire. Tu n\'as pas besoin d\'avoir une idée parfaite. On va la construire ensemble. 💕</div>':"";
+  Q1[S.q1].forEach(function(q){
+    body+='<div class="q"><label>'+q[1]+'</label>'+(q[2]?'<div class="help">'+q[2]+'</div>':'');
+    if(q[0]==="temps")body+='<div class="chips">'+["Quelques heures","1 journée","Quelques jours","1 à 2 semaines","Plus"].map(function(o){return '<button class="chip'+(S.a1.temps===o?" on":"")+'" data-pick="a1.temps" data-val="'+o+'">'+o+'</button>';}).join("")+'</div>';
+    else{body+='<textarea class="inp" rows="2" data-bind="a1.'+q[0]+'" placeholder="'+esc(q[3])+'">'+esc(S.a1[q[0]])+'</textarea>';if(q[4].length)body+='<div class="chips">'+q[4].map(function(o){return '<button class="chip sug" data-add="a1.'+q[0]+'" data-val="'+esc(o)+'">+ '+esc(o)+'</button>';}).join("")+'</div>';}
+    body+='</div>';
+  });
+  if(S.q1===2){
+    body+='<div class="q"><label>As-tu déjà une idée de produit ?</label><div class="chips">'+["Oui","Non","J'ai une idée mais elle est floue"].map(function(o){return '<button class="chip'+(S.a1.statut===o?" on":"")+'" data-pick="a1.statut" data-val="'+esc(o)+'">'+esc(o)+'</button>';}).join("")+'</div>';
+    if(S.a1.statut&&S.a1.statut!=="Non")body+='<textarea class="inp" style="margin-top:12px" rows="2" data-bind="a1.ideeTexte" placeholder="Décris ton idée en quelques mots, même si elle est floue">'+esc(S.a1.ideeTexte)+'</textarea>';
+    if(S.a1.statut==="Oui")body+='<div class="express"><span>⚡</span><p><b>Ton idée est déjà très claire ?</b><br>Passe en mode express : décris ton produit en une fois, on saute directement à ton concept.</p><button class="btn ghost sm" data-act="expressOn">Mode express</button></div>';
+    body+='</div>';
+  }
+  var ok=q1ok(),last=S.q1===3;
+  return h+'<div class="card"><div class="minisub">'+[0,1,2,3].map(function(i){return '<i class="'+(i<=S.q1?"on":"")+'"></i>';}).join("")+'</div>'+body+
+   '<div class="actions between"><button class="btn ghost sm" data-act="'+(S.q1===0?"home":"q1prev")+'">← Retour</button><button class="btn '+(last?"":"pink")+'" data-act="'+(last?"genIdeas":"q1next")+'" '+(ok?"":"disabled")+'>'+(last?"✨ Voir mes idées":"Continuer →")+'</button></div>'+
+   (ok?'':'<p class="mini">Réponds au moins à une question de cet écran pour continuer.</p>')+'</div>'+(S.ideas.length?'<button class="linkbtn" data-act="showIdeas">Revoir les idées déjà proposées</button>':'');
+}
+function ideasView(){
+  var h='<div class="soft gold2">Voici des pistes construites à partir de <b>tes réponses</b>. Les prix et les temps sont des repères, pas des certitudes. Choisis celle qui te fait vibrer. 💕</div><div class="grid2">';
+  h+=S.ideas.map(function(d,i){var sel=S.idea&&S.idea.nom===d.nom;
+    return '<div class="opt'+(sel?" sel":"")+'" style="animation-delay:'+(i*70)+'ms">'+(d.own?'<span class="tagr">Ton idée, structurée</span>':'')+'<h3>'+esc(d.nom)+'</h3><p class="kv">'+esc(d.concept)+'</p><p class="kv"><b>Problème résolu :</b> '+esc(d.probleme)+'</p><p class="kv"><b>Cliente cible :</b> '+esc(d.cible)+'</p><p class="kv"><b>Transformation :</b> '+esc(d.transformation)+'</p><div class="meta"><span>'+esc(d.format)+'</span><span>'+esc(d.difficulte)+'</span><span>⏱ '+esc(d.temps)+'</span><span>💶 '+esc(d.prix)+'</span></div><button class="btn '+(sel?"":"pink")+' sm" data-idea="'+i+'">'+(sel?"✓ Idée choisie":"💗 Je choisis cette idée")+'</button></div>';}).join("");
+  return h+'</div><div class="actions"><button class="btn ghost" data-act="moreIdeas">✨ Donne-moi d\'autres idées</button><button class="linkbtn" data-act="editAnswers">Modifier mes réponses</button></div>'+nav(null,S.idea?"Continuer vers ma cliente →":"","to2",!S.idea);
+}
+function expressView(){
+  var e=S._ex||(S._ex={nom:"",idee:S.a1.ideeTexte||"",cible:"",probleme:"",resultat:"",format:""});
+  return '<div class="card"><div class="soft gold2">⚡ <b>Mode express</b> : décris ton produit, on construit ton concept tout de suite. Tu pourras tout ajuster ensuite.</div>'+
+   '<div class="grid2"><div class="q"><label>Ton idée</label><textarea class="inp" rows="2" data-bind="_ex.idee">'+esc(e.idee)+'</textarea></div><div class="q"><label>Nom (facultatif)</label><input class="inp" data-bind="_ex.nom" value="'+esc(e.nom)+'" placeholder="Si tu l\'as déjà"></div>'+
+   '<div class="q"><label>Pour qui ?</label><textarea class="inp" rows="2" data-bind="_ex.cible" placeholder="Ex. : les mamans actives qui rentrent tard">'+esc(e.cible)+'</textarea></div><div class="q"><label>Son problème</label><textarea class="inp" rows="2" data-bind="_ex.probleme">'+esc(e.probleme)+'</textarea></div>'+
+   '<div class="q"><label>Le résultat promis</label><textarea class="inp" rows="2" data-bind="_ex.resultat" placeholder="Ex. : préparer tous ses dîners en 2 h le dimanche">'+esc(e.resultat)+'</textarea></div>'+
+   '<div class="q"><label>Le format</label><select class="inp" data-bind="_ex.format"><option value="">Choisis un format</option>'+FORMATS.filter(function(f){return f.k!=="bundle"&&f.k!=="autre";}).map(function(f){return '<option value="'+f.k+'"'+(e.format===f.k?" selected":"")+'>'+f.e+" "+f.label+'</option>';}).join("")+'</select></div></div>'+
+   '<div class="actions between"><button class="btn ghost sm" data-act="expressOff">← Revenir aux questions</button><button class="btn pink" data-act="expressGo">⚡ Construire mon concept</button></div></div>';
+}
+function genIdeas(more){
+  if(more)S.round++;else S.round=0;
+  var local=localIdeas(S.round,more?S.ideas.map(function(i){return i.nom;}):[]);
+  if(!AI){S.ideas=local;S.q1=4;save();render();return;}
+  S._busy1=true;render();
+  aiJSON(RULES+"\n\n"+brief()+"\n\nPropose 4 idées de produits digitaux low-ticket vraiment adaptées à ces réponses (sujet précis, cible précise, transformation concrète)"+(more?", différentes de : "+S.ideas.map(function(i){return i.nom;}).join(" ; "):"")+(clean(S.a1.ideeTexte)?". La première doit structurer l'idée de la créatrice : "+S.a1.ideeTexte:"")+". "+JSONONLY+" Format : {\"idees\":[{\"nom\":\"\",\"concept\":\"\",\"probleme\":\"\",\"cible\":\"\",\"transformation\":\"\",\"format\":\"un de : "+FORMATS.filter(function(f){return f.k!=="autre";}).map(function(f){return f.label;}).join(", ")+"\",\"difficulte\":\"Très facile|Facile|Moyen|Avancé\",\"temps\":\"\",\"prix\":\"ex. 12 à 19 €\"}]}")
+  .then(function(r){
+    var ok=((r&&r.idees)||[]).filter(function(x){return x&&x.nom&&x.concept;}).slice(0,5).map(function(x,i){var f=FORMATS.filter(function(z){return z.label.toLowerCase()===String(x.format||"").toLowerCase();})[0]||fmt("guide");return {nom:x.nom,concept:x.concept,probleme:x.probleme||"",cible:x.cible||"",transformation:x.transformation||"",format:f.label,fk:f.k,difficulte:x.difficulte||f.diff,temps:x.temps||f.temps,prix:x.prix||(f.min+" à "+f.max+" €"),own:i===0&&!!clean(S.a1.ideeTexte)&&!more,base:{S:phrase(x.nom,5).toLowerCase(),C:low(x.cible||"ta cliente"),R:low(clean(x.transformation||"obtenir son résultat"))}};});
+    S.ideas=ok.length>=3?ok:local;
+  }).catch(function(e){S.ideas=local;toast(aiErr(e));})
+  .then(function(){S._busy1=false;S.q1=4;save();render();});
+}
+function expressGo(){
+  var e=S._ex||{};
+  if(!clean(e.idee)||!clean(e.cible)||!clean(e.resultat)||!e.format){toast("Remplis l'idée, la cible, le résultat et le format 💕");return;}
+  var f=fmt(e.format);
+  S.idea={nom:clean(e.nom)||cap(short(e.idee,7)),concept:clean(e.idee)+".",probleme:cap(clean(e.probleme||""))+".",cible:cap(clean(e.cible)),transformation:cap(clean(e.resultat))+".",format:f.label,fk:f.k,difficulte:f.diff,temps:f.temps,prix:f.min+" à "+f.max+" €",own:true,base:{S:low(phrase(e.idee,5)),C:low(clean(e.cible)),R:low(clean(e.resultat))}};
+  S.a2.qui=clean(e.cible);S.a2.probleme=clean(e.probleme);S.a2.resultat=clean(e.resultat);S.a2.objectif=clean(e.resultat);
+  synthClient(true);
+  S.format=f.k;S.names=[];S.structure=[];S.structureOk=false;S.bonusList=[];S.bonus=[];S.offer=null;
+  S.express=false;S.q1=4;S.maxStep=Math.max(S.maxStep,4);
+  if(clean(e.nom)){S.name={nom:clean(e.nom),sous:"",angle:"Ton choix",own:true};S.concept=genConcept();}
+  go(4);toast("Ton concept est prêt à être ajusté ✨");
+}
+
+/* ================= étape 2 ================= */
+var Q2=[["qui","Qui est cette personne ?","Son âge, sa vie, ce qui la caractérise."],["situation","Dans quelle situation se trouve-t-elle actuellement ?",""],["probleme","Quel problème rencontre-t-elle ?",""],["frustration","Qu'est-ce qui la frustre ?",""],["essaye","Qu'a-t-elle déjà essayé ?",""],["objectif","Qu'aimerait-elle obtenir ?",""],["resultat","Quel résultat concret voudrait-elle atteindre ?","Un résultat qu'on peut imaginer."],["pourquoi","Pourquoi ce problème est-il important pour elle maintenant ?",""]];
+function step2(){
+  var h=head(2,"Connaître ma cliente","Plus tu la connais, plus ton produit lui parlera. Réponds avec tes mots.");
+  if(S.idea)h+='<div class="soft">Ton idée : <b>'+esc(S.idea.nom)+'</b></div>';
+  if(S.client)return h+'<div class="synth"><h3>👩‍💻 Ta cliente idéale</h3><div class="grid2">'+field("Qui elle est","qui","client")+field("Son problème principal","probleme","client")+field("Ses frustrations","frustrations","client")+field("Ce qu'elle veut","veut","client")+'</div>'+field("La transformation recherchée","transformation","client")+'<p class="mini">Tu peux modifier chaque texte directement.</p></div><div class="actions"><button class="linkbtn" data-act="editClient">Modifier mes réponses</button></div>'+nav(1,"Choisir mon format →","to3");
+  var sug={qui:S.idea?S.idea.cible:"",probleme:S.idea?S.idea.probleme:""};
+  var b='<div class="card">'+Q2.map(function(q){var s=sug[q[0]];return '<div class="q"><label>'+q[1]+'</label>'+(q[2]?'<div class="help">'+q[2]+'</div>':'')+'<textarea class="inp" rows="2" data-bind="a2.'+q[0]+'">'+esc(S.a2[q[0]])+'</textarea>'+(s&&!S.a2[q[0]]?'<div class="chips"><button class="chip sug" data-set="a2.'+q[0]+'" data-val="'+esc(s)+'">Reprendre : « '+esc(short(s,12))+'… »</button></div>':'')+'</div>';}).join("")+'</div>';
+  var ok=a2ok();
+  return h+b+nav(1,"✨ Synthétiser ma cliente","synthClient",!ok)+(ok?"":'<p class="mini">Remplis au moins : qui elle est, son problème, et ce qu\'elle veut obtenir.</p>');
+}
+function a2ok(){return !!(clean(S.a2.qui)&&clean(S.a2.probleme)&&(clean(S.a2.resultat)||clean(S.a2.objectif)));}
+function synthClient(silent){
+  var a=S.a2;
+  var fr=[clean(a.frustration),a.essaye?("Elle a déjà essayé : "+low(clean(a.essaye))+", sans obtenir ce qu'elle voulait"):""].filter(Boolean).join(". ");
+  S.client={qui:cap(clean(a.qui))+(a.situation?". "+cap(clean(a.situation)):"")+".",probleme:cap(clean(a.probleme))+".",frustrations:fr?fr+".":"À préciser.",veut:cap(clean(a.objectif||a.resultat))+(a.pourquoi?". C'est important maintenant car "+low(clean(a.pourquoi)):"")+".",transformation:"Passer de « "+low(clean(a.situation||a.probleme))+" » à « "+low(clean(a.resultat||a.objectif))+" »."};
+  if(!silent){save();render();}
+}
+
+/* ================= étape 3 ================= */
+function recFormats(){
+  var t=S.a1.temps,ik=S.idea?S.idea.fk:"";
+  return FORMATS.filter(function(f){return f.k!=="autre";}).map(function(f){var s=0,why=[];
+    if(f.k===ik){s+=3;why.push("il correspond à l'idée que tu as choisie");}
+    if(f.fit.indexOf(t)>-1){s+=2;why.push("il est réaliste avec le temps que tu as indiqué");}
+    if(f.diff==="Facile"||f.diff==="Très facile"){s+=1;why.push("il est simple à créer pour un premier produit");}
+    return {f:f,s:s,why:why};}).sort(function(a,b){return b.s-a.s;});
+}
+function fcard(x,i,rec){
+  var f=x.f,sel=S.format===f.k;
+  return '<div class="opt'+(sel?" sel":"")+'" style="animation-delay:'+(i*40)+'ms">'+(rec?'<span class="tagr">Recommandé pour toi</span>':'')+'<h3>'+f.e+' '+esc(f.label)+'</h3>'+(x.why&&x.why.length?'<div class="why"><b>Pourquoi :</b> '+esc(x.why.join(", "))+'.</div>':'<p class="kv">'+esc(cap(f.pour))+'.</p>')+'<p class="kv"><b>Il contiendrait :</b> '+esc(f.contient)+'.</p><div class="meta"><span>'+esc(f.diff)+'</span><span>⏱ '+esc(f.temps)+'</span><span>💶 '+f.min+' à '+f.max+' €</span></div><button class="btn '+(sel?"":"pink")+' sm" data-format="'+f.k+'">'+(sel?"✓ Format choisi":"💗 Je choisis ce format")+'</button></div>';
+}
+function step3(){
+  var h=head(3,"Choisir mon format","Voici les formats les plus adaptés à tes réponses. C'est une recommandation : choisis celui qui te ressemble.");
+  var r=recFormats(),top=r.slice(0,3),rest=r.slice(3);
+  h+='<div class="grid3">'+top.map(function(x,i){return fcard(x,i,true);}).join("")+'</div>';
+  if(AI){h+='<div class="coach">'+(S._busy3?thinking("Ton assistante analyse ton projet…"):(S.coach3?'<div class="coachtxt"><b>💬 L\'avis de ton assistante</b>'+md(S.coach3)+'</div>':''))+'<button class="btn ghost sm" data-act="coach3">💬 '+(S.coach3?"Redemander l'avis":"Demander l'avis de mon assistante")+'</button></div>';}
+  var open=S.format&&top.every(function(x){return x.f.k!==S.format;});
+  h+='<details class="card" style="margin-top:18px" '+(open?"open":"")+'><summary class="sumbig">🎀 Voir tous les formats ('+(rest.length+1)+')</summary><div class="grid3" style="margin-top:18px">'+rest.map(function(x,i){return fcard(x,i,false);}).join("")+fcard({f:fmt("autre"),why:[]},0,false)+'</div></details>';
+  if(S.format==="autre")h+='<div class="synth"><h3>✨ Décris ton format</h3><textarea class="inp" rows="2" data-bind="autre" placeholder="Ex. : un calendrier de l\'Avent de 24 mini-défis beauté">'+esc(S.autre)+'</textarea></div>';
+  if(S.format==="bundle")h+='<div class="synth"><h3>🗂️ Compose ton bundle</h3><p class="mini">Choisis 2 à 4 formats à réunir.</p><div class="chips">'+FORMATS.filter(function(f){return ["bundle","autre"].indexOf(f.k)<0;}).map(function(f){return '<button class="chip'+(S.bundle.indexOf(f.k)>-1?" on":"")+'" data-bundle="'+f.k+'">'+f.e+" "+esc(f.label)+'</button>';}).join("")+'</div></div>';
+  var ok=!!S.format&&(S.format!=="autre"||clean(S.autre))&&(S.format!=="bundle"||S.bundle.length>=2);
+  return h+nav(2,ok?"Construire mon concept →":"","to4",!ok);
+}
+function coach3(){
+  S._busy3=true;render();
+  var cand=recFormats().slice(0,5).map(function(x){return x.f.label;}).join(", ");
+  AI(RULES+"\n\n"+brief()+"\n\nLa créatrice hésite sur le format de son produit. Formats envisagés : "+cand+(S.format?" (elle a sélectionné : "+flabel()+")":"")+". En 6 à 10 lignes, dis-lui quel format te semble le plus pertinent pour SA cliente et SON idée, pourquoi, ce que contiendrait concrètement le produit dans ce format, et une alternative. Utilise des puces « - ». Pas de titre.",{})
+  .then(function(r){S.coach3=r.text;}).catch(function(e){toast(aiErr(e));})
+  .then(function(){S._busy3=false;save();render();});
+}
+
+/* ================= étape 4 ================= */
+function step4(){
+  var h=head(4,"Construire mon concept","On donne une identité à ton produit : un nom, une promesse et un positionnement clairs.");
+  if(S._busy4)return h+thinking("Ton assistante travaille sur ton concept…");
+  if(!S.names.length)S.names=genNames();
+  h+='<h3 class="h3">1. Choisis ton nom</h3><div class="grid3">'+S.names.map(function(x,i){var sel=S.name&&S.name.nom===x.nom;return '<div class="opt'+(sel?" sel":"")+'" style="animation-delay:'+(i*50)+'ms"><span class="tagr">'+esc(x.angle||"")+'</span><h3>'+esc(x.nom)+'</h3><p class="sub">'+esc(x.sous||"")+'</p><p class="kv">'+esc(x.pour||"")+'</p><button class="btn '+(sel?"":"pink")+' sm" data-name="'+i+'">'+(sel?"✓ Nom choisi":"💗 Je choisis ce nom")+'</button></div>';}).join("")+
+  '<div class="opt"><span class="tagr">Ton propre nom</span><h3>J\'ai déjà mon nom</h3><input class="inp" id="ownName" placeholder="Écris ton nom" value="'+esc(S.name&&S.name.own?S.name.nom:"")+'" style="margin:8px 0 10px"><input class="inp" id="ownSub" placeholder="Sous-titre (facultatif)" value="'+esc(S.name&&S.name.own?S.name.sous:"")+'" style="margin-bottom:12px"><button class="btn ghost sm" data-act="ownName">Utiliser ce nom</button></div></div>'+
+  '<div class="actions"><button class="btn ghost sm" data-act="moreNames">✨ D\'autres noms</button></div>';
+  if(S.name&&S.concept){
+    h+='<h3 class="h3">2. Ton concept</h3><div class="synth"><div class="field"><span class="lab">Nom et sous-titre</span><input class="inp" data-bind="name.nom" value="'+esc(S.name.nom)+'" style="margin-bottom:8px"><input class="inp" data-bind="name.sous" value="'+esc(S.name.sous||"")+'"></div>'+field("La promesse","promesse","concept")+
+    (AI?'<div class="chips" style="margin:-4px 0 14px"><button class="chip sug" data-act="promos">✨ Rendre ma promesse plus précise</button>'+S.promos.map(function(p,i){return '<button class="chip" data-promo="'+i+'">'+esc(p)+'</button>';}).join("")+'</div>':'')+
+    '<div class="grid2">'+field("Avant","avant","concept")+field("Après","apres","concept")+'</div>'+field("La grande promesse (claire et réaliste)","grande","concept")+
+    '<span class="lab" style="display:block;margin:10px 0 6px">Le positionnement</span><div class="grid3">'+field("Pourquoi ce produit existe","pourquoi","concept",3)+field("Pour qui","pourqui","concept",3)+field("Le problème précis","probleme","concept",3)+'</div>'+
+    '<div class="soft gold2" style="margin:8px 0 0">Relis ta grande promesse : elle doit être réaliste, sans promettre de revenus ni de résultats garantis.</div></div>';
+  }
+  return h+nav(3,S.name&&S.concept?"Créer ma structure →":"","to5",!(S.name&&S.concept));
+}
+function pickName(x){
+  S.name=x;var local=genConcept();
+  if(!AI){S.concept=local;save();render();return;}
+  S._busy4=true;render();
+  aiJSON(RULES+"\n\n"+brief()+"\n\nRédige le concept du produit « "+x.nom+" ». La promesse doit être précise, mesurable si possible, réaliste. "+JSONONLY+" {\"promesse\":\"À la fin de …, tu seras capable de …\",\"avant\":\"\",\"apres\":\"\",\"grande\":\"une phrase claire et réaliste\",\"pourquoi\":\"\",\"pourqui\":\"\",\"probleme\":\"\"}")
+  .then(function(r){S.concept=(r&&r.promesse&&r.grande)?Object.assign(local,r):local;}).catch(function(e){S.concept=local;toast(aiErr(e));})
+  .then(function(){S._busy4=false;save();render();});
+}
+function moreNames(){
+  if(!AI){S.names=genNames().map(function(x,i){return Object.assign({},x,{nom:x.nom+[" : l'essentiel"," Express"," Sérénité"," Pas à Pas"," Déclic"][i%5]});});save();render();return;}
+  S._busy4=true;render();
+  aiJSON(RULES+"\n\n"+brief()+"\n\nPropose 5 noms de produit percutants, courts et faciles à retenir, différents de : "+S.names.map(function(n){return n.nom;}).join(" ; ")+". "+JSONONLY+" {\"noms\":[{\"nom\":\"\",\"sous\":\"sous-titre\",\"angle\":\"\",\"pour\":\"pourquoi il fonctionne\"}]}")
+  .then(function(r){var a=(r&&r.noms||[]).filter(function(x){return x&&x.nom;});if(a.length>=3)S.names=a.slice(0,5);}).catch(function(e){toast(aiErr(e));})
+  .then(function(){S._busy4=false;save();render();});
+}
+function promos(){
+  S._busy4=true;render();
+  aiJSON(RULES+"\n\n"+brief()+"\n\nPropose 3 versions plus précises et plus concrètes de la promesse actuelle (« "+(S.concept?S.concept.promesse:"")+" »), chacune en une phrase, réaliste, sans résultat garanti. "+JSONONLY+" {\"versions\":[\"\",\"\",\"\"]}","quick")
+  .then(function(r){S.promos=(r&&r.versions||[]).filter(Boolean).slice(0,3);}).catch(function(e){toast(aiErr(e));})
+  .then(function(){S._busy4=false;save();render();});
+}
+
+/* ================= étape 5 ================= */
+function step5(){
+  var h=head(5,"Créer ma structure","Voici une structure pensée pour une débutante. Modifie, déplace, ajoute ou supprime des parties : c'est ton produit.");
+  if(S._busy5)return h+thinking("Ton assistante améliore ta structure…");
+  if(!S.structure.length){S.structure=genStructure(false);save();}
+  S.structure.forEach(function(m){if(!m.id)m.id=uid();});
+  h+='<div class="soft">Garde uniquement ce qui aide vraiment ta cliente à obtenir sa transformation. Chaque partie deviendra une vraie partie de ton produit en phase 2.</div>';
+  h+=S.structure.map(function(md_,i){
+    return '<div class="mod" style="animation-delay:'+(i*40)+'ms"><div class="modh"><span class="n">'+(i+1)+'</span><input data-bind="structure.'+i+'.titre" value="'+esc(md_.titre)+'" aria-label="Titre de la partie '+(i+1)+'"><button class="icon" data-up="'+i+'" title="Monter" '+(i===0?"disabled":"")+'>↑</button><button class="icon" data-del="'+i+'" title="Supprimer">🗑️</button></div><div class="modb">'+
+    ["objectif","contenu","points","exercice","resultat"].map(function(k){return '<div class="field"><span class="lab">'+{objectif:"Objectif",contenu:"Contenu",points:"Points à traiter",exercice:"Exercice",resultat:"Résultat attendu"}[k]+'</span><textarea class="inp" rows="2" data-bind="structure.'+i+'.'+k+'">'+esc(md_[k])+'</textarea></div>';}).join("")+'</div></div>';
+  }).join("");
+  h+='<div class="actions"><button class="btn ghost sm" data-act="improveStruct">✨ Améliorer la structure</button><button class="btn ghost sm" data-act="addPart">➕ Ajouter une partie</button><button class="btn '+(S.structureOk?"":"pink")+'" data-act="validStruct">'+(S.structureOk?"✓ Structure validée":"💗 Valider ma structure")+'</button></div>';
+  return h+nav(4,S.structureOk?"Ajouter mes bonus →":"","to6",!S.structureOk);
+}
+function improveStruct(){
+  S.structureOk=false;
+  if(!AI){S.structure=genStructure(!S._variant);S._variant=!S._variant;save();render();toast("Nouvelle proposition de structure ✨");return;}
+  S._busy5=true;render();
+  aiJSON(RULES+"\n\n"+brief()+"\n\nFormat : "+flabel()+" ("+fmt(S.format).spec+")\nStructure actuelle : "+JSON.stringify(S.structure.map(function(m){return {titre:m.titre,objectif:m.objectif,contenu:m.contenu,points:m.points,exercice:m.exercice,resultat:m.resultat};}))+"\n\nAméliore cette structure pour une cliente débutante : progressive, logique, adaptée au format, sans partie inutile, 3 à 8 parties. "+JSONONLY+" {\"parties\":[{\"titre\":\"\",\"objectif\":\"\",\"contenu\":\"\",\"points\":\"\",\"exercice\":\"\",\"resultat\":\"\"}]}")
+  .then(function(r){var a=(r&&r.parties||[]).filter(function(x){return x&&x.titre;});S.structure=(a.length>=3?a.slice(0,10):genStructure(true)).map(function(x){return Object.assign({id:uid()},x);});})
+  .catch(function(e){toast(aiErr(e));})
+  .then(function(){S._busy5=false;save();render();toast("Nouvelle proposition de structure ✨");});
+}
+
+/* ================= étape 6 ================= */
+function step6(){
+  var h=head(6,"Ajouter mes bonus","Un bon bonus aide ta cliente à appliquer ton produit. Choisis 1 à 3 bonus vraiment utiles : ils seront créés eux aussi en phase 2.");
+  if(S._busy6)return h+thinking("Ton assistante cherche des bonus utiles…");
+  if(!S.bonusList.length){S.bonusList=genBonus();save();}
+  var selN=S.bonus.map(function(b){return b.nom;});
+  h+='<div class="grid2">'+S.bonusList.map(function(b,i){var on=selN.indexOf(b.nom)>-1;return '<div class="opt'+(on?" sel":"")+'" style="animation-delay:'+(i*50)+'ms"><h3>🎁 '+esc(b.nom)+'</h3><p class="kv"><b>Contenu :</b> '+esc(b.contenu)+'</p><p class="kv"><b>Intérêt pour ta cliente :</b> '+esc(b.interet||"")+'</p><div class="meta"><span>Valeur perçue : '+esc(b.valeur||"Moyenne")+'</span></div><button class="btn '+(on?"":"pink")+' sm" data-bonus="'+i+'">'+(on?"✓ Ajouté":"💗 Ajouter ce bonus")+'</button></div>';}).join("")+'</div>';
+  if(S.bonus.length)h+='<div class="synth" style="margin-top:22px"><h3>🎁 Mes bonus</h3>'+S.bonus.map(function(b,i){return '<div class="field"><span class="lab">Bonus '+(i+1)+'</span><input class="inp" data-bind="bonus.'+i+'.nom" value="'+esc(b.nom)+'" style="margin-bottom:6px"><textarea class="inp" rows="2" data-bind="bonus.'+i+'.contenu">'+esc(b.contenu)+'</textarea></div>';}).join("")+'</div>';
+  h+='<div class="actions"><button class="btn ghost sm" data-act="moreBonus">✨ D\'autres idées de bonus</button></div>';
+  return h+nav(5,S.bonus.length?"Définir mon offre →":"","to7",!S.bonus.length);
+}
+function moreBonus(){
+  if(!AI){toast("Tu peux renommer un bonus pour l'adapter à ton produit 💕");return;}
+  S._busy6=true;render();
+  aiJSON(RULES+"\n\n"+brief()+"\n\nPropose 5 bonus réellement utiles pour aider la cliente à appliquer ce produit (pas de bonus artificiel). "+JSONONLY+" {\"bonus\":[{\"nom\":\"\",\"contenu\":\"\",\"valeur\":\"Moyenne|Élevée\",\"interet\":\"\"}]}","quick")
+  .then(function(r){var a=(r&&r.bonus||[]).filter(function(x){return x&&x.nom;});if(a.length>=3)S.bonusList=a.slice(0,5);}).catch(function(e){toast(aiErr(e));})
+  .then(function(){S._busy6=false;save();render();});
+}
+
+/* ================= étape 7 ================= */
+function calcTxt(){
+  var p=parseFloat(S.a7.prix),o=parseFloat(S.a7.objectif),v=parseFloat(S.a7.ventes);
+  if(p>0&&o>0)return "Au prix de "+p+" €, il faudrait environ "+Math.ceil(o/p)+" ventes pour atteindre "+o+" € de chiffre d'affaires (avant frais et cotisations). C'est un calcul, pas une prévision.";
+  if(p>0&&v>0)return v+" ventes à "+p+" € représenteraient environ "+Math.round(p*v)+" € de chiffre d'affaires (avant frais et cotisations). C'est un calcul, pas une prévision.";
+  return "";
+}
+function step7(){
+  var f=fmt(S.format),lo=f.min,hi=f.max+(S.bonus.length>=2?5:0);
+  var h=head(7,"Définir mon offre","Il n'existe pas de « prix parfait ». Voici une fourchette et les éléments qui peuvent la faire varier.");
+  h+='<div class="grid2"><div class="card"><h3 class="h3" style="margin-top:0">💶 Repère de prix</h3><p class="bigprice gold">'+lo+' à '+hi+' €</p><p class="mini">Pour '+G(f).un+esc(low(flabel()))+' low-ticket, avec '+S.bonus.length+' bonus. C\'est un repère indicatif, pas une règle.</p><p class="kv" style="margin-top:14px"><b>Ce qui peut faire monter le prix :</b> une transformation importante, beaucoup de contenu utile, des bonus qui font gagner du temps, un positionnement premium.</p><p class="kv"><b>Ce qui peut le faire baisser :</b> un premier produit, une audience qui te découvre, un contenu très court.</p></div>'+
+  '<div class="card"><h3 class="h3" style="margin-top:0">📝 Mes infos (facultatif)</h3><div class="field"><span class="lab">Prix envisagé (€)</span><input class="inp" type="number" min="0" data-bind="a7.prix" value="'+esc(S.a7.prix)+'" placeholder="'+Math.round((lo+hi)/2)+'"></div><div class="field"><span class="lab">Mon audience</span><input class="inp" data-bind="a7.audience" value="'+esc(S.a7.audience)+'" placeholder="Ex. : 800 abonnées sur Instagram"></div><div class="field"><span class="lab">Plateforme de vente</span><div class="chips">'+["Stan Store","Beacons","Systeme.io","Etsy","Autre"].map(function(o){return '<button class="chip'+(S.a7.plateforme===o?" on":"")+'" data-pick="a7.plateforme" data-val="'+o+'">'+o+'</button>';}).join("")+'</div></div><div class="grid2"><div class="field"><span class="lab">Objectif de CA (€)</span><input class="inp" type="number" min="0" data-bind="a7.objectif" value="'+esc(S.a7.objectif)+'"></div><div class="field"><span class="lab">Ventes envisagées</span><input class="inp" type="number" min="0" data-bind="a7.ventes" value="'+esc(S.a7.ventes)+'"></div></div><p id="calc" class="calc">'+calcTxt()+'</p></div></div>';
+  h+='<div class="actions"><button class="btn '+(S.offer?"ghost":"pink")+'" data-act="genOffer">'+(S.offer?"✨ Mettre à jour mon offre":"✨ Créer mon offre")+'</button></div>';
+  if(S.offer)h+='<div class="synth"><h3>💰 Mon offre</h3>'+field("Produit principal","produit","offer")+field("Bonus","bonus","offer",3)+field("Promesse","promesse","offer")+'<div class="grid2">'+field("Prix envisagé","prix","offer")+field("Positionnement","positionnement","offer")+'</div></div>';
+  return h+nav(6,S.offer?"Valider mon projet →":"","to8",!S.offer);
+}
+function genOffer(){
+  var f=fmt(S.format),p=parseFloat(S.a7.prix);
+  S.offer={produit:(S.name?S.name.nom:"Mon produit")+" : "+low(flabel())+(S.name&&S.name.sous?" · "+S.name.sous:""),bonus:S.bonus.map(function(b){return "🎁 "+b.nom;}).join("\n"),promesse:S.concept?S.concept.grande:"",prix:(p>0?p+" €":(f.min+" à "+f.max+" € (à décider)"))+(S.a7.plateforme?" · vendu sur "+S.a7.plateforme:""),positionnement:G(f).Un+low(flabel())+" accessible, pensé"+(FEM.indexOf(f.k)>-1?"e":"")+" pour "+low(clean(S.a2.qui||"ta cliente"))+"."};
+  save();render();toast("Ton offre est prête 💰");
+}
+
+/* ================= étape 8 ================= */
+function step8(){
+  var h=head(8,"Je valide mon projet","Vérifie que tout est juste avant que ton assistante commence à créer ton produit. Tu pourras toujours revenir modifier.");
+  function rc(t,v,g){return '<div class="rcard"><div class="rch"><b>'+t+'</b><button class="linkbtn" data-go="'+g+'">Modifier</button></div><div>'+(v||'<i class="empty">À compléter</i>')+'</div></div>';}
+  h+='<div class="grid2">'+
+   rc("💡 Mon idée",S.idea?esc(S.idea.nom):"",1)+
+   rc("👩‍💻 Ma cliente",S.client?esc(S.client.qui):"",2)+
+   rc("🎀 Mon format",S.format?esc(flabel()):"",3)+
+   rc("✨ Mon produit",S.name?"<b>"+esc(S.name.nom)+"</b>"+(S.name.sous?"<br><i>"+esc(S.name.sous)+"</i>":""):"",4)+
+   rc("💗 Ma promesse",S.concept?esc(S.concept.promesse):"",4)+
+   rc("💰 Mon offre",S.offer?esc(S.offer.prix):"",7)+
+   '</div>'+
+   '<div class="grid2">'+rc("📚 Ma structure",S.structure.length?"<ol>"+S.structure.map(function(m){return "<li>"+esc(m.titre)+"</li>";}).join("")+"</ol>":"",5)+rc("🎁 Mes bonus",S.bonus.length?"<ul>"+S.bonus.map(function(b){return "<li>"+esc(b.nom)+"</li>";}).join("")+"</ul>":"",6)+'</div>';
+  h+='<div class="card"><h3 class="h3" style="margin-top:0">🎙️ Le ton de ton produit</h3><div class="chips">'+["Chaleureux et bienveillant","Simple et direct","Doux et féminin","Premium et élégant","Motivant et énergique"].map(function(t){return '<button class="chip'+(S.tone===t?" on":"")+'" data-tone="'+esc(t)+'">'+esc(t)+'</button>';}).join("")+'</div></div>';
+  var ready=S.idea&&S.client&&S.format&&S.name&&S.concept&&S.structure.length;
+  h+='<div class="launch"><div class="fl spk" style="left:8%;top:20%"></div><div class="fl spk" style="right:10%;bottom:20%;animation-delay:-1.4s"></div><h2>Prête à créer ton produit ?</h2><p>'+(S.sections.length?"Ton produit est déjà en cours de création : on reprend là où tu t'es arrêtée.":"Ton assistante va créer ton produit partie par partie. Tu valides chaque partie, tu demandes des modifications quand tu veux.")+'</p>'+
+   (AI?"":'<p class="mini" style="color:#fff">Sans l\'assistance IA, tu pourras créer chaque partie avec la consigne à copier dans ton propre outil d\'IA.</p>')+
+   '<button class="btn big" data-act="create" '+(ready?"":"disabled")+'>'+(S.sections.length?"✨ CONTINUER MA CRÉATION":"✨ CRÉER MON PRODUIT")+'</button></div>';
+  return h+nav(7,"","");
+}
+
+/* ================= étape 9 : le studio ================= */
+var STAT={todo:["○","À créer"],draft:["✎","À relire"],ok:["✓","Validée"],stale:["⚠","À mettre à jour"]};
+var SUGS=["Plus simple","Plus concret","Plus détaillé","Plus court","Plus féminin","Plus premium","Plus motivant","Ajoute un exemple","Ajoute un exercice","Ajoute une astuce"];
+var ADDS=[["un exemple concret","🌸 Un exemple"],["un exercice pratique","✏️ Un exercice"],["une checklist","✅ Une checklist"],["un tableau à remplir","📊 Un tableau"],["une astuce","💡 Une astuce"],["un modèle prêt à utiliser","🧩 Un modèle"]];
+function step9(){
+  var h=head(9,"Je crée mon produit","Ton assistante crée chaque partie avec toi. Relis, valide, ou demande une modification avec tes mots.");
+  if(!AI&&AIstate!=="attente")h+=noAiNote();
+  if(S.sections.length&&signature()!==S.sig){
+    h+='<div class="dirty"><b>🔄 Ton projet a changé depuis la création de certaines parties.</b><p>Veux-tu mettre à jour les parties concernées pour qu\'elles restent cohérentes ?</p><div class="actions"><button class="btn pink sm" data-act="dirtyYes">OUI, METTRE À JOUR</button><button class="btn ghost sm" data-act="dirtyNo">NON, GARDER MES PARTIES</button></div></div>';
+  }
+  var p=progress(),okN=S.sections.filter(function(x){return x.status==="ok";}).length,tot=S.sections.length;
+  var side='<aside class="side"><div class="dash"><span class="dk">MON PRODUIT</span><b class="dn">'+esc(S.name?S.name.nom:"Mon produit")+'</b><span class="df">'+esc(flabel())+(S.version>1?" · Version "+S.version:"")+'</span>'+
+   '<p class="dp"><b>Cliente :</b> '+esc(short(S.client?S.client.qui:"",14))+'</p><p class="dp"><b>Promesse :</b> '+esc(short(S.concept?S.concept.promesse:"",18))+'</p>'+
+   '<div class="dbar"><i style="width:'+p+'%"></i></div><div class="dstats"><span><b>'+p+' %</b> créé</span><span><b>'+okN+'</b> validée'+(okN>1?"s":"")+'</span><span><b>'+(tot-okN)+'</b> restante'+(tot-okN>1?"s":"")+'</span></div></div>'+
+   '<div class="slist">'+S.sections.map(function(x,i){var s=STAT[x.status]||STAT.todo;var busy=S._busy&&S._busy.i===i;return '<button class="si s-'+x.status+(i===S.cur?" cur":"")+'" data-sec="'+i+'"><span class="sic">'+(busy?'<i class="spin"></i>':s[0])+'</span><span class="sit">'+esc(x.titre)+'<small>'+(busy?"En création…":s[1])+'</small></span></button>';}).join("")+'</div>'+
+   '<div class="sidebtns"><button class="btn ghost sm" data-act="chatOpen">💬 Mon assistante</button><button class="btn sm" data-act="finish">✅ Finaliser mon produit</button></div></aside>';
+  var sec=S.sections[S.cur]||S.sections[0];
+  var i=S.cur,busy=S._busy&&S._busy.i===i,other=S._busy&&S._busy.i!==i;
+  var st=STAT[sec.status]||STAT.todo;
+  var ed='<section class="editor"><div class="edh"><span class="pn">'+(i+1)+' / '+tot+'</span><h3>'+esc(sec.titre)+'</h3><span class="stp s-'+sec.status+'">'+st[0]+' '+st[1]+'</span></div>';
+  if(busy){
+    ed+=thinking(S._busy.text?"Ton assistante écrit ta partie…":"Ton assistante prépare ta partie… (cela peut prendre jusqu'à une minute)",true)+'<div class="doc live" id="live">'+md(S._busy.text||"")+'</div>';
+  }else if(S._edit===i){
+    ed+='<p class="mini">Modifie librement le texte. Les repères de mise en forme : « # » titres, « - » puces, « - [ ] » cases à cocher, « ____ » lignes à remplir.</p><textarea class="inp editarea" id="editarea">'+esc(sec.content)+'</textarea><div class="actions"><button class="btn pink sm" data-act="saveEdit">💾 Enregistrer</button><button class="btn ghost sm" data-act="cancelEdit">Annuler</button></div>';
+  }else if(sec.content){
+    ed+='<div class="doc">'+md(sec.content)+'</div><p class="mini">'+words(sec.content)+' mots'+(sec.history&&sec.history.length?' · <button class="linkbtn" data-act="undo">↩ Revenir à la version précédente</button>':'')+'</p>';
+    if(sec.status==="stale")ed+='<div class="dirty"><b>⚠ Cette partie doit être mise à jour</b><p>Ton projet a changé depuis sa création.</p><button class="btn pink sm" data-act="refresh" '+(AI&&!other?"":"disabled")+'>🔄 METTRE À JOUR CETTE PARTIE</button></div>';
+    ed+='<div class="eact"><button class="btn '+(sec.status==="ok"?"ghost":"pink")+' sm" data-act="validate">'+(sec.status==="ok"?"✓ Validée":"✓ VALIDER")+'</button><button class="btn ghost sm" data-act="edit">✏️ MODIFIER</button>'+
+     (AI?'<button class="btn ghost sm" data-act="improve" '+(other?"disabled":"")+'>✨ AMÉLIORER</button><button class="btn ghost sm" data-act="regen" '+(other?"disabled":"")+'>🔄 RÉGÉNÉRER</button>':'')+'</div>';
+    if(AI){
+      ed+='<div class="req"><b>💬 Ta demande</b><p class="mini">Dis-le avec tes mots : « Ajoute un exemple », « Fais plus simple », « Plus adapté aux débutantes »…</p><textarea class="inp" id="reqbox" rows="2" placeholder="Qu\'aimerais-tu changer dans cette partie ?">'+esc(S._req||"")+'</textarea>'+
+       '<div class="chips">'+SUGS.map(function(s){return '<button class="chip sug" data-sug="'+esc(s)+'">'+esc(s)+'</button>';}).join("")+'</div>'+
+       '<div class="chips"><span class="mini" style="align-self:center">➕ Ajouter :</span>'+ADDS.map(function(a){return '<button class="chip" data-addel="'+esc(a[0])+'" '+(other?"disabled":"")+'>'+a[1]+'</button>';}).join("")+'</div>'+
+       '<div class="actions"><button class="btn pink sm" data-act="applyReq" '+(other?"disabled":"")+'>✨ APPLIQUER MA DEMANDE</button></div></div>';
+    }
+  }else{
+    if(AI){
+      ed+='<div class="empty"><span>🪄</span><p><b>Cette partie n\'est pas encore créée.</b><br>Ton assistante va la rédiger à partir de tout ton projet.</p><button class="btn big" data-act="gen" '+(other?"disabled":"")+'>✨ CRÉER CETTE PARTIE</button>'+(other?'<p class="mini">Une autre partie est en cours de création : patiente quelques instants.</p>':'')+'</div>';
+    }else{
+      ed+='<div class="manual"><p><b>Crée cette partie avec ton outil d\'IA</b> (Claude, ChatGPT, Gemini…) :</p><ol><li>Copie la consigne ci-dessous.</li><li>Colle-la dans ton outil d\'IA.</li><li>Colle le résultat dans le cadre, puis enregistre.</li></ol><div class="copyp"><button class="btn ghost sm" data-act="copyPrompt">📋 Copier la consigne</button><details><summary>Voir la consigne</summary><pre>'+esc(sectionPrompt(sec,"create"))+'</pre></details></div><textarea class="inp editarea" id="pastearea" placeholder="Colle ici le texte créé, ou écris ta partie toi-même"></textarea><div class="actions"><button class="btn pink sm" data-act="savePaste">💾 Enregistrer cette partie</button></div></div>';
+    }
+  }
+  ed+='<div class="actions between"><button class="btn ghost sm" data-act="prevSec" '+(i===0?"disabled":"")+'>← Partie précédente</button>'+(i<tot-1?'<button class="btn ghost sm" data-act="nextSec">Partie suivante →</button>':'<button class="btn pink sm" data-act="finish">Finaliser mon produit →</button>')+'</div></section>';
+  return h+'<div class="studio">'+side+ed+'</div>';
+}
+
+/* ================= assistante (tiroir) ================= */
+function renderChat(){
+  var box=$("#chatmsgs");if(!box)return;
+  var h=S.chat.length?"":'<div class="cmsg a"><div>Coucou 💕 Je suis ton assistante. Je connais tout ton projet : pose-moi tes questions sur ton produit, je t\'aide à l\'améliorer.</div></div>';
+  h+=S.chat.map(function(m){return '<div class="cmsg '+(m.role==="user"?"u":"a")+'"><div>'+(m.role==="user"?esc(m.content):md(m.content))+'</div></div>';}).join("");
+  if(S._chatBusy)h+='<div class="cmsg a"><div id="chatlive"><span class="dots"><i></i><i></i><i></i></span></div></div>';
+  box.innerHTML=h;box.scrollTop=box.scrollHeight;
+  var ok=!!AI;$("#chatin").disabled=!ok||!!S._chatBusy;$("#chatsend").disabled=!ok||!!S._chatBusy;
+  $("#chatnote").textContent=ok?"":"Ton assistante est disponible dans la version avec l'IA (dans Claude).";
+}
+function openChat(){$("#chat").classList.add("on");$("#veil").classList.add("on");renderChat();setTimeout(function(){var c=$("#chatin");if(c&&!c.disabled)c.focus();},300);}
+
+/* ================= étape 10 : mon produit ================= */
+function step10(){
+  var h=head(10,"Mon produit","Dernière vérification, puis ton produit est prêt à être téléchargé.");
+  var notOk=S.sections.filter(function(x){return x.status!=="ok";});
+  h+='<div class="card"><h3 class="h3" style="margin-top:0">🔍 Contrôle qualité</h3>';
+  if(notOk.length)h+='<div class="soft gold2">'+notOk.length+' partie'+(notOk.length>1?"s":"")+' ne '+(notOk.length>1?"sont":"est")+' pas encore validée'+(notOk.length>1?"s":"")+' : '+esc(notOk.map(function(x){return x.titre;}).join(", "))+'. <button class="linkbtn" data-act="toFirstTodo">Les ouvrir</button></div>';
+  if(S._qcBusy)h+=thinking("Ton assistante relit tout ton produit… (jusqu'à deux minutes)");
+  else if(!S.qc)h+='<p>Ton assistante vérifie la cohérence, la qualité, l\'utilité et l\'expérience de lecture de tout ton produit, puis te propose les corrections utiles.</p><button class="btn pink" data-act="qc">🔍 LANCER LE CONTRÔLE QUALITÉ</button>';
+  else{
+    var q=S.qc,sc=Math.max(0,Math.min(100,parseInt(q.score,10)||0));
+    h+='<div class="qc"><div class="gauge" style="background:conic-gradient(#C9973A '+sc+'%,#FFE7F0 0)"><b>'+sc+'</b><small>/100</small></div><div><p>'+esc(q.resume||"")+'</p>'+(q.note?'<p class="mini">'+esc(q.note)+'</p>':'')+'</div></div>'+
+     '<ul class="qcl">'+(q.criteres||[]).map(function(c){return '<li class="'+(c.ok?"ok":"ko")+'"><span>'+(c.ok?"✓":"!")+'</span><div><b>'+esc(c.nom)+'</b><br>'+esc(c.commentaire||"")+'</div></li>';}).join("")+'</ul>';
+    if((q.corrections||[]).length)h+='<h4 class="h4">Corrections proposées</h4>'+q.corrections.map(function(c,i){return '<div class="fix"><div><b>'+esc(c.partie)+'</b> · '+esc(c.probleme)+'<br><i>'+esc(c.demande)+'</i></div><button class="btn ghost sm" data-fix="'+i+'">Corriger</button></div>';}).join("");
+    h+='<div class="actions"><button class="btn ghost sm" data-act="qc">🔄 Relancer le contrôle</button></div>';
+  }
+  h+='</div>';
+  if(S.qc){
+    var tw=S.sections.reduce(function(a,x){return a+words(x.content);},0);
+    h+='<div class="ready"><div class="fl spk" style="left:7%;top:16%"></div><div class="fl spk" style="right:9%;bottom:18%;animation-delay:-1.4s"></div><div class="fl bub" style="width:140px;height:140px;right:-40px;top:-40px;opacity:.35"></div>'+
+     '<h2>TON PRODUIT EST PRÊT ✨</h2><p>Tu n\'es plus au stade de l\'idée.<br>Tu as maintenant un véritable produit digital prêt à être amélioré, présenté et vendu.</p>'+
+     '<div class="rsum"><div><b>'+esc(S.name?S.name.nom:"")+'</b><span>'+esc(flabel())+'</span></div><div><b>'+S.sections.length+'</b><span>parties</span></div><div><b>'+tw+'</b><span>mots</span></div><div><b>'+S.bonus.length+'</b><span>bonus</span></div></div></div>'+
+     '<div class="actions center noprint"><button class="btn big" data-act="dlHtml">⬇️ TÉLÉCHARGER MON PRODUIT</button><button class="btn ghost" data-act="preview">👀 VOIR MON PRODUIT</button><button class="btn ghost" data-act="printDoc">🖨️ IMPRIMER / PDF</button></div>'+
+     '<div class="actions center noprint"><button class="btn ghost sm" data-act="dlTxt">📄 Version texte</button><button class="btn ghost sm" data-act="copyAll">📋 Copier tout</button><button class="btn ghost sm" data-go="9">✏️ Modifier mon produit</button><button class="btn ghost sm" data-act="newVersion">🌱 Créer une nouvelle version</button><button class="linkbtn" data-act="reset">Commencer un nouveau produit</button></div>'+
+     '<div class="card"><h3 class="h3" style="margin-top:0">🚀 Et maintenant ?</h3><ul class="soft"><li>Complète les passages <mark>[À PERSONNALISER]</mark> avec ton vécu : c\'est ce qui rend ton produit unique.</li><li>Mets ton produit en page sur Canva (module 3 du cours), puis exporte-le.</li><li>Ouvre ta boutique et écris ta page de vente (modules 5 à 7).</li><li>Lance-toi avec le plan de 7 jours (module 8). 💕</li></ul></div>';
+    if(S.versions.length)h+='<div class="card"><h3 class="h3" style="margin-top:0">🗂️ Mes versions précédentes</h3>'+S.versions.map(function(v,i){return '<div class="fix"><div><b>Version '+v.v+'</b> · '+esc(v.date)+' · '+v.sections.length+' parties</div><button class="btn ghost sm" data-ver="'+i+'">Restaurer</button></div>';}).join("")+'</div>';
+  }
+  return h+'<div class="actions between noprint"><button class="btn ghost sm" data-go="9">← Retour à la création</button><span></span></div>';
+}
+function openPreview(print){
+  var p=$("#preview");
+  $("#pvdoc").innerHTML='<div class="pvcover"><span>'+esc(flabel())+'</span><h1>'+esc(S.name?S.name.nom:"Mon produit")+'</h1>'+(S.name&&S.name.sous?'<p class="s">'+esc(S.name.sous)+'</p>':'')+(S.concept?'<p>'+esc(S.concept.promesse)+'</p>':'')+'</div>'+S.sections.map(function(x){return '<section class="doc pvsec">'+md(x.content||("# "+x.titre+"\n\n(À compléter)"))+'</section>';}).join("");
+  p.classList.add("on");document.body.classList.add("pvopen");p.scrollTop=0;
+  if(print)setTimeout(function(){window.print();},400);
+}
+function closePreview(){$("#preview").classList.remove("on");document.body.classList.remove("pvopen");}
+
+/* ================= fenêtre de confirmation ================= */
+function ask(title,text,yes,no,onYes,onNo){
+  var m=$("#modal");$("#mt").textContent=title;$("#mx").textContent=text;$("#myes").textContent=yes;$("#mno").textContent=no;
+  m.classList.add("on");
+  $("#myes").onclick=function(){m.classList.remove("on");onYes&&onYes();};
+  $("#mno").onclick=function(){m.classList.remove("on");onNo&&onNo();};
+}
+
+/* ================= récapitulatif ================= */
+function renderDrawer(){
+  function r(t,v){return '<div class="rec"><b>'+t+'</b><span class="'+(v?"":"empty")+'">'+(v?esc(v):"Pas encore renseigné")+'</span></div>';}
+  var okN=S.sections.filter(function(x){return x.status==="ok";}).length;
+  $("#recap").innerHTML=r("Mon idée",S.idea?S.idea.nom:"")+r("Ma cliente",S.client?S.client.qui:"")+r("Mon format",S.format?flabel():"")+r("Mon produit",S.name?S.name.nom:"")+r("Ma promesse",S.concept?S.concept.promesse:"")+r("Ma structure",S.structure.length?S.structure.length+" parties"+(S.structureOk?" (validée)":""):"")+r("Mes bonus",S.bonus.map(function(b){return b.nom;}).join(", "))+r("Mon offre",S.offer?S.offer.prix:"")+r("Ma création",S.sections.length?progress()+" % · "+okN+" / "+S.sections.length+" parties validées":"");
+}
+function openDrawer(){$("#drawer").classList.add("on");$("#veil").classList.add("on");}
+function closeAll(){["#drawer","#chat","#veil"].forEach(function(s){$(s).classList.remove("on");});}
+
+/* ================= événements ================= */
+function setPath(path,val){var p=path.split("."),o=S;for(var i=0;i<p.length-1;i++){if(o[p[i]]==null)return;o=o[p[i]];}o[p[p.length-1]]=val;}
+function getPath(path){var p=path.split("."),o=S;for(var i=0;i<p.length;i++){if(o==null)return "";o=o[p[i]];}return o;}
+function resetFrom(level){
+  if(level<=1){S.client=null;}
+  if(level<=3){S.names=[];S.name=null;S.concept=null;S.promos=[];S.structure=[];S.structureOk=false;S.bonusList=[];S.bonus=[];S.offer=null;S.validated=false;}
+}
+function chooseFormat(k){
+  if(S.format===k)return;
+  var apply=function(){S.format=k;S.coach3=S.coach3;S.names=[];S.name=S.name&&S.name.own?S.name:null;S.concept=null;S.structure=[];S.structureOk=false;S.bonusList=[];S.offer=null;S.validated=false;save();render();toast("Format choisi 🎀");};
+  if(S.sections.some(function(x){return x.content;})){
+    ask("Changer de format ?","Ton produit est déjà en cours de création. Changer de format va reconstruire ton concept, ta structure et tes parties. Tes anciennes parties resteront dans l'historique des versions.","OUI, CHANGER","NON, GARDER",function(){snapshot();S.sections=[];S.sig="";S.qc=null;S.finished=false;apply();});
+  }else apply();
+}
+function snapshot(){
+  if(!S.sections.some(function(x){return x.content;}))return;
+  S.versions.unshift({v:S.version,date:new Date().toLocaleDateString("fr-FR"),name:S.name?S.name.nom:"",sections:JSON.parse(JSON.stringify(S.sections))});
+  S.versions=S.versions.slice(0,3);
+}
+document.addEventListener("input",function(e){
+  var el=e.target,k=el.getAttribute&&el.getAttribute("data-bind");
+  if(el.id==="reqbox"){S._req=el.value;return;}
+  if(!k)return;
+  if(k.indexOf("_ex.")===0){S._ex=S._ex||{};S._ex[k.slice(4)]=el.value;return;}
+  setPath(k,el.value);
+  if(k.indexOf("structure.")===0)S.structureOk=false;
+  save();
+  if(k.indexOf("a1.")===0){var b=$('[data-act="q1next"],[data-act="genIdeas"]');if(b)b.disabled=!q1ok();}
+  if(k.indexOf("a7.")===0){var c=$("#calc");if(c)c.textContent=calcTxt();}
+  if(k.indexOf("a2.")===0&&!S.client){var b2=$('[data-act="synthClient"]');if(b2)b2.disabled=!a2ok();}
+  if(k==="autre"){var b3=$('[data-act="to4"]');if(!b3&&clean(S.autre))render();}
+  renderDrawer();
+});
+document.addEventListener("change",function(e){var el=e.target,k=el.getAttribute&&el.getAttribute("data-bind");if(k&&k.indexOf("_ex.")===0){S._ex=S._ex||{};S._ex[k.slice(4)]=el.value;}});
+document.addEventListener("keydown",function(e){
+  if(e.key==="Escape"){closeAll();closePreview();$("#modal").classList.remove("on");}
+  if(e.target&&e.target.id==="chatin"&&e.key==="Enter"&&!e.shiftKey){e.preventDefault();$("#chatsend").click();}
+});
+document.addEventListener("click",function(e){
+  var t=e.target.closest("button,[data-sec]");if(!t||t.disabled)return;
+  var d=t.dataset;
+  if(d.go!==undefined){go(parseInt(d.go,10));return;}
+  if(d.pick){setPath(d.pick,d.val);save();render();return;}
+  if(d.add){var cur=clean(getPath(d.add));setPath(d.add,cur?(cur+", "+low(d.val)):d.val);save();render();return;}
+  if(d.set){setPath(d.set,d.val);save();render();return;}
+  if(d.idea!==undefined){var id=S.ideas[+d.idea];if(!S.idea||S.idea.nom!==id.nom){S.idea=id;resetFrom(1);if(!S.sections.length)S.format=null;}save();render();toast("Belle idée ! 💗");return;}
+  if(d.format){chooseFormat(d.format);return;}
+  if(d.bundle){var j=S.bundle.indexOf(d.bundle);if(j>-1)S.bundle.splice(j,1);else if(S.bundle.length<4)S.bundle.push(d.bundle);else toast("4 formats maximum 💕");S.structure=[];S.structureOk=false;save();render();return;}
+  if(d.name!==undefined){pickName(S.names[+d.name]);return;}
+  if(d.promo!==undefined){S.concept.promesse=S.promos[+d.promo];save();render();toast("Promesse mise à jour ✨");return;}
+  if(d.del!==undefined){if(S.structure.length<=1){toast("Garde au moins une partie 💕");return;}S.structure.splice(+d.del,1);S.structureOk=false;save();render();return;}
+  if(d.up!==undefined){var u=+d.up;if(u>0){var x=S.structure[u];S.structure[u]=S.structure[u-1];S.structure[u-1]=x;S.structureOk=false;save();render();}return;}
+  if(d.bonus!==undefined){var bo=S.bonusList[+d.bonus],ix=-1;S.bonus.forEach(function(b,q){if(b.nom===bo.nom)ix=q;});if(ix>-1)S.bonus.splice(ix,1);else{if(S.bonus.length>=5){toast("5 bonus maximum 💕");return;}S.bonus.push(Object.assign({},bo));}S.offer=null;save();render();return;}
+  if(d.tone){S.tone=d.tone;save();render();return;}
+  if(d.sec!==undefined){S.cur=+d.sec;S._edit=null;S._req="";save();render();var ed=$(".editor");if(ed&&window.innerWidth<900)ed.scrollIntoView({behavior:"smooth"});return;}
+  if(d.sug){var rb=$("#reqbox");S._req=(clean(S._req)?clean(S._req)+". ":"")+d.sug;if(rb)rb.value=S._req;return;}
+  if(d.addel){runSection(S.cur,"revise","Ajoute "+d.addel+" utile à cette partie, bien intégré au contenu existant.");return;}
+  if(d.fix!==undefined){var c=S.qc.corrections[+d.fix];var idx=0;S.sections.forEach(function(x,q){if(x.titre===c.partie)idx=q;});S.cur=idx;S._req=c.demande;go(9);toast("Ta demande est prête : vérifie-la puis clique sur « Appliquer ».");return;}
+  if(d.ver!==undefined){var v=S.versions[+d.ver];ask("Restaurer la version "+v.v+" ?","Ta version actuelle sera gardée dans l'historique.","RESTAURER","ANNULER",function(){var cur=JSON.parse(JSON.stringify(S.sections));var vv=S.version;S.sections=v.sections;S.versions.splice(+d.ver,1);S.versions.unshift({v:vv,date:new Date().toLocaleDateString("fr-FR"),name:S.name?S.name.nom:"",sections:cur});S.versions=S.versions.slice(0,3);S.qc=null;save();go(9);});return;}
+  var sec=S.sections[S.cur];
+  switch(d.act){
+    case "start":go(1);break;
+    case "resume":go(Math.min(S.maxStep,10));break;
+    case "reset":ask("Commencer un nouveau produit ?","Ton projet actuel sera effacé de cet appareil. Pense à télécharger ton produit avant.","OUI, RECOMMENCER","ANNULER",function(){S=blank();S._busy=null;hasSaved=false;save();go(0);});break;
+    case "home":go(0);break;
+    case "q1next":if(q1ok()){S.q1++;save();render();window.scrollTo({top:0,behavior:"smooth"});}break;
+    case "q1prev":if(S.q1>0){S.q1--;save();render();}break;
+    case "genIdeas":genIdeas(false);break;
+    case "moreIdeas":genIdeas(true);break;
+    case "showIdeas":S.q1=4;save();render();break;
+    case "editAnswers":S.q1=0;save();render();break;
+    case "expressOn":S.express=true;S._ex=null;render();break;
+    case "expressOff":S.express=false;render();break;
+    case "expressGo":expressGo();break;
+    case "to2":go(2);break;
+    case "synthClient":synthClient();break;
+    case "editClient":S.client=null;save();render();break;
+    case "to3":go(3);break;
+    case "coach3":coach3();break;
+    case "to4":go(4);break;
+    case "ownName":var on=clean($("#ownName").value);if(!on){toast("Écris d'abord ton nom 💕");return;}pickName({nom:on,sous:clean($("#ownSub").value),angle:"Ton choix",pour:"",own:true});break;
+    case "moreNames":moreNames();break;
+    case "promos":promos();break;
+    case "to5":go(5);break;
+    case "improveStruct":improveStruct();break;
+    case "addPart":S.structure.push(M("Nouvelle partie"));S.structureOk=false;save();render();setTimeout(function(){var ins=$$(".modh input");if(ins.length){ins[ins.length-1].focus();ins[ins.length-1].select();}},100);break;
+    case "validStruct":S.structureOk=true;save();render();toast("Structure validée 💗");break;
+    case "to6":go(6);break;
+    case "moreBonus":moreBonus();break;
+    case "to7":go(7);break;
+    case "genOffer":genOffer();break;
+    case "to8":go(8);break;
+    case "create":
+      if(!S.sections.length)buildSections();
+      S.validated=true;var n=nextTodo();S.cur=n>-1?n:0;go(9);
+      if(S.sections[S.cur]&&!S.sections[S.cur].content)toast("C'est parti ! Clique sur « Créer cette partie » ✨");
+      break;
+    case "dirtyYes":buildSections();S.sections.forEach(function(x){if(x.content)x.status="stale";});save();render();toast("Les parties à revoir sont marquées ⚠. Ouvre-les et clique sur « Mettre à jour ».");break;
+    case "dirtyNo":buildSections();save();render();toast("Tes parties sont conservées 💕");break;
+    case "gen":runSection(S.cur,"create");break;
+    case "refresh":runSection(S.cur,"revise","Mets cette partie à jour pour qu'elle soit parfaitement cohérente avec les informations actuelles du projet (nom, promesse, cliente, format, structure, bonus et ton).");break;
+    case "improve":runSection(S.cur,"revise","Améliore cette partie : plus claire, plus concrète, plus utile pour une débutante, avec de meilleurs exemples et sans remplissage.");break;
+    case "regen":ask("Régénérer cette partie ?","Ton assistante va écrire une nouvelle version. L'actuelle restera récupérable avec « Revenir à la version précédente ».","OUI, RÉGÉNÉRER","ANNULER",function(){runSection(S.cur,"create");});break;
+    case "applyReq":var rq=clean(($("#reqbox")||{}).value||S._req);if(!rq){toast("Écris ta demande ou choisis une suggestion 💕");return;}S._req="";runSection(S.cur,"revise",rq);break;
+    case "stop":if(ctl)ctl.abort();break;
+    case "validate":if(sec.status==="ok")return;sec.status="ok";save();var nx=nextTodo();
+      if(nx===-1){confetti();toast("Toutes tes parties sont validées ! 🎉");render();}
+      else{S.cur=nx;S._req="";render();toast("Partie validée 💗 Voici ta partie suivante.");window.scrollTo({top:0,behavior:"smooth"});}
+      break;
+    case "edit":S._edit=S.cur;render();break;
+    case "saveEdit":var ta=$("#editarea");if(ta){sec.history=(sec.history||[]).concat([sec.content]).slice(-3);sec.content=ta.value;sec.status="draft";S.decisions.push(sec.titre+" : modifiée à la main par la créatrice");}S._edit=null;save();render();toast("Modifications enregistrées 💾");break;
+    case "cancelEdit":S._edit=null;render();break;
+    case "undo":if(sec.history&&sec.history.length){sec.content=sec.history.pop();sec.status="draft";save();render();toast("Version précédente restaurée ↩");}break;
+    case "copyPrompt":copyText(sectionPrompt(sec,"create"),"Consigne copiée 📋");break;
+    case "savePaste":var pa=$("#pastearea");if(!pa||!pa.value.trim()){toast("Colle d'abord ton texte 💕");return;}sec.content=pa.value.trim();sec.status="draft";save();render();toast("Partie enregistrée 💾");break;
+    case "prevSec":if(S.cur>0){S.cur--;S._edit=null;S._req="";save();render();}break;
+    case "nextSec":if(S.cur<S.sections.length-1){S.cur++;S._edit=null;S._req="";save();render();}break;
+    case "finish":
+      var left=S.sections.filter(function(x){return x.status!=="ok";}).length;
+      if(left)ask("Finaliser maintenant ?",left+" partie(s) ne sont pas encore validées. Tu peux lancer le contrôle qualité quand même, ou revenir les valider.","CONTINUER","REVENIR",function(){go(10);});
+      else go(10);
+      break;
+    case "toFirstTodo":var ft=nextTodo();if(ft>-1)S.cur=ft;go(9);break;
+    case "qc":runQC();break;
+    case "dlHtml":S.finished=true;save();download("html");renderStepper();break;
+    case "dlTxt":download("txt");break;
+    case "copyAll":copyText(productText(),"Tout ton produit est copié 📋");break;
+    case "preview":openPreview(false);break;
+    case "printDoc":openPreview(true);break;
+    case "pvclose":closePreview();break;
+    case "pvprint":window.print();break;
+    case "newVersion":ask("Créer une nouvelle version ?","La version actuelle est gardée dans l'historique. Tu pourras ensuite modifier ton produit librement.","OUI, NOUVELLE VERSION","ANNULER",function(){snapshot();S.version++;S.sections.forEach(function(x){if(x.status==="ok")x.status="draft";});S.qc=null;S.finished=false;save();go(9);toast("Version "+S.version+" créée 🌱");});break;
+    case "recap":openDrawer();break;
+    case "chatOpen":openChat();break;
+    case "close":closeAll();break;
+    case "chatSend":var ci=$("#chatin");var msg=clean(ci.value);if(!msg)return;ci.value="";askAssistant(msg);break;
+    case "chatSug":askAssistant(t.textContent);break;
+  }
+});
+$("#veil").addEventListener("click",closeAll);
+window.addEventListener("beforeunload",function(e){if(S._busy){e.preventDefault();e.returnValue="";}});
+render();
+})();
+
+</script>
+</body>
+</html>

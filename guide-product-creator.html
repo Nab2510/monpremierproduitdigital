@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Mode d'emploi · PRODUCT CREATOR ✨</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--barbie:#FFC1D8;--bonbon:#FF9EC7;--hot:#EC4E97;--hotdeep:#C8337A;--blush:#FFF4F8;--blush2:#FFE7F0;--ink:#3A1F2B;--ink2:#6E5260;
+--gold:linear-gradient(115deg,#A97A24 0%,#E9C878 28%,#FFF1C9 46%,#D9AE55 64%,#A97A24 100%);
+--goldd:linear-gradient(115deg,#7A5312 0%,#B8862F 18%,#F3D98B 30%,#B8862F 42%,#7A5312 55%,#B8862F 70%,#F3D98B 82%,#7A5312 100%)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Poppins",system-ui,sans-serif;font-size:18px;line-height:1.7;color:var(--ink);background:var(--blush);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif;line-height:1.1;margin:0;font-weight:700}
+p{margin:0 0 1em}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px;position:relative;z-index:2}
+.gold{font-style:italic;font-weight:600;background:var(--goldd);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 5s linear infinite;padding-right:.05em}
+.tag{display:inline-block;background:var(--hot);color:#fff;border-radius:99px;padding:8px 18px;font-weight:600;font-size:15px}
+.tag.w{background:#fff;color:var(--hotdeep)}
+.btn{position:relative;overflow:hidden;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:99px;padding:20px 42px;font-family:"Poppins",sans-serif;font-size:19px;font-weight:800;letter-spacing:1.3px;text-decoration:none;color:#3A2410;background:var(--goldd);background-size:220% 100%;box-shadow:0 18px 36px -14px rgba(122,83,18,.8);animation:breathe 2.6s ease-in-out infinite,shine 5s linear infinite;cursor:pointer}
+.btn::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.65),transparent);transform:skewX(-20deg);animation:sweep 3.4s ease-in-out infinite;z-index:-1}
+.btn.pink{background:var(--hot);color:#fff;box-shadow:0 18px 36px -14px rgba(200,51,122,.9);animation:breathe 2.6s ease-in-out infinite}
+.btn.sm{padding:13px 24px;font-size:15px;letter-spacing:.6px}
+.fl{position:absolute;z-index:1;pointer-events:none}
+.bub{border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff 0,var(--bonbon) 45%,var(--hot) 100%);opacity:.55;animation:drift 12s ease-in-out infinite}
+.ring{border-radius:50%;border:2px solid #fff;opacity:.7;animation:drift 16s ease-in-out infinite reverse}
+.spk{width:22px;height:22px;background:var(--gold);clip-path:polygon(50% 0,61% 39%,100% 50%,61% 61%,50% 100%,39% 61%,0 50%,39% 39%);animation:twinkle 3.2s ease-in-out infinite}
+@keyframes shine{to{background-position:-220% 0}}
+@keyframes breathe{50%{transform:scale(1.04)}}
+@keyframes sweep{0%{left:-70%}55%,100%{left:130%}}
+@keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(18px,-26px)}}
+@keyframes twinkle{0%,100%{transform:scale(.6) rotate(0);opacity:.3}50%{transform:scale(1.15) rotate(45deg);opacity:1}}
+@keyframes bob{50%{transform:translateY(-12px) rotate(4deg)}}
+@keyframes pop{0%{transform:scale(.6);opacity:0}70%{transform:scale(1.08);opacity:1}100%{transform:scale(1)}}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:44px 0 80px;text-align:center;background:radial-gradient(circle at 15% 15%,#fff 0,transparent 35%),radial-gradient(circle at 85% 85%,#EC4E97 0,transparent 45%),linear-gradient(160deg,#FFC1D8 0%,#FF9EC7 100%)}
+.brand{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:15px}
+.logo{width:42px;height:42px;border-radius:50%;background:var(--gold);background-size:200% 100%;display:grid;place-items:center;font-family:"Playfair Display";font-style:italic;font-weight:700;color:#fff;font-size:22px;animation:shine 5s linear infinite}
+.giftbox{font-size:110px;line-height:1;display:inline-block;margin:26px 0 6px;animation:bob 2.8s ease-in-out infinite;filter:drop-shadow(0 18px 20px rgba(200,51,122,.35))}
+.hero h1{font-size:clamp(40px,6.4vw,78px);letter-spacing:-1px;margin-top:10px}
+.hero .lede{font-size:clamp(18px,2vw,21px);max-width:640px;margin:20px auto 30px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px}
+.chips a{background:rgba(255,255,255,.88);border-radius:99px;padding:9px 18px;font-size:15px;color:var(--ink);text-decoration:none;font-weight:500}
+
+/* idées */
+.sec{position:relative;overflow:hidden;padding:80px 0}
+.sec h2{font-size:clamp(34px,5vw,56px);text-align:center;margin-bottom:14px}
+.sub{text-align:center;max-width:680px;margin:0 auto 30px;font-size:19px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:22px}
+.filters button{border:2px solid var(--barbie);background:#fff;border-radius:99px;padding:9px 16px;font-family:inherit;font-size:14.5px;font-weight:600;color:var(--ink2);cursor:pointer;transition:all .25s}
+.filters button.on{background:var(--hot);border-color:var(--hot);color:#fff}
+.bar{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center;margin-bottom:28px}
+.favcount{background:#fff;border-radius:99px;padding:10px 18px;font-weight:600;font-size:15px;color:var(--hotdeep);border:2px solid var(--barbie)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{position:relative;background:#fff;border-radius:26px;padding:22px 22px 18px;box-shadow:0 16px 40px -24px rgba(200,51,122,.55);border:2px solid transparent;transition:transform .3s,border-color .3s;animation:pop .5s cubic-bezier(.2,.8,.2,1) both}
+.card:hover{transform:translateY(-5px) rotate(-.5deg)}
+.card.fav{border-color:var(--hot)}
+.card.hl{border-color:#C9973A;box-shadow:0 0 0 6px rgba(233,200,120,.35),0 16px 40px -24px rgba(200,51,122,.55)}
+.card .dom{font-size:12.5px;font-weight:600;color:var(--hotdeep);text-transform:uppercase;letter-spacing:1px}
+.card h3{font-size:22px;margin:6px 0 10px}
+.card .meta{display:flex;flex-wrap:wrap;gap:6px}
+.card .meta span{background:var(--blush2);border-radius:99px;padding:3px 11px;font-size:13px}
+.card .heart{position:absolute;top:14px;right:14px;width:40px;height:40px;border-radius:50%;border:0;background:var(--blush2);font-size:18px;cursor:pointer;transition:transform .2s}
+.card .heart:active{transform:scale(.85)}
+.card.fav .heart{background:var(--hot)}
+.mine{max-width:760px;margin:30px auto 0;background:#fff;border-radius:26px;padding:22px 26px;border:2px dashed var(--bonbon);display:none}
+.mine.on{display:block}
+.mine h3{font-size:22px;margin-bottom:8px}
+.mine ul{margin:0;padding-left:22px}
+
+/* test */
+.testbg{background:radial-gradient(circle at 90% 10%,#fff 0,transparent 35%),linear-gradient(160deg,#FFC1D8,#FF9EC7)}
+.testbox{max-width:780px;margin:0 auto;background:#fff;border-radius:34px;padding:34px 32px;box-shadow:0 40px 80px -34px rgba(200,51,122,.7)}
+.testbox label{display:block;font-weight:600;margin-bottom:8px}
+.testbox input{width:100%;font-family:inherit;font-size:17px;border:2px solid var(--blush2);border-radius:14px;padding:13px 16px;margin-bottom:22px}
+.testbox input:focus{outline:none;border-color:var(--hot)}
+.q{padding:18px 0;border-top:1px solid var(--blush2)}
+.q p{font-weight:600;margin-bottom:10px}
+.q .opts{display:flex;flex-wrap:wrap;gap:8px}
+.q .opts button{border:2px solid var(--blush2);background:#fff;border-radius:99px;padding:9px 18px;font-family:inherit;font-size:15px;font-weight:600;cursor:pointer;color:var(--ink);transition:all .2s}
+.q .opts button.on{background:var(--hot);border-color:var(--hot);color:#fff}
+.prog{height:12px;background:var(--blush2);border-radius:99px;overflow:hidden;margin:6px 0 18px}
+.prog i{display:block;height:100%;width:0;background:var(--goldd);background-size:220% 100%;animation:shine 4s linear infinite;transition:width .4s}
+.result{display:none;margin-top:26px;text-align:center;background:var(--blush);border-radius:26px;padding:28px 24px;animation:pop .6s both}
+.result.on{display:block}
+.gauge{position:relative;width:170px;height:170px;margin:0 auto 14px;border-radius:50%;background:conic-gradient(#C9973A var(--p,0%),#FFE7F0 0);display:grid;place-items:center;transition:--p 1s}
+.gauge::before{content:"";position:absolute;inset:16px;border-radius:50%;background:#fff}
+.gauge b{position:relative;font-family:"Playfair Display";font-size:44px;color:var(--hotdeep)}
+.result h3{font-size:30px;margin-bottom:8px}
+.result ul{text-align:left;max-width:560px;margin:14px auto 20px;padding-left:22px}
+.result li{margin-bottom:8px}
+
+/* suite */
+.steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:30px 0 36px}
+.steps3 div{background:#fff;border-radius:26px;padding:24px 22px;box-shadow:0 16px 40px -24px rgba(200,51,122,.5)}
+.steps3 b{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--gold);color:#3A2410;font-family:"Playfair Display";font-size:22px;margin-bottom:10px}
+.steps3 h3{font-size:22px;margin-bottom:6px}
+.steps3 p{margin:0;font-size:16px;color:var(--ink2)}
+.offer{max-width:760px;margin:0 auto;text-align:center;background:linear-gradient(135deg,#EC4E97 0%,#FF9EC7 70%);border-radius:36px;padding:44px 30px;color:#fff;position:relative;overflow:hidden}
+.offer h2{color:#fff;font-size:clamp(32px,4.6vw,50px);margin-bottom:12px}
+.offer p{max-width:560px;margin:0 auto 24px}
+.foot{text-align:center;padding:40px 22px 60px;font-size:14.5px;color:var(--ink2)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,200%);background:var(--ink);color:#fff;border-radius:99px;padding:12px 22px;font-weight:500;z-index:50;transition:transform .35s;font-size:15px;visibility:hidden}
+.toast.on{transform:translate(-50%,0);visibility:visible}
+.confetti{position:fixed;inset:0;pointer-events:none;z-index:60;overflow:hidden}
+.confetti i{position:absolute;top:-20px;width:10px;height:15px;border-radius:3px;animation:fall linear forwards}
+@media (max-width:900px){.grid{grid-template-columns:1fr 1fr}.steps3{grid-template-columns:1fr}}
+@media (max-width:560px){body{font-size:16.5px}.grid{grid-template-columns:1fr}.testbox{padding:26px 18px}.btn{width:100%;padding:18px 20px;font-size:17px}.giftbox{font-size:86px}.sec{padding:56px 0}.card h3{font-size:20px;padding-right:40px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.stepbox{display:grid;grid-template-columns:1fr 230px;gap:26px;align-items:center;background:#fff;border-radius:30px;padding:28px 30px;margin:0 0 20px;box-shadow:0 20px 50px -30px rgba(200,51,122,.5)}
+.stepbox.noimg{grid-template-columns:1fr}
+.stepbox h3{font-size:26px;margin:0 0 10px;display:flex;gap:12px;align-items:center}
+.stepbox h3 b{flex:0 0 46px;height:46px;border-radius:50%;background:var(--gold);display:grid;place-items:center;color:#3A2410;font-size:22px}
+.stepbox ol,.stepbox ul{margin:6px 0 0;padding-left:22px}
+.stepbox li{margin-bottom:6px}
+.shot{background:#fff;border-radius:30px;padding:8px;box-shadow:0 24px 44px -24px rgba(200,51,122,.7),0 0 0 4px #FFC1D8}
+.shot img{display:block;width:100%;border-radius:23px}
+.kbd{display:inline-block;background:var(--hot);color:#fff;border-radius:99px;padding:1px 10px;font-weight:700;font-size:.85em;white-space:nowrap}
+.kbd.g{background:var(--goldd);color:#3A2410}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.opt2{background:#fff;border-radius:28px;padding:26px;box-shadow:0 20px 50px -30px rgba(200,51,122,.5)}
+.opt2.ia{border:3px solid transparent;background:linear-gradient(#fff,#fff) padding-box,var(--gold) border-box}
+.opt2 h3{font-size:24px;margin:8px 0}
+.tip{background:#FFF3DA;border-left:6px solid #C9973A;border-radius:22px;padding:18px 22px;margin:18px 0}
+.ex{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.ex div{border-radius:16px;padding:12px 14px;font-size:15px}
+.ex .no{background:#fff;border:2px solid #F3D3DF}
+.ex .yes{background:#FFF4F8;border:2px solid var(--hot)}
+.ex b{display:block;font-size:13px;letter-spacing:1px}
+details.q{background:#fff;border-radius:20px;margin:10px 0;padding:0 20px}
+details.q summary{cursor:pointer;font-weight:600;padding:16px 0;list-style:none}
+details.q p{margin:0 0 14px}
+@media (max-width:760px){.stepbox{grid-template-columns:1fr}.stepbox .shot{max-width:230px;margin:0 auto}.two,.ex{grid-template-columns:1fr}}
+@media print{.hero{border-radius:0}.stepbox,.opt2{box-shadow:none;border:1px solid #F3D3DF;page-break-inside:avoid}.btn{animation:none}.fl{display:none}.chips{display:none}}
+</style></head>
+<body>
+<section class="hero">
+  <div class="fl bub" style="width:150px;height:150px;left:4%;top:18%"></div>
+  <div class="fl bub" style="width:220px;height:220px;right:-60px;bottom:6%;animation-delay:-6s"></div>
+  <div class="fl spk" style="left:24%;top:22%"></div><div class="fl spk" style="right:22%;top:30%;animation-delay:-1.2s"></div>
+  <div class="wrap">
+    <div class="brand"><span class="logo">N</span>Mon Premier Produit Digital</div><br>
+    <span class="giftbox">📘</span><br>
+    <span class="tag w">Mode d'emploi · même si tu n'as jamais utilisé l'IA</span>
+    <h1>Bien utiliser<br><span class="gold">PRODUCT CREATOR ✨</span></h1>
+    <p class="lede">Tout ce qu'il faut savoir pour créer ton produit digital avec ton assistante, pas à pas. Aucune connaissance technique n'est nécessaire.</p>
+    <div class="chips"><a href="#versions">🤖 Les 2 versions</a><a href="#compte">👤 Créer mon compte</a><a href="#etapes">🪄 Les étapes</a><a href="#demandes">💬 Bien demander</a><a href="#gratuit">💸 Version gratuite</a><a href="#faq">❓ Questions</a></div>
+  </div>
+</section>
+
+<section class="sec" id="versions">
+  <div class="wrap" style="max-width:940px">
+    <h2>Quelle <span class="gold">version</span> choisir ?</h2>
+    <p class="sub">Product Creator existe en deux versions. Les deux t'accompagnent de l'idée jusqu'à ton produit.</p>
+    <div class="two">
+      <div class="opt2 ia"><span class="tag">✨ Recommandée</span><h3>Avec l'assistance IA</h3><p>Ton assistante <b>rédige vraiment ton produit</b> avec toi, partie par partie, et répond à tes questions.</p><ul><li>Elle s'ouvre dans <b>Claude</b>, l'assistant IA d'Anthropic</li><li>Il te faut un <b>compte Claude</b> (on le crée ensemble juste en dessous)</li><li>Un compte <b>gratuit</b> permet de l'utiliser dans une limite d'utilisation ; un <b>abonnement payant</b> donne beaucoup plus d'utilisation</li></ul><p style="text-align:center;margin-top:16px"><a class="btn" href="https://claude.ai/artifact/5aEMcm1Tq4b3VEH3VSqmGx" target="_blank" rel="noopener">OUVRIR AVEC L'IA ✨</a></p></div>
+      <div class="opt2"><span class="tag w" style="border:2px solid #FFC1D8">💗 100 % gratuite</span><h3>Version libre</h3><p>Elle est <b>intégrée directement dans ton cours</b> (Bonus ★). Aucun compte n'est nécessaire.</p><ul><li>Toute la phase de conception fonctionne</li><li>Pour créer ton produit, l'outil te donne une <b>consigne toute prête</b> à copier dans une IA gratuite (voir plus bas)</li><li>Tu colles le résultat, et Product Creator l'assemble pour toi</li></ul><p style="text-align:center;margin-top:16px"><a class="btn pink" href="https://monpremierproduitdigital.vercel.app/product-creator.html" target="_blank" rel="noopener">OUVRIR LA VERSION LIBRE</a></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec testbg" id="compte">
+  <div class="wrap" style="max-width:940px">
+    <h2>Créer ton compte <span class="gold">Claude</span></h2>
+    <p class="sub">Uniquement pour la version avec l'IA. Compte 3 minutes.</p>
+    <div class="stepbox noimg"><h3><b>1</b>Crée ton compte</h3><ol><li>Va sur <b>claude.ai</b>, sur ton téléphone ou ton ordinateur.</li><li>Clique sur <span class="kbd">S'inscrire</span>, avec ton adresse email ou ton compte Google.</li><li>Si tu choisis l'email, ouvre le message reçu et clique sur le lien de confirmation.</li><li>Réponds aux petites questions d'accueil (ton prénom…). C'est tout !</li></ol></div>
+    <div class="stepbox noimg"><h3><b>2</b>Ouvre Product Creator</h3><ol><li>Dans ton cours, ouvre <b>Bonus ★ Product Creator</b> et clique sur <span class="kbd g">OUVRIR AVEC L'IA ✨</span>.</li><li>Product Creator s'ouvre dans Claude. Si Claude te le demande, connecte-toi.</li><li>Astuce : ajoute la page à tes favoris pour la retrouver en un clic.</li></ol></div>
+    <div class="stepbox noimg"><h3><b>3</b>Autorise ton assistante</h3><p>La première fois que tu demandes quelque chose à l'IA, Claude affiche une petite fenêtre pour <b>autoriser l'outil à utiliser ton compte</b>. Clique sur <b>Autoriser</b>. Sans cette autorisation, l'outil fonctionne en mode sans IA.</p><p>Tu sais que l'IA est active quand tu vois <b>« ✨ Assistance IA active »</b> en haut de l'outil.</p></div>
+  </div>
+</section>
+
+<section class="sec" id="etapes">
+  <div class="wrap" style="max-width:940px">
+    <h2>Les étapes, <span class="gold">une par une</span></h2>
+    <div class="stepbox"><div><h3><b>1</b>Commence ton produit</h3><p>Clique sur <span class="kbd g">COMMENCER MON PRODUIT</span>. Ton projet s'enregistre automatiquement : tu peux fermer la page et revenir plus tard sur le même appareil.</p><p>En haut, <b>💗 Mon projet</b> te montre tout ce que tu as déjà décidé.</p></div><div class="shot"><img src="mppd-studio-accueil.jpg" alt="Accueil de Product Creator"></div></div>
+    <div class="stepbox"><div><h3><b>2</b>Phase 1 : je conçois</h3><p>Réponds simplement, avec tes mots, puis choisis parmi les propositions :</p><ol><li><b>Mon idée</b> : des idées adaptées à tes réponses. Pas convaincue ? <b>« Donne-moi d'autres idées »</b>. Idée déjà claire ? Utilise le <b>mode express</b>.</li><li><b>Ma cliente</b> : décris la personne que tu veux aider.</li><li><b>Mon format</b> : e-book, workbook, checklist, planner, templates…</li><li><b>Mon concept, ma structure, mes bonus, mon offre</b> : tu choisis, tu modifies, tu valides.</li><li><b>Je valide</b> : tu relis tout, tu choisis le ton, puis <span class="kbd g">CRÉER MON PRODUIT ✨</span>.</li></ol></div><div class="shot"><img src="mppd-studio-idees.jpg" alt="Idées proposées"></div></div>
+    <div class="stepbox"><div><h3><b>3</b>Phase 2 : je crée</h3><p>Ton produit est découpé en parties. Pour chaque partie :</p><ol><li>Clique sur <span class="kbd g">CRÉER CETTE PARTIE</span>. Ton assistante écrit en direct (compte de quelques secondes à une minute).</li><li><b>Relis tranquillement.</b></li><li>Clique sur <span class="kbd">✓ VALIDER</span> si elle te plaît, ou sur <b>AMÉLIORER</b>, <b>RÉGÉNÉRER</b> ou <b>MODIFIER</b> (pour changer le texte toi-même).</li><li>Tu peux aussi <b>ajouter</b> un exemple, un exercice, une checklist ou un tableau en un clic.</li></ol><p>Le tableau de bord à gauche montre ta progression.</p></div><div class="shot"><img src="mppd-studio-studio.jpg" alt="Studio de création"></div></div>
+    <div class="stepbox"><div><h3><b>4</b>Ton assistante</h3><p>Clique sur <b>💬 Assistante</b> pour poser tes questions : « Mon produit est-il assez complet ? », « Qu'est-ce qui manque ? ». Elle connaît tout ton projet.</p></div><div class="shot"><img src="mppd-studio-dash.jpg" alt="Tableau de bord"></div></div>
+    <div class="stepbox"><div><h3><b>5</b>Finalise et télécharge</h3><ol><li>Clique sur <span class="kbd g">FINALISER MON PRODUIT</span>, puis lance le <b>contrôle qualité</b>. Chaque correction proposée s'applique en un clic.</li><li>Clique sur <span class="kbd g">TÉLÉCHARGER MON PRODUIT</span> : tu reçois un joli document.</li><li>Pour un <b>PDF</b> : <b>Imprimer / PDF</b>, puis choisis « Enregistrer au format PDF ».</li><li>Complète les passages <mark style="background:#FFE7F0;color:#C8337A;border-radius:6px;padding:0 4px">[À PERSONNALISER]</mark> avec ton vécu, puis mets en page sur Canva (module 3).</li></ol></div><div class="shot"><img src="mppd-studio-pret.jpg" alt="Produit prêt"></div></div>
+  </div>
+</section>
+
+<section class="sec testbg" id="demandes">
+  <div class="wrap" style="max-width:940px">
+    <h2>Bien <span class="gold">demander</span> une modification</h2>
+    <p class="sub">Dans « Ta demande », écris comme si tu parlais à une amie. Plus tu es précise, meilleur est le résultat.</p>
+    <div class="stepbox noimg">
+      <div class="ex"><div class="no"><b>😕 TROP VAGUE</b>« Change ça »</div><div class="yes"><b>💗 PRÉCIS</b>« Rends l'introduction plus courte et plus chaleureuse »</div></div>
+      <div class="ex"><div class="no"><b>😕 TROP VAGUE</b>« Ajoute des trucs »</div><div class="yes"><b>💗 PRÉCIS</b>« Ajoute un exemple avec une maman qui travaille à temps plein »</div></div>
+      <div class="ex"><div class="no"><b>😕 TROP VAGUE</b>« C'est nul »</div><div class="yes"><b>💗 PRÉCIS</b>« Fais plus concret, avec des étapes numérotées »</div></div>
+      <div class="tip"><b>Mes phrases magiques :</b> « Plus simple » · « Plus concret » · « Développe cette partie » · « Ajoute un exercice » · « Parle comme à une débutante » · « Plus premium » · « C'est trop long »</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="gratuit">
+  <div class="wrap" style="max-width:940px">
+    <h2>Créer ton produit <span class="gold">gratuitement</span></h2>
+    <p class="sub">Pas de compte Claude, ou ta limite gratuite est atteinte ? La version libre te permet quand même de créer tout ton produit.</p>
+    <div class="stepbox noimg"><h3><b>✦</b>La méthode « copier-coller »</h3><ol><li>Ouvre la <b>version libre</b> (Bonus ★ dans ton cours) et fais toute la phase 1.</li><li>Dans la phase 2, pour chaque partie, clique sur <span class="kbd">📋 Copier la consigne</span>.</li><li>Ouvre une IA gratuite et colle la consigne dans la zone de message :<ul><li><b>ChatGPT</b> (chatgpt.com)</li><li><b>Gemini</b> (gemini.google.com)</li><li><b>Le Chat de Mistral</b> (chat.mistral.ai)</li><li>ou <b>Claude</b> en version gratuite (claude.ai)</li></ul></li><li>Copie la réponse, reviens dans Product Creator, colle-la dans le cadre, puis clique sur <span class="kbd">Enregistrer cette partie</span>.</li><li>Relis, valide, et passe à la partie suivante. À la fin, télécharge ton produit comme dans la version IA.</li></ol>
+    <div class="tip">💡 La consigne contient déjà toutes les informations de ton projet : ton idée, ta cliente, ton format, ta structure et ton ton. Tu n'as rien à écrire toi-même.</div></div>
+    <p class="mini" style="text-align:center;font-size:14px;color:#6E5260">Les offres gratuites des outils d'IA ont des limites d'utilisation qui peuvent changer : si tu es bloquée, attends quelques heures ou essaie un autre outil.</p>
+  </div>
+</section>
+
+<section class="sec testbg" id="faq">
+  <div class="wrap" style="max-width:860px">
+    <h2>Tes <span class="gold">questions</span></h2>
+    <details class="q"><summary>Je ne vois pas « Assistance IA active »</summary><p>Tu es sûrement dans la version libre, ou tu n'as pas autorisé l'outil. Ouvre le lien « Avec l'IA » depuis ton cours, connecte-toi à Claude, puis autorise l'outil à la première demande.</p></details>
+    <details class="q"><summary>Le message « trop de demandes » s'affiche</summary><p>Tu as atteint une limite d'utilisation. Patiente un peu, puis réessaie. En attendant, tu peux continuer avec la méthode copier-coller.</p></details>
+    <details class="q"><summary>Je peux arrêter et reprendre plus tard ?</summary><p>Oui, ton projet est enregistré automatiquement sur ton appareil, dans ton navigateur. Reviens sur la même page, avec le même appareil et le même navigateur. Pense à télécharger ton produit régulièrement.</p></details>
+    <details class="q"><summary>Une partie s'est arrêtée au milieu</summary><p>Écris « Termine cette partie » dans « Ta demande », ou clique sur « Régénérer ». Une version précédente reste toujours récupérable.</p></details>
+    <details class="q"><summary>Le contenu est-il prêt à vendre tel quel ?</summary><p>Il te fait gagner énormément de temps, mais relis toujours tout, vérifie les informations et ajoute ton expérience personnelle : c'est ce qui rend ton produit unique. Aucun outil ne peut garantir des ventes.</p></details>
+    <details class="q"><summary>Je peux changer d'avis en cours de route ?</summary><p>Oui : clique sur n'importe quelle étape en haut. Si ton projet change, Product Creator te propose de mettre à jour les parties déjà créées.</p></details>
+  </div>
+</section>
+<div class="foot"><strong>PRODUCT CREATOR ✨</strong> · un bonus de Mon Premier Produit Digital · Réalise-toi avec Nab<br>Claude est un service d'Anthropic. ChatGPT, Gemini et Le Chat appartiennent à leurs éditeurs respectifs.</div>
+</body></html>
